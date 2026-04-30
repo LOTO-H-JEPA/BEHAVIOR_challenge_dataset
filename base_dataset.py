@@ -212,7 +212,7 @@ class BaseDataset:
                 ]
 
                 length = float(episode.get("length", 0.0))
-                duration_hours = (length / fps) / 3600.0
+                duration_hours = (length / fps) / 3600.0 # lets compute in minutes 
                 if duration_hours <= 0:
                     continue
 
@@ -254,7 +254,8 @@ class BaseDataset:
         save_json_file(str(metadata_file), selected_meta)
         self.logger.info(f"Saved selected metadata to {metadata_file.resolve()}")
         return selected_meta
-
+   
+   # TODO update log preview
     def _log_metadata_preview(self) -> None:
         tasks_count = len(self.tasks) if isinstance(self.tasks, list) else 0
         episodes_count = len(self.episodes) if isinstance(self.episodes, list) else 0

@@ -8,7 +8,7 @@ dataset:
   obs_resolution: 256 # 256x256 RGB only support 
   fps: 5 # fps for downsampling
   shard_size: 1 # in GiB
-  base_dataset_destination: None # default is output/base_dataset, "hugging_face", "google_cloud"
+  base_dataset_destination: "/Users/julianquast/Documents/Documents/LOTO-H-JEPA/dataset_pipeline/BEHAVIOR_challenge_dataset/output/base_dataset" # default is output/base_dataset, "hugging_face", "google_cloud"
   encoded_dataset_destination: "hugging_face"  # "hugging_face", "google_cloud" "local (output/encoded_dataset)"
   encoded_dataset_destination_path: # 
   augmentation: "resize_crop" # "resize_crop" or None (no aug)
