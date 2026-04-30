@@ -1,7 +1,4 @@
+from .base_dataset import BaseDataset
 
-
-
-
-#TODO install dependencies and run the code
-# pip install -r requirements.txt
-
+if __name__ == "__main__":
+    BaseDataset()
