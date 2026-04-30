@@ -114,7 +114,6 @@ class BaseDataset:
         total_count = len(required_meta_files)
         self.logger.info(
             f"Base dataset metadata loaded: {found_count}/{total_count} files found "
-            f"(info={self.info is not None}, tasks={self.tasks is not None}, episodes={self.episodes is not None})"
         )
 
         if found_count == total_count:
@@ -122,6 +121,9 @@ class BaseDataset:
             self._log_metadata_preview()
         else:
             self.selected_meta = None
+            self.logger.warning(
+                "Not all required metadata files were loaded successfully; skipping episode selection."
+            )
 
         return loaded_meta
 
@@ -193,7 +195,7 @@ class BaseDataset:
                 data_parquet_file = self.info["data_path"].format(**path_vars)
                 episode_file = self.info["metainfo_path"].format(**path_vars)
  
-                if self.camera_view_type in {"all", "multi"}:
+                if self.camera_view_type in {"all"}:
                     video_keys = [
                         "observation.images.rgb.head",
                         "observation.images.rgb.left_wrist",
@@ -212,8 +214,8 @@ class BaseDataset:
                 ]
 
                 length = float(episode.get("length", 0.0))
-                duration_hours = (length / fps) / 3600.0 # lets compute in minutes 
-                if duration_hours <= 0:
+                duration_minutes = (length / fps) / 60.0 # lets compute in minutes 
+                if duration_minutes <= 0:
                     continue
 
                 selected.append(
@@ -222,7 +224,7 @@ class BaseDataset:
                         "task_name": task_name,
                         "task_index": task_meta.get("task_index"),
                         "episode_index": sampled_id,
-                        "duration_hours": duration_hours,
+                        "duration_minutes": duration_minutes,
                         "video_file": video_files[0],
                         "video_files": video_files,
                         "data_parquet_file": data_parquet_file,
@@ -230,8 +232,8 @@ class BaseDataset:
                         "raw": episode,
                     }
                 )
-                remaining_budget -= duration_hours
-                selected_hours += duration_hours
+                remaining_budget -= duration_minutes
+                selected_hours += duration_minutes
 
         selected_meta = {
             "target_hours": target_hours,
