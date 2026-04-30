@@ -129,7 +129,7 @@ class BaseDataset:
         target_hours = float(self.dataset_size)
         eval_task_set = set(self.eval_tasks)
 
-        fps = float(self.info.get("fps", self.fps))
+        fps = float(self.info.get("fps", 30.0))
         total_tasks = int(self.info.get("total_tasks", 50))
         per_task_budget_hours = target_hours / float(total_tasks)
 
@@ -142,18 +142,20 @@ class BaseDataset:
                     "task_name": task.get("task_name"),
                     "task": description,
                 }
+        #TODO lets assert if the task_lookup has 50 entries
 
         episode_index_lookup: dict[int, dict[str, Any]] = {}
         episodes_by_task_desc: dict[str, list[int]] = {}
         for episode in self.episodes:
             episode_id = episode.get("episode_index")
             if episode_id is None:
-                continue
+                continue # TODO log warning 
             episode_index_lookup[int(episode_id)] = episode
             for task_desc in (episode.get("tasks") or []):
                 if task_desc in task_lookup:
                     episodes_by_task_desc.setdefault(task_desc, []).append(int(episode_id))
-
+        #TODO log number of found ids per task and global sum of ids 
+        
         selected: list[dict[str, Any]] = []
         selected_hours = 0.0
 
@@ -176,9 +178,8 @@ class BaseDataset:
                 path_vars = {"episode_chunk": episode_chunk, "episode_index": sampled_id}
                 data_parquet_file = self.info["data_path"].format(**path_vars)
                 episode_file = self.info["metainfo_path"].format(**path_vars)
-                annotation_file = self.info["annotation_path"].format(**path_vars)
-
-                video_key = self.camera_view_type
+ 
+                video_key = self.camera_view_type #TODO should handle  head only and all three                
                 video_file = self.info["video_path"].format(**(path_vars | {"video_key": video_key}))
 
                 length = float(episode.get("length", 0.0))
