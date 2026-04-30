@@ -129,12 +129,12 @@ class BaseDataset:
 
     def _build_selected_meta(self) -> dict[str, Any]:
         rng = random.Random(self.seed)
-        target_hours = float(self.dataset_size)
+        target_minutes = float(self.dataset_size) * 60.0
         eval_task_set = set(self.eval_tasks)
 
         fps = float(self.info.get("fps", 30.0))
         total_tasks = int(self.info.get("total_tasks", 50))
-        per_task_budget_hours = target_hours / float(total_tasks)
+        per_task_budget_minutes = target_minutes / float(total_tasks)
 
         task_lookup: dict[str, dict[str, Any]] = {}
         for task in self.tasks:
@@ -173,14 +173,14 @@ class BaseDataset:
         )
         
         selected: list[dict[str, Any]] = []
-        selected_hours = 0.0
+        selected_minutes = 0.0
 
         for task_desc, task_meta in task_lookup.items():
             task_name = task_meta.get("task_name")
             if self.exclude_eval_tasks and task_name in eval_task_set:
                 continue
 
-            remaining_budget = per_task_budget_hours
+            remaining_budget = per_task_budget_minutes
             episode_ids = episodes_by_task_desc.get(task_desc, []).copy()
 
             while episode_ids and remaining_budget > 0:
@@ -233,20 +233,20 @@ class BaseDataset:
                     }
                 )
                 remaining_budget -= duration_minutes
-                selected_hours += duration_minutes
+                selected_minutes += duration_minutes
 
         selected_meta = {
-            "target_hours": target_hours,
-            "selected_hours": selected_hours,
-            "per_task_budget_hours": per_task_budget_hours,
+            "target_minutes": target_minutes,
+            "selected_minutes": selected_minutes,
+            "per_task_budget_minutes": per_task_budget_minutes,
             "num_selected_episodes": len(selected),
             "exclude_eval_tasks": self.exclude_eval_tasks,
             "eval_tasks": list(eval_task_set),
             "episodes": selected,
         }
         self.logger.info(
-            f"Selected {len(selected)} episodes totaling {selected_hours:.3f}h "
-            f"(target={target_hours:.3f}h, per_task_budget={per_task_budget_hours:.3f}h)."
+            f"Selected {len(selected)} episodes totaling {selected_minutes:.1f}m "
+            f"(target={target_minutes:.1f}m, per_task_budget={per_task_budget_minutes:.1f}m)."
         )
         output_dir = self.base_dataset_destination
         if not output_dir or str(output_dir).lower() in {"none", "null"}:
@@ -257,19 +257,34 @@ class BaseDataset:
         self.logger.info(f"Saved selected metadata to {metadata_file.resolve()}")
         return selected_meta
    
-   # TODO update log preview
     def _log_metadata_preview(self) -> None:
+        info_keys = list(self.info.keys())[:8] if isinstance(self.info, dict) else []
         tasks_count = len(self.tasks) if isinstance(self.tasks, list) else 0
         episodes_count = len(self.episodes) if isinstance(self.episodes, list) else 0
-        selected_count = (
-            len(self.selected_meta.get("episodes", []))
-            if isinstance(self.selected_meta, dict)
-            else 0
+        selected_episodes = (
+            self.selected_meta.get("episodes", []) if isinstance(self.selected_meta, dict) else []
         )
+        selected_count = len(selected_episodes) if isinstance(selected_episodes, list) else 0
+
+        task_totals: dict[str, int] = {}
+        for episode in selected_episodes if isinstance(selected_episodes, list) else []:
+            task_name = str(episode.get("task_name") or episode.get("task") or "unknown_task")
+            task_totals[task_name] = task_totals.get(task_name, 0) + 1
+
+        contribution_summary = "none"
+        if selected_count > 0 and task_totals:
+            sorted_totals = sorted(task_totals.items(), key=lambda item: (-item[1], item[0]))
+            contribution_summary = ", ".join(
+                f"{task}: {count} eps ({(count / selected_count) * 100:.1f}%)"
+                for task, count in sorted_totals
+            )
+
         self.logger.info(
-            f"Metadata preview: info_keys={list(self.info.keys())[:8] if isinstance(self.info, dict) else []}, "
-            f"tasks={tasks_count}, episodes={episodes_count}, selected={selected_count}"
+            f"Metadata preview: info_keys={info_keys}, tasks={tasks_count}, "
+            f"episodes={episodes_count}, selected={selected_count}, "
+            f"task_contributions=[{contribution_summary}]"
         )
+
 
     def _episode_task_name(self, episode: dict[str, Any]) -> str:
         return (
@@ -279,11 +294,13 @@ class BaseDataset:
             or "unknown_task"
         )
 
-    def _episode_duration_hours(self, episode: dict[str, Any]) -> float:
-        if "duration_hours" in episode:
-            return float(episode["duration_hours"])
+    def _episode_duration_minutes(self, episode: dict[str, Any]) -> float:
+        if "duration_minutes" in episode:
+            return float(episode["duration_minutes"])
         if "duration_seconds" in episode:
-            return float(episode["duration_seconds"]) / 3600.0
+            return float(episode["duration_seconds"]) / 60.0
+        if "duration_hours" in episode:
+            return float(episode["duration_hours"]) * 60.0
         if "num_frames" in episode and self.fps:
-            return float(episode["num_frames"]) / float(self.fps) / 3600.0
+            return float(episode["num_frames"]) / float(self.fps) / 60.0
         return 0.0
