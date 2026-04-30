@@ -210,7 +210,6 @@ class BaseDataset:
                     self.info["video_path"].format(**(path_vars | {"video_key": video_key}))
                     for video_key in video_keys
                 ]
-                annotation_file = self.info["annotation_path"].format(**path_vars)
 
                 length = float(episode.get("length", 0.0))
                 duration_hours = (length / fps) / 3600.0
@@ -228,7 +227,6 @@ class BaseDataset:
                         "video_files": video_files,
                         "data_parquet_file": data_parquet_file,
                         "episode_file": episode_file,
-                        "annotation_file": annotation_file,
                         "raw": episode,
                     }
                 )
