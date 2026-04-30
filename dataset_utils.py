@@ -57,11 +57,18 @@ def load_from_huggingface(
         if download_mode == "snapshot":
             return snapshot_download(
                 repo_id=repo_id,
+                repo_type="dataset",
                 token=token,
                 allow_patterns=file_path,
                 **kwargs,
             )
-        return hf_hub_download(repo_id=repo_id, filename=file_path, token=token, **kwargs)
+        return hf_hub_download(
+            repo_id=repo_id,
+            repo_type="dataset",
+            filename=file_path,
+            token=token,
+            **kwargs,
+        )
     return load_dataset(repo_id, **kwargs)
 
 
