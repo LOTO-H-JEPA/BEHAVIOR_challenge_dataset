@@ -5,6 +5,8 @@ from pathlib import Path
 from typing import Any
 
 from .dataset_utils import (
+    episode_duration_minutes,
+    episode_task_name,
     load_from_huggingface,
     load_json_file,
     load_jsonl_file,
@@ -128,6 +130,7 @@ class BaseDataset:
         return loaded_meta
 
     def _build_selected_meta(self) -> dict[str, Any]:
+        """Sample episodes per task and persist selected metadata to disk."""
         rng = random.Random(self.seed)
         target_hours = float(self.dataset_size)
         eval_task_set = set(self.eval_tasks)
@@ -135,7 +138,113 @@ class BaseDataset:
         fps = float(self.info.get("fps", 30.0))
         total_tasks = int(self.info.get("total_tasks", 50))
         per_task_budget_hours = target_hours / float(total_tasks)
+        episode_index_lookup, episodes_by_task_desc, task_lookup = self._build_episode_task_lookups()
+        self._log_task_episode_link_summary(task_lookup, episodes_by_task_desc)
 
+        selected: list[dict[str, Any]] = []
+        selected_hours = 0.0
+
+        for task_desc, task_meta in task_lookup.items():
+            task_name = task_meta.get("task_name")
+            if self.exclude_eval_tasks and task_name in eval_task_set:
+                continue
+
+            remaining_budget_hours = per_task_budget_hours
+            episode_ids = episodes_by_task_desc.get(task_desc, []).copy()
+
+            while episode_ids and remaining_budget_hours > 0:
+                sampled_id = rng.choice(episode_ids)
+                episode_ids.remove(sampled_id)
+                episode = episode_index_lookup.get(sampled_id)
+                if not episode:
+                    continue
+
+                duration_minutes = episode_duration_minutes(episode, fps)
+                duration_hours = duration_minutes / 60.0
+                if duration_hours <= 0:
+                    continue
+
+                selected.append(
+                    self._build_selected_episode_entry(
+                        task_desc=task_desc,
+                        task_name=task_name,
+                        task_index=task_meta.get("task_index"),
+                        sampled_id=sampled_id,
+                        duration_minutes=duration_minutes,
+                        episode=episode,
+                    )
+                )
+                remaining_budget_hours -= duration_hours
+                selected_hours += duration_hours
+
+        selected_meta = {
+            "target_hours": target_hours,
+            "selected_hours": selected_hours,
+            "per_task_budget_hours": per_task_budget_hours,
+            "num_selected_episodes": len(selected),
+            "exclude_eval_tasks": self.exclude_eval_tasks,
+            "eval_tasks": list(eval_task_set),
+            "episodes": selected,
+        }
+        self.logger.info(
+            f"Selected {len(selected)} episodes totaling {selected_hours:.3f}h "
+            f"(target={target_hours:.3f}h, per_task_budget={per_task_budget_hours:.3f}h)."
+        )
+        output_dir = self.base_dataset_destination
+        if not output_dir or str(output_dir).lower() in {"none", "null"}:
+            output_dir = "output"
+
+        metadata_file = Path(output_dir) / "meta.json"
+        save_json_file(str(metadata_file), selected_meta)
+        self.logger.info(f"Saved selected metadata to {metadata_file.resolve()}")
+        return selected_meta
+   
+    def _log_metadata_preview(self) -> None:
+        """Log selected-episode counts and per-task duration-weighted contributions."""
+        tasks_count = len(self.tasks) if isinstance(self.tasks, list) else 0
+        episodes_count = len(self.episodes) if isinstance(self.episodes, list) else 0
+        selected_episodes = (
+            self.selected_meta.get("episodes", []) if isinstance(self.selected_meta, dict) else []
+        )
+        selected_count = len(selected_episodes) if isinstance(selected_episodes, list) else 0
+
+        task_totals: dict[str, int] = {}
+        task_duration_totals: dict[str, float] = {}
+        fps = float(self.info.get("fps", 30.0))
+        for episode in selected_episodes if isinstance(selected_episodes, list) else []:
+            task_name = str(episode_task_name(episode))
+            task_totals[task_name] = task_totals.get(task_name, 0) + 1
+            duration_minutes = episode_duration_minutes(episode, fps)
+            task_duration_totals[task_name] = (
+                task_duration_totals.get(task_name, 0.0) + duration_minutes
+            )
+
+        total_duration_minutes = sum(task_duration_totals.values())
+
+        contribution_summary = "none"
+        if selected_count > 0 and task_totals:
+            sorted_totals = sorted(task_totals.items(), key=lambda item: (-item[1], item[0]))
+            contribution_parts: list[str] = []
+            for task, count in sorted_totals:
+                duration_share_pct = 0.0
+                if total_duration_minutes > 0:
+                    duration_share_pct = (
+                        task_duration_totals.get(task, 0.0) / total_duration_minutes
+                    ) * 100
+                contribution_parts.append(f"{task}: {count} eps ({duration_share_pct:.1f}%)")
+            contribution_summary = ", ".join(contribution_parts)
+
+        self.logger.info("Metadata preview:")
+        self.logger.info(
+            f"  counts: tasks={tasks_count}, episodes={episodes_count}, selected:episodes={selected_count}"
+        )
+        self.logger.info(f"  task_contributions: [{contribution_summary}]")
+
+
+    def _build_episode_task_lookups(
+        self,
+    ) -> tuple[dict[int, dict[str, Any]], dict[str, list[int]], dict[str, dict[str, Any]]]:
+        """Build lookup maps for episodes and task metadata relationships."""
         task_lookup: dict[str, dict[str, Any]] = {}
         for task in self.tasks:
             description = task.get("task")
@@ -162,6 +271,13 @@ class BaseDataset:
             for task_desc in (episode.get("tasks") or []):
                 if task_desc in task_lookup:
                     episodes_by_task_desc.setdefault(task_desc, []).append(int(episode_id))
+
+        return episode_index_lookup, episodes_by_task_desc, task_lookup
+
+    def _log_task_episode_link_summary(
+        self, task_lookup: dict[str, dict[str, Any]], episodes_by_task_desc: dict[str, list[int]]
+    ) -> None:
+        """Log high-level statistics for task-to-episode link coverage."""
         task_episode_counts = {
             task_desc: len(episodes_by_task_desc.get(task_desc, []))
             for task_desc in task_lookup
@@ -171,119 +287,49 @@ class BaseDataset:
             f"Found episode links for {len(task_episode_counts)}/{len(task_lookup)} tasks; "
             f"total task-episode links={total_task_episode_links}."
         )
-        
-        selected: list[dict[str, Any]] = []
-        selected_hours = 0.0
 
-        for task_desc, task_meta in task_lookup.items():
-            task_name = task_meta.get("task_name")
-            if self.exclude_eval_tasks and task_name in eval_task_set:
-                continue
+    def _build_selected_episode_entry(
+        self,
+        task_desc: str,
+        task_name: str | None,
+        task_index: int | None,
+        sampled_id: int,
+        duration_minutes: float,
+        episode: dict[str, Any],
+    ) -> dict[str, Any]:
+        """Construct a normalized selected-episode metadata record."""
+        episode_chunk = sampled_id // int(self.info["chunks_size"])
+        path_vars = {"episode_chunk": episode_chunk, "episode_index": sampled_id}
+        data_parquet_file = self.info["data_path"].format(**path_vars)
+        episode_file = self.info["metainfo_path"].format(**path_vars)
 
-            remaining_budget = per_task_budget_hours
-            episode_ids = episodes_by_task_desc.get(task_desc, []).copy()
+        if self.camera_view_type in {"all"}:
+            video_keys = [
+                "observation.images.rgb.head",
+                "observation.images.rgb.left_wrist",
+                "observation.images.rgb.right_wrist",
+            ]
+        elif self.camera_view_type in {"head", "left_wrist", "right_wrist"}:
+            video_keys = [f"observation.images.rgb.{self.camera_view_type}"]
+        else:
+            raise ValueError(
+                f"Unsupported camera_view_type '{self.camera_view_type}'. "
+                "Expected one of: all, head, left_wrist, right_wrist."
+            )
+        video_files = [
+            self.info["video_path"].format(**(path_vars | {"video_key": video_key}))
+            for video_key in video_keys
+        ]
 
-            while episode_ids and remaining_budget > 0:
-                sampled_id = rng.choice(episode_ids)
-                episode_ids.remove(sampled_id)
-                episode = episode_index_lookup.get(sampled_id)
-                if not episode:
-                    continue
-
-                episode_chunk = sampled_id // int(self.info["chunks_size"])
-                path_vars = {"episode_chunk": episode_chunk, "episode_index": sampled_id}
-                data_parquet_file = self.info["data_path"].format(**path_vars)
-                episode_file = self.info["metainfo_path"].format(**path_vars)
- 
-                if self.camera_view_type in {"all"}:
-                    video_keys = [
-                        "observation.images.rgb.head",
-                        "observation.images.rgb.left_wrist",
-                        "observation.images.rgb.right_wrist",
-                    ]
-                elif self.camera_view_type in {"head", "left_wrist", "right_wrist"}:
-                    video_keys = [f"observation.images.rgb.{self.camera_view_type}"]
-                else:
-                    raise ValueError(
-                        f"Unsupported camera_view_type '{self.camera_view_type}'. "
-                        "Expected one of: all, head, left_wrist, right_wrist."
-                    )
-                video_files = [
-                    self.info["video_path"].format(**(path_vars | {"video_key": video_key}))
-                    for video_key in video_keys
-                ]
-
-                length = float(episode.get("length", 0.0))
-                duration_minutes = (length / fps) / 60.0 # lets compute in minutes 
-                if duration_minutes <= 0:
-                    continue
-
-                selected.append(
-                    {
-                        "task": task_desc,
-                        "task_name": task_name,
-                        "task_index": task_meta.get("task_index"),
-                        "episode_index": sampled_id,
-                        "duration_minutes": duration_minutes,
-                        "video_file": video_files[0],
-                        "video_files": video_files,
-                        "data_parquet_file": data_parquet_file,
-                        "episode_file": episode_file,
-                        "raw": episode,
-                    }
-                )
-                remaining_budget -= duration_minutes
-                selected_hours += duration_minutes
-
-        selected_meta = {
-            "target_hours": target_hours,
-            "selected_hours": selected_hours,
-            "per_task_budget_hours": per_task_budget_hours,
-            "num_selected_episodes": len(selected),
-            "exclude_eval_tasks": self.exclude_eval_tasks,
-            "eval_tasks": list(eval_task_set),
-            "episodes": selected,
+        return {
+            "task": task_desc,
+            "task_name": task_name,
+            "task_index": task_index,
+            "episode_index": sampled_id,
+            "duration_minutes": duration_minutes,
+            "video_file": video_files[0],
+            "video_files": video_files,
+            "data_parquet_file": data_parquet_file,
+            "episode_file": episode_file,
+            "raw": episode,
         }
-        self.logger.info(
-            f"Selected {len(selected)} episodes totaling {selected_hours:.3f}h "
-            f"(target={target_hours:.3f}h, per_task_budget={per_task_budget_hours:.3f}h)."
-        )
-        output_dir = self.base_dataset_destination
-        if not output_dir or str(output_dir).lower() in {"none", "null"}:
-            output_dir = "output"
-
-        metadata_file = Path(output_dir) / "meta.json"
-        save_json_file(str(metadata_file), selected_meta)
-        self.logger.info(f"Saved selected metadata to {metadata_file.resolve()}")
-        return selected_meta
-   
-   # TODO update log preview
-    def _log_metadata_preview(self) -> None:
-        tasks_count = len(self.tasks) if isinstance(self.tasks, list) else 0
-        episodes_count = len(self.episodes) if isinstance(self.episodes, list) else 0
-        selected_count = (
-            len(self.selected_meta.get("episodes", []))
-            if isinstance(self.selected_meta, dict)
-            else 0
-        )
-        self.logger.info(
-            f"Metadata preview: info_keys={list(self.info.keys())[:8] if isinstance(self.info, dict) else []}, "
-            f"tasks={tasks_count}, episodes={episodes_count}, selected={selected_count}"
-        )
-
-    def _episode_task_name(self, episode: dict[str, Any]) -> str:
-        return (
-            episode.get("task")
-            or episode.get("task_name")
-            or episode.get("task_id")
-            or "unknown_task"
-        )
-
-    def _episode_duration_hours(self, episode: dict[str, Any]) -> float:
-        if "duration_hours" in episode:
-            return float(episode["duration_hours"])
-        if "duration_seconds" in episode:
-            return float(episode["duration_seconds"]) / 3600.0
-        if "num_frames" in episode and self.fps:
-            return float(episode["num_frames"]) / float(self.fps) / 3600.0
-        return 0.0

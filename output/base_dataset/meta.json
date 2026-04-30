@@ -1,0 +1,3347 @@
+{
+  "target_hours": 10.0,
+  "selected_hours": 12.52877777777777,
+  "per_task_budget_hours": 0.2,
+  "num_selected_episodes": 145,
+  "exclude_eval_tasks": true,
+  "eval_tasks": [
+    "outfit_a_basic_toolbox"
+  ],
+  "episodes": [
+    {
+      "task": "Turn on the radio receiver that's on the table in the living room.",
+      "task_name": "turning_on_radio",
+      "task_index": 0,
+      "episode_index": 2150,
+      "duration_minutes": 1.5355555555555556,
+      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00002150.mp4",
+      "video_files": [
+        "videos/task-0000/observation.images.rgb.head/episode_00002150.mp4"
+      ],
+      "data_parquet_file": "data/task-0000/episode_00002150.parquet",
+      "episode_file": "meta/episodes/task-0000/episode_00002150.json",
+      "raw": {
+        "episode_index": 2150,
+        "tasks": [
+          "Turn on the radio receiver that's on the table in the living room."
+        ],
+        "length": 2764,
+        "distance_traveled": 1.5754,
+        "left_eef_displacement": 3.7872,
+        "right_eef_displacement": 4.4688
+      }
+    },
+    {
+      "task": "Turn on the radio receiver that's on the table in the living room.",
+      "task_name": "turning_on_radio",
+      "task_index": 0,
+      "episode_index": 310,
+      "duration_minutes": 1.5744444444444445,
+      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000310.mp4",
+      "video_files": [
+        "videos/task-0000/observation.images.rgb.head/episode_00000310.mp4"
+      ],
+      "data_parquet_file": "data/task-0000/episode_00000310.parquet",
+      "episode_file": "meta/episodes/task-0000/episode_00000310.json",
+      "raw": {
+        "episode_index": 310,
+        "tasks": [
+          "Turn on the radio receiver that's on the table in the living room."
+        ],
+        "length": 2834,
+        "distance_traveled": 2.2983,
+        "left_eef_displacement": 2.9435,
+        "right_eef_displacement": 4.704
+      }
+    },
+    {
+      "task": "Turn on the radio receiver that's on the table in the living room.",
+      "task_name": "turning_on_radio",
+      "task_index": 0,
+      "episode_index": 70,
+      "duration_minutes": 1.28,
+      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000070.mp4",
+      "video_files": [
+        "videos/task-0000/observation.images.rgb.head/episode_00000070.mp4"
+      ],
+      "data_parquet_file": "data/task-0000/episode_00000070.parquet",
+      "episode_file": "meta/episodes/task-0000/episode_00000070.json",
+      "raw": {
+        "episode_index": 70,
+        "tasks": [
+          "Turn on the radio receiver that's on the table in the living room."
+        ],
+        "length": 2304,
+        "distance_traveled": 1.0813,
+        "left_eef_displacement": 3.4057,
+        "right_eef_displacement": 4.6878
+      }
+    },
+    {
+      "task": "Turn on the radio receiver that's on the table in the living room.",
+      "task_name": "turning_on_radio",
+      "task_index": 0,
+      "episode_index": 2820,
+      "duration_minutes": 0.7316666666666667,
+      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00002820.mp4",
+      "video_files": [
+        "videos/task-0000/observation.images.rgb.head/episode_00002820.mp4"
+      ],
+      "data_parquet_file": "data/task-0000/episode_00002820.parquet",
+      "episode_file": "meta/episodes/task-0000/episode_00002820.json",
+      "raw": {
+        "episode_index": 2820,
+        "tasks": [
+          "Turn on the radio receiver that's on the table in the living room."
+        ],
+        "length": 1317,
+        "distance_traveled": 0.8683,
+        "left_eef_displacement": 2.2873,
+        "right_eef_displacement": 2.322
+      }
+    },
+    {
+      "task": "Turn on the radio receiver that's on the table in the living room.",
+      "task_name": "turning_on_radio",
+      "task_index": 0,
+      "episode_index": 760,
+      "duration_minutes": 1.535,
+      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000760.mp4",
+      "video_files": [
+        "videos/task-0000/observation.images.rgb.head/episode_00000760.mp4"
+      ],
+      "data_parquet_file": "data/task-0000/episode_00000760.parquet",
+      "episode_file": "meta/episodes/task-0000/episode_00000760.json",
+      "raw": {
+        "episode_index": 760,
+        "tasks": [
+          "Turn on the radio receiver that's on the table in the living room."
+        ],
+        "length": 2763,
+        "distance_traveled": 2.0605,
+        "left_eef_displacement": 2.5749,
+        "right_eef_displacement": 5.4001
+      }
+    },
+    {
+      "task": "Turn on the radio receiver that's on the table in the living room.",
+      "task_name": "turning_on_radio",
+      "task_index": 0,
+      "episode_index": 680,
+      "duration_minutes": 1.1827777777777777,
+      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000680.mp4",
+      "video_files": [
+        "videos/task-0000/observation.images.rgb.head/episode_00000680.mp4"
+      ],
+      "data_parquet_file": "data/task-0000/episode_00000680.parquet",
+      "episode_file": "meta/episodes/task-0000/episode_00000680.json",
+      "raw": {
+        "episode_index": 680,
+        "tasks": [
+          "Turn on the radio receiver that's on the table in the living room."
+        ],
+        "length": 2129,
+        "distance_traveled": 1.1799,
+        "left_eef_displacement": 3.7391,
+        "right_eef_displacement": 4.9298
+      }
+    },
+    {
+      "task": "Turn on the radio receiver that's on the table in the living room.",
+      "task_name": "turning_on_radio",
+      "task_index": 0,
+      "episode_index": 630,
+      "duration_minutes": 1.2572222222222222,
+      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000630.mp4",
+      "video_files": [
+        "videos/task-0000/observation.images.rgb.head/episode_00000630.mp4"
+      ],
+      "data_parquet_file": "data/task-0000/episode_00000630.parquet",
+      "episode_file": "meta/episodes/task-0000/episode_00000630.json",
+      "raw": {
+        "episode_index": 630,
+        "tasks": [
+          "Turn on the radio receiver that's on the table in the living room."
+        ],
+        "length": 2263,
+        "distance_traveled": 1.6775,
+        "left_eef_displacement": 2.763,
+        "right_eef_displacement": 4.454
+      }
+    },
+    {
+      "task": "Turn on the radio receiver that's on the table in the living room.",
+      "task_name": "turning_on_radio",
+      "task_index": 0,
+      "episode_index": 400,
+      "duration_minutes": 1.2422222222222221,
+      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000400.mp4",
+      "video_files": [
+        "videos/task-0000/observation.images.rgb.head/episode_00000400.mp4"
+      ],
+      "data_parquet_file": "data/task-0000/episode_00000400.parquet",
+      "episode_file": "meta/episodes/task-0000/episode_00000400.json",
+      "raw": {
+        "episode_index": 400,
+        "tasks": [
+          "Turn on the radio receiver that's on the table in the living room."
+        ],
+        "length": 2236,
+        "distance_traveled": 1.8696,
+        "left_eef_displacement": 2.0284,
+        "right_eef_displacement": 3.5303
+      }
+    },
+    {
+      "task": "Turn on the radio receiver that's on the table in the living room.",
+      "task_name": "turning_on_radio",
+      "task_index": 0,
+      "episode_index": 2960,
+      "duration_minutes": 0.9055555555555556,
+      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00002960.mp4",
+      "video_files": [
+        "videos/task-0000/observation.images.rgb.head/episode_00002960.mp4"
+      ],
+      "data_parquet_file": "data/task-0000/episode_00002960.parquet",
+      "episode_file": "meta/episodes/task-0000/episode_00002960.json",
+      "raw": {
+        "episode_index": 2960,
+        "tasks": [
+          "Turn on the radio receiver that's on the table in the living room."
+        ],
+        "length": 1630,
+        "distance_traveled": 2.544,
+        "left_eef_displacement": 2.9637,
+        "right_eef_displacement": 2.9077
+      }
+    },
+    {
+      "task": "Turn on the radio receiver that's on the table in the living room.",
+      "task_name": "turning_on_radio",
+      "task_index": 0,
+      "episode_index": 300,
+      "duration_minutes": 1.083888888888889,
+      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000300.mp4",
+      "video_files": [
+        "videos/task-0000/observation.images.rgb.head/episode_00000300.mp4"
+      ],
+      "data_parquet_file": "data/task-0000/episode_00000300.parquet",
+      "episode_file": "meta/episodes/task-0000/episode_00000300.json",
+      "raw": {
+        "episode_index": 300,
+        "tasks": [
+          "Turn on the radio receiver that's on the table in the living room."
+        ],
+        "length": 1951,
+        "distance_traveled": 0.9031,
+        "left_eef_displacement": 2.907,
+        "right_eef_displacement": 4.2208
+      }
+    },
+    {
+      "task": "Put the three can of soda from the living room inside the tash can in the kitchen.",
+      "task_name": "picking_up_trash",
+      "task_index": 1,
+      "episode_index": 12740,
+      "duration_minutes": 2.945,
+      "video_file": "videos/task-0001/observation.images.rgb.head/episode_00012740.mp4",
+      "video_files": [
+        "videos/task-0001/observation.images.rgb.head/episode_00012740.mp4"
+      ],
+      "data_parquet_file": "data/task-0001/episode_00012740.parquet",
+      "episode_file": "meta/episodes/task-0001/episode_00012740.json",
+      "raw": {
+        "episode_index": 12740,
+        "tasks": [
+          "Put the three can of soda from the living room inside the tash can in the kitchen."
+        ],
+        "length": 5301,
+        "distance_traveled": 9.3959,
+        "left_eef_displacement": 11.8448,
+        "right_eef_displacement": 11.96
+      }
+    },
+    {
+      "task": "Put the three can of soda from the living room inside the tash can in the kitchen.",
+      "task_name": "picking_up_trash",
+      "task_index": 1,
+      "episode_index": 12910,
+      "duration_minutes": 2.6972222222222224,
+      "video_file": "videos/task-0001/observation.images.rgb.head/episode_00012910.mp4",
+      "video_files": [
+        "videos/task-0001/observation.images.rgb.head/episode_00012910.mp4"
+      ],
+      "data_parquet_file": "data/task-0001/episode_00012910.parquet",
+      "episode_file": "meta/episodes/task-0001/episode_00012910.json",
+      "raw": {
+        "episode_index": 12910,
+        "tasks": [
+          "Put the three can of soda from the living room inside the tash can in the kitchen."
+        ],
+        "length": 4855,
+        "distance_traveled": 11.2991,
+        "left_eef_displacement": 11.398,
+        "right_eef_displacement": 10.5731
+      }
+    },
+    {
+      "task": "Put the three can of soda from the living room inside the tash can in the kitchen.",
+      "task_name": "picking_up_trash",
+      "task_index": 1,
+      "episode_index": 12260,
+      "duration_minutes": 2.887222222222222,
+      "video_file": "videos/task-0001/observation.images.rgb.head/episode_00012260.mp4",
+      "video_files": [
+        "videos/task-0001/observation.images.rgb.head/episode_00012260.mp4"
+      ],
+      "data_parquet_file": "data/task-0001/episode_00012260.parquet",
+      "episode_file": "meta/episodes/task-0001/episode_00012260.json",
+      "raw": {
+        "episode_index": 12260,
+        "tasks": [
+          "Put the three can of soda from the living room inside the tash can in the kitchen."
+        ],
+        "length": 5197,
+        "distance_traveled": 13.5034,
+        "left_eef_displacement": 10.8121,
+        "right_eef_displacement": 9.8168
+      }
+    },
+    {
+      "task": "Put the three can of soda from the living room inside the tash can in the kitchen.",
+      "task_name": "picking_up_trash",
+      "task_index": 1,
+      "episode_index": 10320,
+      "duration_minutes": 3.8088888888888888,
+      "video_file": "videos/task-0001/observation.images.rgb.head/episode_00010320.mp4",
+      "video_files": [
+        "videos/task-0001/observation.images.rgb.head/episode_00010320.mp4"
+      ],
+      "data_parquet_file": "data/task-0001/episode_00010320.parquet",
+      "episode_file": "meta/episodes/task-0001/episode_00010320.json",
+      "raw": {
+        "episode_index": 10320,
+        "tasks": [
+          "Put the three can of soda from the living room inside the tash can in the kitchen."
+        ],
+        "length": 6856,
+        "distance_traveled": 6.7534,
+        "left_eef_displacement": 9.5265,
+        "right_eef_displacement": 7.7421
+      }
+    },
+    {
+      "task": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room.",
+      "task_name": "putting_away_Halloween_decorations",
+      "task_index": 2,
+      "episode_index": 22090,
+      "duration_minutes": 6.444444444444445,
+      "video_file": "videos/task-0002/observation.images.rgb.head/episode_00022090.mp4",
+      "video_files": [
+        "videos/task-0002/observation.images.rgb.head/episode_00022090.mp4"
+      ],
+      "data_parquet_file": "data/task-0002/episode_00022090.parquet",
+      "episode_file": "meta/episodes/task-0002/episode_00022090.json",
+      "raw": {
+        "episode_index": 22090,
+        "tasks": [
+          "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+        ],
+        "length": 11600,
+        "distance_traveled": 17.8308,
+        "left_eef_displacement": 17.4326,
+        "right_eef_displacement": 18.1307
+      }
+    },
+    {
+      "task": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room.",
+      "task_name": "putting_away_Halloween_decorations",
+      "task_index": 2,
+      "episode_index": 21390,
+      "duration_minutes": 8.068333333333333,
+      "video_file": "videos/task-0002/observation.images.rgb.head/episode_00021390.mp4",
+      "video_files": [
+        "videos/task-0002/observation.images.rgb.head/episode_00021390.mp4"
+      ],
+      "data_parquet_file": "data/task-0002/episode_00021390.parquet",
+      "episode_file": "meta/episodes/task-0002/episode_00021390.json",
+      "raw": {
+        "episode_index": 21390,
+        "tasks": [
+          "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+        ],
+        "length": 14523,
+        "distance_traveled": 20.4707,
+        "left_eef_displacement": 26.4819,
+        "right_eef_displacement": 27.3311
+      }
+    },
+    {
+      "task": "From the breakfast table in the kitchen, move both pizzas - keeping each on its plate - into the same refrigerator, put both bowls into one sink, and make sure the refrigerator is closed.",
+      "task_name": "cleaning_up_plates_and_food",
+      "task_index": 3,
+      "episode_index": 30090,
+      "duration_minutes": 5.507777777777777,
+      "video_file": "videos/task-0003/observation.images.rgb.head/episode_00030090.mp4",
+      "video_files": [
+        "videos/task-0003/observation.images.rgb.head/episode_00030090.mp4"
+      ],
+      "data_parquet_file": "data/task-0003/episode_00030090.parquet",
+      "episode_file": "meta/episodes/task-0003/episode_00030090.json",
+      "raw": {
+        "episode_index": 30090,
+        "tasks": [
+          "From the breakfast table in the kitchen, move both pizzas - keeping each on its plate - into the same refrigerator, put both bowls into one sink, and make sure the refrigerator is closed."
+        ],
+        "length": 9914,
+        "distance_traveled": 36.7206,
+        "left_eef_displacement": 19.5167,
+        "right_eef_displacement": 18.6028
+      }
+    },
+    {
+      "task": "From the breakfast table in the kitchen, move both pizzas - keeping each on its plate - into the same refrigerator, put both bowls into one sink, and make sure the refrigerator is closed.",
+      "task_name": "cleaning_up_plates_and_food",
+      "task_index": 3,
+      "episode_index": 30080,
+      "duration_minutes": 9.360000000000001,
+      "video_file": "videos/task-0003/observation.images.rgb.head/episode_00030080.mp4",
+      "video_files": [
+        "videos/task-0003/observation.images.rgb.head/episode_00030080.mp4"
+      ],
+      "data_parquet_file": "data/task-0003/episode_00030080.parquet",
+      "episode_file": "meta/episodes/task-0003/episode_00030080.json",
+      "raw": {
+        "episode_index": 30080,
+        "tasks": [
+          "From the breakfast table in the kitchen, move both pizzas - keeping each on its plate - into the same refrigerator, put both bowls into one sink, and make sure the refrigerator is closed."
+        ],
+        "length": 16848,
+        "distance_traveled": 48.9686,
+        "left_eef_displacement": 20.0958,
+        "right_eef_displacement": 19.3467
+      }
+    },
+    {
+      "task": "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet.",
+      "task_name": "can_meat",
+      "task_index": 4,
+      "episode_index": 40260,
+      "duration_minutes": 7.689444444444445,
+      "video_file": "videos/task-0004/observation.images.rgb.head/episode_00040260.mp4",
+      "video_files": [
+        "videos/task-0004/observation.images.rgb.head/episode_00040260.mp4"
+      ],
+      "data_parquet_file": "data/task-0004/episode_00040260.parquet",
+      "episode_file": "meta/episodes/task-0004/episode_00040260.json",
+      "raw": {
+        "episode_index": 40260,
+        "tasks": [
+          "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet."
+        ],
+        "length": 13841,
+        "distance_traveled": 32.1151,
+        "left_eef_displacement": 31.7559,
+        "right_eef_displacement": 34.9389
+      }
+    },
+    {
+      "task": "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet.",
+      "task_name": "can_meat",
+      "task_index": 4,
+      "episode_index": 40600,
+      "duration_minutes": 7.804444444444444,
+      "video_file": "videos/task-0004/observation.images.rgb.head/episode_00040600.mp4",
+      "video_files": [
+        "videos/task-0004/observation.images.rgb.head/episode_00040600.mp4"
+      ],
+      "data_parquet_file": "data/task-0004/episode_00040600.parquet",
+      "episode_file": "meta/episodes/task-0004/episode_00040600.json",
+      "raw": {
+        "episode_index": 40600,
+        "tasks": [
+          "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet."
+        ],
+        "length": 14048,
+        "distance_traveled": 27.8102,
+        "left_eef_displacement": 21.763,
+        "right_eef_displacement": 40.1621
+      }
+    },
+    {
+      "task": "Take the four mousetraps from the cabinet in the bathroom and place them on the bathroom floor. Make sure all four end up on the same floor surface, and ensure that at least two of them are either under or directly next to the same bathroom sink.",
+      "task_name": "setting_mousetraps",
+      "task_index": 5,
+      "episode_index": 50740,
+      "duration_minutes": 4.849444444444444,
+      "video_file": "videos/task-0005/observation.images.rgb.head/episode_00050740.mp4",
+      "video_files": [
+        "videos/task-0005/observation.images.rgb.head/episode_00050740.mp4"
+      ],
+      "data_parquet_file": "data/task-0005/episode_00050740.parquet",
+      "episode_file": "meta/episodes/task-0005/episode_00050740.json",
+      "raw": {
+        "episode_index": 50740,
+        "tasks": [
+          "Take the four mousetraps from the cabinet in the bathroom and place them on the bathroom floor. Make sure all four end up on the same floor surface, and ensure that at least two of them are either under or directly next to the same bathroom sink."
+        ],
+        "length": 8729,
+        "distance_traveled": 8.992,
+        "left_eef_displacement": 11.2316,
+        "right_eef_displacement": 10.7734
+      }
+    },
+    {
+      "task": "Take the four mousetraps from the cabinet in the bathroom and place them on the bathroom floor. Make sure all four end up on the same floor surface, and ensure that at least two of them are either under or directly next to the same bathroom sink.",
+      "task_name": "setting_mousetraps",
+      "task_index": 5,
+      "episode_index": 51820,
+      "duration_minutes": 5.615555555555556,
+      "video_file": "videos/task-0005/observation.images.rgb.head/episode_00051820.mp4",
+      "video_files": [
+        "videos/task-0005/observation.images.rgb.head/episode_00051820.mp4"
+      ],
+      "data_parquet_file": "data/task-0005/episode_00051820.parquet",
+      "episode_file": "meta/episodes/task-0005/episode_00051820.json",
+      "raw": {
+        "episode_index": 51820,
+        "tasks": [
+          "Take the four mousetraps from the cabinet in the bathroom and place them on the bathroom floor. Make sure all four end up on the same floor surface, and ensure that at least two of them are either under or directly next to the same bathroom sink."
+        ],
+        "length": 10108,
+        "distance_traveled": 10.6272,
+        "left_eef_displacement": 14.0668,
+        "right_eef_displacement": 12.9947
+      }
+    },
+    {
+      "task": "Take the four mousetraps from the cabinet in the bathroom and place them on the bathroom floor. Make sure all four end up on the same floor surface, and ensure that at least two of them are either under or directly next to the same bathroom sink.",
+      "task_name": "setting_mousetraps",
+      "task_index": 5,
+      "episode_index": 52200,
+      "duration_minutes": 6.736111111111112,
+      "video_file": "videos/task-0005/observation.images.rgb.head/episode_00052200.mp4",
+      "video_files": [
+        "videos/task-0005/observation.images.rgb.head/episode_00052200.mp4"
+      ],
+      "data_parquet_file": "data/task-0005/episode_00052200.parquet",
+      "episode_file": "meta/episodes/task-0005/episode_00052200.json",
+      "raw": {
+        "episode_index": 52200,
+        "tasks": [
+          "Take the four mousetraps from the cabinet in the bathroom and place them on the bathroom floor. Make sure all four end up on the same floor surface, and ensure that at least two of them are either under or directly next to the same bathroom sink."
+        ],
+        "length": 12125,
+        "distance_traveled": 11.0468,
+        "left_eef_displacement": 17.3314,
+        "right_eef_displacement": 16.2937
+      }
+    },
+    {
+      "task": "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket.",
+      "task_name": "hiding_Easter_eggs",
+      "task_index": 6,
+      "episode_index": 60070,
+      "duration_minutes": 5.966666666666667,
+      "video_file": "videos/task-0006/observation.images.rgb.head/episode_00060070.mp4",
+      "video_files": [
+        "videos/task-0006/observation.images.rgb.head/episode_00060070.mp4"
+      ],
+      "data_parquet_file": "data/task-0006/episode_00060070.parquet",
+      "episode_file": "meta/episodes/task-0006/episode_00060070.json",
+      "raw": {
+        "episode_index": 60070,
+        "tasks": [
+          "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket."
+        ],
+        "length": 10740,
+        "distance_traveled": 20.7658,
+        "left_eef_displacement": 14.9632,
+        "right_eef_displacement": 15.6
+      }
+    },
+    {
+      "task": "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket.",
+      "task_name": "hiding_Easter_eggs",
+      "task_index": 6,
+      "episode_index": 62120,
+      "duration_minutes": 3.1722222222222225,
+      "video_file": "videos/task-0006/observation.images.rgb.head/episode_00062120.mp4",
+      "video_files": [
+        "videos/task-0006/observation.images.rgb.head/episode_00062120.mp4"
+      ],
+      "data_parquet_file": "data/task-0006/episode_00062120.parquet",
+      "episode_file": "meta/episodes/task-0006/episode_00062120.json",
+      "raw": {
+        "episode_index": 62120,
+        "tasks": [
+          "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket."
+        ],
+        "length": 5710,
+        "distance_traveled": 14.2498,
+        "left_eef_displacement": 9.6161,
+        "right_eef_displacement": 14.8158
+      }
+    },
+    {
+      "task": "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket.",
+      "task_name": "hiding_Easter_eggs",
+      "task_index": 6,
+      "episode_index": 60740,
+      "duration_minutes": 4.198333333333333,
+      "video_file": "videos/task-0006/observation.images.rgb.head/episode_00060740.mp4",
+      "video_files": [
+        "videos/task-0006/observation.images.rgb.head/episode_00060740.mp4"
+      ],
+      "data_parquet_file": "data/task-0006/episode_00060740.parquet",
+      "episode_file": "meta/episodes/task-0006/episode_00060740.json",
+      "raw": {
+        "episode_index": 60740,
+        "tasks": [
+          "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket."
+        ],
+        "length": 7557,
+        "distance_traveled": 35.3678,
+        "left_eef_displacement": 11.1276,
+        "right_eef_displacement": 13.6976
+      }
+    },
+    {
+      "task": "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room.",
+      "task_name": "picking_up_toys",
+      "task_index": 7,
+      "episode_index": 72710,
+      "duration_minutes": 9.916111111111112,
+      "video_file": "videos/task-0007/observation.images.rgb.head/episode_00072710.mp4",
+      "video_files": [
+        "videos/task-0007/observation.images.rgb.head/episode_00072710.mp4"
+      ],
+      "data_parquet_file": "data/task-0007/episode_00072710.parquet",
+      "episode_file": "meta/episodes/task-0007/episode_00072710.json",
+      "raw": {
+        "episode_index": 72710,
+        "tasks": [
+          "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room."
+        ],
+        "length": 17849,
+        "distance_traveled": 19.3631,
+        "left_eef_displacement": 17.4443,
+        "right_eef_displacement": 19.8717
+      }
+    },
+    {
+      "task": "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room.",
+      "task_name": "picking_up_toys",
+      "task_index": 7,
+      "episode_index": 72460,
+      "duration_minutes": 11.327222222222222,
+      "video_file": "videos/task-0007/observation.images.rgb.head/episode_00072460.mp4",
+      "video_files": [
+        "videos/task-0007/observation.images.rgb.head/episode_00072460.mp4"
+      ],
+      "data_parquet_file": "data/task-0007/episode_00072460.parquet",
+      "episode_file": "meta/episodes/task-0007/episode_00072460.json",
+      "raw": {
+        "episode_index": 72460,
+        "tasks": [
+          "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room."
+        ],
+        "length": 20389,
+        "distance_traveled": 19.0122,
+        "left_eef_displacement": 22.5188,
+        "right_eef_displacement": 23.3674
+      }
+    },
+    {
+      "task": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end.",
+      "task_name": "rearranging_kitchen_furniture",
+      "task_index": 8,
+      "episode_index": 82480,
+      "duration_minutes": 4.694444444444445,
+      "video_file": "videos/task-0008/observation.images.rgb.head/episode_00082480.mp4",
+      "video_files": [
+        "videos/task-0008/observation.images.rgb.head/episode_00082480.mp4"
+      ],
+      "data_parquet_file": "data/task-0008/episode_00082480.parquet",
+      "episode_file": "meta/episodes/task-0008/episode_00082480.json",
+      "raw": {
+        "episode_index": 82480,
+        "tasks": [
+          "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+        ],
+        "length": 8450,
+        "distance_traveled": 21.1113,
+        "left_eef_displacement": 10.1504,
+        "right_eef_displacement": 14.0287
+      }
+    },
+    {
+      "task": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end.",
+      "task_name": "rearranging_kitchen_furniture",
+      "task_index": 8,
+      "episode_index": 81550,
+      "duration_minutes": 3.6133333333333337,
+      "video_file": "videos/task-0008/observation.images.rgb.head/episode_00081550.mp4",
+      "video_files": [
+        "videos/task-0008/observation.images.rgb.head/episode_00081550.mp4"
+      ],
+      "data_parquet_file": "data/task-0008/episode_00081550.parquet",
+      "episode_file": "meta/episodes/task-0008/episode_00081550.json",
+      "raw": {
+        "episode_index": 81550,
+        "tasks": [
+          "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+        ],
+        "length": 6504,
+        "distance_traveled": 21.1374,
+        "left_eef_displacement": 14.5023,
+        "right_eef_displacement": 16.4855
+      }
+    },
+    {
+      "task": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end.",
+      "task_name": "rearranging_kitchen_furniture",
+      "task_index": 8,
+      "episode_index": 81160,
+      "duration_minutes": 5.61,
+      "video_file": "videos/task-0008/observation.images.rgb.head/episode_00081160.mp4",
+      "video_files": [
+        "videos/task-0008/observation.images.rgb.head/episode_00081160.mp4"
+      ],
+      "data_parquet_file": "data/task-0008/episode_00081160.parquet",
+      "episode_file": "meta/episodes/task-0008/episode_00081160.json",
+      "raw": {
+        "episode_index": 81160,
+        "tasks": [
+          "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+        ],
+        "length": 10098,
+        "distance_traveled": 27.0264,
+        "left_eef_displacement": 11.2602,
+        "right_eef_displacement": 17.3269
+      }
+    },
+    {
+      "task": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room.",
+      "task_name": "putting_up_Christmas_decorations_inside",
+      "task_index": 9,
+      "episode_index": 91010,
+      "duration_minutes": 6.84111111111111,
+      "video_file": "videos/task-0009/observation.images.rgb.head/episode_00091010.mp4",
+      "video_files": [
+        "videos/task-0009/observation.images.rgb.head/episode_00091010.mp4"
+      ],
+      "data_parquet_file": "data/task-0009/episode_00091010.parquet",
+      "episode_file": "meta/episodes/task-0009/episode_00091010.json",
+      "raw": {
+        "episode_index": 91010,
+        "tasks": [
+          "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+        ],
+        "length": 12314,
+        "distance_traveled": 40.2596,
+        "left_eef_displacement": 14.6805,
+        "right_eef_displacement": 22.0013
+      }
+    },
+    {
+      "task": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room.",
+      "task_name": "putting_up_Christmas_decorations_inside",
+      "task_index": 9,
+      "episode_index": 91720,
+      "duration_minutes": 6.822222222222222,
+      "video_file": "videos/task-0009/observation.images.rgb.head/episode_00091720.mp4",
+      "video_files": [
+        "videos/task-0009/observation.images.rgb.head/episode_00091720.mp4"
+      ],
+      "data_parquet_file": "data/task-0009/episode_00091720.parquet",
+      "episode_file": "meta/episodes/task-0009/episode_00091720.json",
+      "raw": {
+        "episode_index": 91720,
+        "tasks": [
+          "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+        ],
+        "length": 12280,
+        "distance_traveled": 37.1075,
+        "left_eef_displacement": 16.7412,
+        "right_eef_displacement": 21.0406
+      }
+    },
+    {
+      "task": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker.",
+      "task_name": "set_up_a_coffee_station_in_your_kitchen",
+      "task_index": 10,
+      "episode_index": 102030,
+      "duration_minutes": 3.125,
+      "video_file": "videos/task-0010/observation.images.rgb.head/episode_00102030.mp4",
+      "video_files": [
+        "videos/task-0010/observation.images.rgb.head/episode_00102030.mp4"
+      ],
+      "data_parquet_file": "data/task-0010/episode_00102030.parquet",
+      "episode_file": "meta/episodes/task-0010/episode_00102030.json",
+      "raw": {
+        "episode_index": 102030,
+        "tasks": [
+          "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+        ],
+        "length": 5625,
+        "distance_traveled": 12.6742,
+        "left_eef_displacement": 9.2527,
+        "right_eef_displacement": 8.0506
+      }
+    },
+    {
+      "task": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker.",
+      "task_name": "set_up_a_coffee_station_in_your_kitchen",
+      "task_index": 10,
+      "episode_index": 100900,
+      "duration_minutes": 2.6661111111111113,
+      "video_file": "videos/task-0010/observation.images.rgb.head/episode_00100900.mp4",
+      "video_files": [
+        "videos/task-0010/observation.images.rgb.head/episode_00100900.mp4"
+      ],
+      "data_parquet_file": "data/task-0010/episode_00100900.parquet",
+      "episode_file": "meta/episodes/task-0010/episode_00100900.json",
+      "raw": {
+        "episode_index": 100900,
+        "tasks": [
+          "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+        ],
+        "length": 4799,
+        "distance_traveled": 12.8578,
+        "left_eef_displacement": 11.0185,
+        "right_eef_displacement": 7.0881
+      }
+    },
+    {
+      "task": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker.",
+      "task_name": "set_up_a_coffee_station_in_your_kitchen",
+      "task_index": 10,
+      "episode_index": 100020,
+      "duration_minutes": 3.748888888888889,
+      "video_file": "videos/task-0010/observation.images.rgb.head/episode_00100020.mp4",
+      "video_files": [
+        "videos/task-0010/observation.images.rgb.head/episode_00100020.mp4"
+      ],
+      "data_parquet_file": "data/task-0010/episode_00100020.parquet",
+      "episode_file": "meta/episodes/task-0010/episode_00100020.json",
+      "raw": {
+        "episode_index": 100020,
+        "tasks": [
+          "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+        ],
+        "length": 6748,
+        "distance_traveled": 10.0331,
+        "left_eef_displacement": 6.9705,
+        "right_eef_displacement": 10.7056
+      }
+    },
+    {
+      "task": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker.",
+      "task_name": "set_up_a_coffee_station_in_your_kitchen",
+      "task_index": 10,
+      "episode_index": 102970,
+      "duration_minutes": 4.846666666666667,
+      "video_file": "videos/task-0010/observation.images.rgb.head/episode_00102970.mp4",
+      "video_files": [
+        "videos/task-0010/observation.images.rgb.head/episode_00102970.mp4"
+      ],
+      "data_parquet_file": "data/task-0010/episode_00102970.parquet",
+      "episode_file": "meta/episodes/task-0010/episode_00102970.json",
+      "raw": {
+        "episode_index": 102970,
+        "tasks": [
+          "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+        ],
+        "length": 8724,
+        "distance_traveled": 21.02,
+        "left_eef_displacement": 12.9279,
+        "right_eef_displacement": 13.6959
+      }
+    },
+    {
+      "task": "In the kitchen, gather all eight plates from the two countertops, place them all inside a single cabinet (either one), and make sure all cabinets are closed when you're done.",
+      "task_name": "putting_dishes_away_after_cleaning",
+      "task_index": 11,
+      "episode_index": 110570,
+      "duration_minutes": 5.558888888888889,
+      "video_file": "videos/task-0011/observation.images.rgb.head/episode_00110570.mp4",
+      "video_files": [
+        "videos/task-0011/observation.images.rgb.head/episode_00110570.mp4"
+      ],
+      "data_parquet_file": "data/task-0011/episode_00110570.parquet",
+      "episode_file": "meta/episodes/task-0011/episode_00110570.json",
+      "raw": {
+        "episode_index": 110570,
+        "tasks": [
+          "In the kitchen, gather all eight plates from the two countertops, place them all inside a single cabinet (either one), and make sure all cabinets are closed when you're done."
+        ],
+        "length": 10006,
+        "distance_traveled": 43.5087,
+        "left_eef_displacement": 27.091,
+        "right_eef_displacement": 25.8512
+      }
+    },
+    {
+      "task": "In the kitchen, gather all eight plates from the two countertops, place them all inside a single cabinet (either one), and make sure all cabinets are closed when you're done.",
+      "task_name": "putting_dishes_away_after_cleaning",
+      "task_index": 11,
+      "episode_index": 112650,
+      "duration_minutes": 7.092777777777778,
+      "video_file": "videos/task-0011/observation.images.rgb.head/episode_00112650.mp4",
+      "video_files": [
+        "videos/task-0011/observation.images.rgb.head/episode_00112650.mp4"
+      ],
+      "data_parquet_file": "data/task-0011/episode_00112650.parquet",
+      "episode_file": "meta/episodes/task-0011/episode_00112650.json",
+      "raw": {
+        "episode_index": 112650,
+        "tasks": [
+          "In the kitchen, gather all eight plates from the two countertops, place them all inside a single cabinet (either one), and make sure all cabinets are closed when you're done."
+        ],
+        "length": 12767,
+        "distance_traveled": 47.1031,
+        "left_eef_displacement": 28.2744,
+        "right_eef_displacement": 27.8805
+      }
+    },
+    {
+      "task": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done.",
+      "task_name": "preparing_lunch_box",
+      "task_index": 12,
+      "episode_index": 121580,
+      "duration_minutes": 4.075555555555556,
+      "video_file": "videos/task-0012/observation.images.rgb.head/episode_00121580.mp4",
+      "video_files": [
+        "videos/task-0012/observation.images.rgb.head/episode_00121580.mp4"
+      ],
+      "data_parquet_file": "data/task-0012/episode_00121580.parquet",
+      "episode_file": "meta/episodes/task-0012/episode_00121580.json",
+      "raw": {
+        "episode_index": 121580,
+        "tasks": [
+          "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+        ],
+        "length": 7336,
+        "distance_traveled": 14.2879,
+        "left_eef_displacement": 15.0404,
+        "right_eef_displacement": 16.4037
+      }
+    },
+    {
+      "task": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done.",
+      "task_name": "preparing_lunch_box",
+      "task_index": 12,
+      "episode_index": 121310,
+      "duration_minutes": 4.638888888888888,
+      "video_file": "videos/task-0012/observation.images.rgb.head/episode_00121310.mp4",
+      "video_files": [
+        "videos/task-0012/observation.images.rgb.head/episode_00121310.mp4"
+      ],
+      "data_parquet_file": "data/task-0012/episode_00121310.parquet",
+      "episode_file": "meta/episodes/task-0012/episode_00121310.json",
+      "raw": {
+        "episode_index": 121310,
+        "tasks": [
+          "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+        ],
+        "length": 8350,
+        "distance_traveled": 14.5969,
+        "left_eef_displacement": 16.2237,
+        "right_eef_displacement": 15.0528
+      }
+    },
+    {
+      "task": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done.",
+      "task_name": "preparing_lunch_box",
+      "task_index": 12,
+      "episode_index": 121090,
+      "duration_minutes": 5.010000000000001,
+      "video_file": "videos/task-0012/observation.images.rgb.head/episode_00121090.mp4",
+      "video_files": [
+        "videos/task-0012/observation.images.rgb.head/episode_00121090.mp4"
+      ],
+      "data_parquet_file": "data/task-0012/episode_00121090.parquet",
+      "episode_file": "meta/episodes/task-0012/episode_00121090.json",
+      "raw": {
+        "episode_index": 121090,
+        "tasks": [
+          "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+        ],
+        "length": 9018,
+        "distance_traveled": 16.0222,
+        "left_eef_displacement": 12.7807,
+        "right_eef_displacement": 15.4916
+      }
+    },
+    {
+      "task": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it.",
+      "task_name": "loading_the_car",
+      "task_index": 13,
+      "episode_index": 130590,
+      "duration_minutes": 10.07,
+      "video_file": "videos/task-0013/observation.images.rgb.head/episode_00130590.mp4",
+      "video_files": [
+        "videos/task-0013/observation.images.rgb.head/episode_00130590.mp4"
+      ],
+      "data_parquet_file": "data/task-0013/episode_00130590.parquet",
+      "episode_file": "meta/episodes/task-0013/episode_00130590.json",
+      "raw": {
+        "episode_index": 130590,
+        "tasks": [
+          "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+        ],
+        "length": 18126,
+        "distance_traveled": 85.2986,
+        "left_eef_displacement": 14.3758,
+        "right_eef_displacement": 21.6279
+      }
+    },
+    {
+      "task": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it.",
+      "task_name": "loading_the_car",
+      "task_index": 13,
+      "episode_index": 130890,
+      "duration_minutes": 10.948333333333332,
+      "video_file": "videos/task-0013/observation.images.rgb.head/episode_00130890.mp4",
+      "video_files": [
+        "videos/task-0013/observation.images.rgb.head/episode_00130890.mp4"
+      ],
+      "data_parquet_file": "data/task-0013/episode_00130890.parquet",
+      "episode_file": "meta/episodes/task-0013/episode_00130890.json",
+      "raw": {
+        "episode_index": 130890,
+        "tasks": [
+          "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+        ],
+        "length": 19707,
+        "distance_traveled": 79.5444,
+        "left_eef_displacement": 18.4361,
+        "right_eef_displacement": 23.2715
+      }
+    },
+    {
+      "task": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed.",
+      "task_name": "carrying_in_groceries",
+      "task_index": 14,
+      "episode_index": 142770,
+      "duration_minutes": 7.225555555555556,
+      "video_file": "videos/task-0014/observation.images.rgb.head/episode_00142770.mp4",
+      "video_files": [
+        "videos/task-0014/observation.images.rgb.head/episode_00142770.mp4"
+      ],
+      "data_parquet_file": "data/task-0014/episode_00142770.parquet",
+      "episode_file": "meta/episodes/task-0014/episode_00142770.json",
+      "raw": {
+        "episode_index": 142770,
+        "tasks": [
+          "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+        ],
+        "length": 13006,
+        "distance_traveled": 50.5133,
+        "left_eef_displacement": 19.3136,
+        "right_eef_displacement": 17.7886
+      }
+    },
+    {
+      "task": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed.",
+      "task_name": "carrying_in_groceries",
+      "task_index": 14,
+      "episode_index": 141530,
+      "duration_minutes": 7.612777777777778,
+      "video_file": "videos/task-0014/observation.images.rgb.head/episode_00141530.mp4",
+      "video_files": [
+        "videos/task-0014/observation.images.rgb.head/episode_00141530.mp4"
+      ],
+      "data_parquet_file": "data/task-0014/episode_00141530.parquet",
+      "episode_file": "meta/episodes/task-0014/episode_00141530.json",
+      "raw": {
+        "episode_index": 141530,
+        "tasks": [
+          "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+        ],
+        "length": 13703,
+        "distance_traveled": 51.6357,
+        "left_eef_displacement": 20.9138,
+        "right_eef_displacement": 20.4227
+      }
+    },
+    {
+      "task": "Bring the three plywood sheets from the garden into the corridor and place them on the floor there.",
+      "task_name": "bringing_in_wood",
+      "task_index": 15,
+      "episode_index": 150270,
+      "duration_minutes": 8.581666666666667,
+      "video_file": "videos/task-0015/observation.images.rgb.head/episode_00150270.mp4",
+      "video_files": [
+        "videos/task-0015/observation.images.rgb.head/episode_00150270.mp4"
+      ],
+      "data_parquet_file": "data/task-0015/episode_00150270.parquet",
+      "episode_file": "meta/episodes/task-0015/episode_00150270.json",
+      "raw": {
+        "episode_index": 150270,
+        "tasks": [
+          "Bring the three plywood sheets from the garden into the corridor and place them on the floor there."
+        ],
+        "length": 15447,
+        "distance_traveled": 61.6223,
+        "left_eef_displacement": 14.5754,
+        "right_eef_displacement": 18.9253
+      }
+    },
+    {
+      "task": "Bring the three plywood sheets from the garden into the corridor and place them on the floor there.",
+      "task_name": "bringing_in_wood",
+      "task_index": 15,
+      "episode_index": 150240,
+      "duration_minutes": 7.3100000000000005,
+      "video_file": "videos/task-0015/observation.images.rgb.head/episode_00150240.mp4",
+      "video_files": [
+        "videos/task-0015/observation.images.rgb.head/episode_00150240.mp4"
+      ],
+      "data_parquet_file": "data/task-0015/episode_00150240.parquet",
+      "episode_file": "meta/episodes/task-0015/episode_00150240.json",
+      "raw": {
+        "episode_index": 150240,
+        "tasks": [
+          "Bring the three plywood sheets from the garden into the corridor and place them on the floor there."
+        ],
+        "length": 13158,
+        "distance_traveled": 46.3389,
+        "left_eef_displacement": 14.0516,
+        "right_eef_displacement": 18.1305
+      }
+    },
+    {
+      "task": "Move the two storage containers from the living room to the garage. In the garage, place one container on the floor and stack the other container on top of it (either order is fine).",
+      "task_name": "moving_boxes_to_storage",
+      "task_index": 16,
+      "episode_index": 161230,
+      "duration_minutes": 7.577777777777778,
+      "video_file": "videos/task-0016/observation.images.rgb.head/episode_00161230.mp4",
+      "video_files": [
+        "videos/task-0016/observation.images.rgb.head/episode_00161230.mp4"
+      ],
+      "data_parquet_file": "data/task-0016/episode_00161230.parquet",
+      "episode_file": "meta/episodes/task-0016/episode_00161230.json",
+      "raw": {
+        "episode_index": 161230,
+        "tasks": [
+          "Move the two storage containers from the living room to the garage. In the garage, place one container on the floor and stack the other container on top of it (either order is fine)."
+        ],
+        "length": 13640,
+        "distance_traveled": 43.1667,
+        "left_eef_displacement": 9.8425,
+        "right_eef_displacement": 8.744
+      }
+    },
+    {
+      "task": "Move the two storage containers from the living room to the garage. In the garage, place one container on the floor and stack the other container on top of it (either order is fine).",
+      "task_name": "moving_boxes_to_storage",
+      "task_index": 16,
+      "episode_index": 160270,
+      "duration_minutes": 7.422777777777778,
+      "video_file": "videos/task-0016/observation.images.rgb.head/episode_00160270.mp4",
+      "video_files": [
+        "videos/task-0016/observation.images.rgb.head/episode_00160270.mp4"
+      ],
+      "data_parquet_file": "data/task-0016/episode_00160270.parquet",
+      "episode_file": "meta/episodes/task-0016/episode_00160270.json",
+      "raw": {
+        "episode_index": 160270,
+        "tasks": [
+          "Move the two storage containers from the living room to the garage. In the garage, place one container on the floor and stack the other container on top of it (either order is fine)."
+        ],
+        "length": 13361,
+        "distance_traveled": 54.1026,
+        "left_eef_displacement": 5.7258,
+        "right_eef_displacement": 8.8069
+      }
+    },
+    {
+      "task": "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish.",
+      "task_name": "bringing_water",
+      "task_index": 17,
+      "episode_index": 170970,
+      "duration_minutes": 5.788888888888889,
+      "video_file": "videos/task-0017/observation.images.rgb.head/episode_00170970.mp4",
+      "video_files": [
+        "videos/task-0017/observation.images.rgb.head/episode_00170970.mp4"
+      ],
+      "data_parquet_file": "data/task-0017/episode_00170970.parquet",
+      "episode_file": "meta/episodes/task-0017/episode_00170970.json",
+      "raw": {
+        "episode_index": 170970,
+        "tasks": [
+          "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish."
+        ],
+        "length": 10420,
+        "distance_traveled": 20.1243,
+        "left_eef_displacement": 8.9361,
+        "right_eef_displacement": 10.8157
+      }
+    },
+    {
+      "task": "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish.",
+      "task_name": "bringing_water",
+      "task_index": 17,
+      "episode_index": 170940,
+      "duration_minutes": 5.913333333333333,
+      "video_file": "videos/task-0017/observation.images.rgb.head/episode_00170940.mp4",
+      "video_files": [
+        "videos/task-0017/observation.images.rgb.head/episode_00170940.mp4"
+      ],
+      "data_parquet_file": "data/task-0017/episode_00170940.parquet",
+      "episode_file": "meta/episodes/task-0017/episode_00170940.json",
+      "raw": {
+        "episode_index": 170940,
+        "tasks": [
+          "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish."
+        ],
+        "length": 10644,
+        "distance_traveled": 24.7966,
+        "left_eef_displacement": 9.7782,
+        "right_eef_displacement": 11.7145
+      }
+    },
+    {
+      "task": "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish.",
+      "task_name": "bringing_water",
+      "task_index": 17,
+      "episode_index": 171950,
+      "duration_minutes": 5.253333333333333,
+      "video_file": "videos/task-0017/observation.images.rgb.head/episode_00171950.mp4",
+      "video_files": [
+        "videos/task-0017/observation.images.rgb.head/episode_00171950.mp4"
+      ],
+      "data_parquet_file": "data/task-0017/episode_00171950.parquet",
+      "episode_file": "meta/episodes/task-0017/episode_00171950.json",
+      "raw": {
+        "episode_index": 171950,
+        "tasks": [
+          "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish."
+        ],
+        "length": 9456,
+        "distance_traveled": 26.7669,
+        "left_eef_displacement": 9.5995,
+        "right_eef_displacement": 10.5841
+      }
+    },
+    {
+      "task": "In the bedroom, move the book from the bed onto either nightstand, and place the two sandals side by side next to the bed.",
+      "task_name": "tidying_bedroom",
+      "task_index": 18,
+      "episode_index": 180990,
+      "duration_minutes": 5.752777777777778,
+      "video_file": "videos/task-0018/observation.images.rgb.head/episode_00180990.mp4",
+      "video_files": [
+        "videos/task-0018/observation.images.rgb.head/episode_00180990.mp4"
+      ],
+      "data_parquet_file": "data/task-0018/episode_00180990.parquet",
+      "episode_file": "meta/episodes/task-0018/episode_00180990.json",
+      "raw": {
+        "episode_index": 180990,
+        "tasks": [
+          "In the bedroom, move the book from the bed onto either nightstand, and place the two sandals side by side next to the bed."
+        ],
+        "length": 10355,
+        "distance_traveled": 9.1394,
+        "left_eef_displacement": 9.5214,
+        "right_eef_displacement": 10.2501
+      }
+    },
+    {
+      "task": "In the bedroom, move the book from the bed onto either nightstand, and place the two sandals side by side next to the bed.",
+      "task_name": "tidying_bedroom",
+      "task_index": 18,
+      "episode_index": 180200,
+      "duration_minutes": 5.479444444444444,
+      "video_file": "videos/task-0018/observation.images.rgb.head/episode_00180200.mp4",
+      "video_files": [
+        "videos/task-0018/observation.images.rgb.head/episode_00180200.mp4"
+      ],
+      "data_parquet_file": "data/task-0018/episode_00180200.parquet",
+      "episode_file": "meta/episodes/task-0018/episode_00180200.json",
+      "raw": {
+        "episode_index": 180200,
+        "tasks": [
+          "In the bedroom, move the book from the bed onto either nightstand, and place the two sandals side by side next to the bed."
+        ],
+        "length": 9863,
+        "distance_traveled": 17.5833,
+        "left_eef_displacement": 16.1934,
+        "right_eef_displacement": 15.648
+      }
+    },
+    {
+      "task": "In the bedroom, move the book from the bed onto either nightstand, and place the two sandals side by side next to the bed.",
+      "task_name": "tidying_bedroom",
+      "task_index": 18,
+      "episode_index": 182790,
+      "duration_minutes": 7.177222222222222,
+      "video_file": "videos/task-0018/observation.images.rgb.head/episode_00182790.mp4",
+      "video_files": [
+        "videos/task-0018/observation.images.rgb.head/episode_00182790.mp4"
+      ],
+      "data_parquet_file": "data/task-0018/episode_00182790.parquet",
+      "episode_file": "meta/episodes/task-0018/episode_00182790.json",
+      "raw": {
+        "episode_index": 182790,
+        "tasks": [
+          "In the bedroom, move the book from the bed onto either nightstand, and place the two sandals side by side next to the bed."
+        ],
+        "length": 12919,
+        "distance_traveled": 15.8817,
+        "left_eef_displacement": 13.2478,
+        "right_eef_displacement": 13.728
+      }
+    },
+    {
+      "task": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl.",
+      "task_name": "sorting_vegetables",
+      "task_index": 20,
+      "episode_index": 201420,
+      "duration_minutes": 10.712222222222222,
+      "video_file": "videos/task-0020/observation.images.rgb.head/episode_00201420.mp4",
+      "video_files": [
+        "videos/task-0020/observation.images.rgb.head/episode_00201420.mp4"
+      ],
+      "data_parquet_file": "data/task-0020/episode_00201420.parquet",
+      "episode_file": "meta/episodes/task-0020/episode_00201420.json",
+      "raw": {
+        "episode_index": 201420,
+        "tasks": [
+          "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+        ],
+        "length": 19282,
+        "distance_traveled": 21.8725,
+        "left_eef_displacement": 57.0307,
+        "right_eef_displacement": 32.9662
+      }
+    },
+    {
+      "task": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl.",
+      "task_name": "sorting_vegetables",
+      "task_index": 20,
+      "episode_index": 201720,
+      "duration_minutes": 6.434444444444444,
+      "video_file": "videos/task-0020/observation.images.rgb.head/episode_00201720.mp4",
+      "video_files": [
+        "videos/task-0020/observation.images.rgb.head/episode_00201720.mp4"
+      ],
+      "data_parquet_file": "data/task-0020/episode_00201720.parquet",
+      "episode_file": "meta/episodes/task-0020/episode_00201720.json",
+      "raw": {
+        "episode_index": 201720,
+        "tasks": [
+          "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+        ],
+        "length": 11582,
+        "distance_traveled": 19.1345,
+        "left_eef_displacement": 48.983,
+        "right_eef_displacement": 21.2839
+      }
+    },
+    {
+      "task": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room.",
+      "task_name": "collecting_childrens_toys",
+      "task_index": 21,
+      "episode_index": 210380,
+      "duration_minutes": 13.418888888888889,
+      "video_file": "videos/task-0021/observation.images.rgb.head/episode_00210380.mp4",
+      "video_files": [
+        "videos/task-0021/observation.images.rgb.head/episode_00210380.mp4"
+      ],
+      "data_parquet_file": "data/task-0021/episode_00210380.parquet",
+      "episode_file": "meta/episodes/task-0021/episode_00210380.json",
+      "raw": {
+        "episode_index": 210380,
+        "tasks": [
+          "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+        ],
+        "length": 24154,
+        "distance_traveled": 28.2715,
+        "left_eef_displacement": 28.4591,
+        "right_eef_displacement": 37.4189
+      }
+    },
+    {
+      "task": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other.",
+      "task_name": "putting_shoes_on_rack",
+      "task_index": 22,
+      "episode_index": 221330,
+      "duration_minutes": 4.095,
+      "video_file": "videos/task-0022/observation.images.rgb.head/episode_00221330.mp4",
+      "video_files": [
+        "videos/task-0022/observation.images.rgb.head/episode_00221330.mp4"
+      ],
+      "data_parquet_file": "data/task-0022/episode_00221330.parquet",
+      "episode_file": "meta/episodes/task-0022/episode_00221330.json",
+      "raw": {
+        "episode_index": 221330,
+        "tasks": [
+          "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+        ],
+        "length": 7371,
+        "distance_traveled": 18.1442,
+        "left_eef_displacement": 10.0207,
+        "right_eef_displacement": 11.2273
+      }
+    },
+    {
+      "task": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other.",
+      "task_name": "putting_shoes_on_rack",
+      "task_index": 22,
+      "episode_index": 220250,
+      "duration_minutes": 3.4922222222222223,
+      "video_file": "videos/task-0022/observation.images.rgb.head/episode_00220250.mp4",
+      "video_files": [
+        "videos/task-0022/observation.images.rgb.head/episode_00220250.mp4"
+      ],
+      "data_parquet_file": "data/task-0022/episode_00220250.parquet",
+      "episode_file": "meta/episodes/task-0022/episode_00220250.json",
+      "raw": {
+        "episode_index": 220250,
+        "tasks": [
+          "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+        ],
+        "length": 6286,
+        "distance_traveled": 17.5202,
+        "left_eef_displacement": 8.8757,
+        "right_eef_displacement": 9.5121
+      }
+    },
+    {
+      "task": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other.",
+      "task_name": "putting_shoes_on_rack",
+      "task_index": 22,
+      "episode_index": 221890,
+      "duration_minutes": 4.111666666666666,
+      "video_file": "videos/task-0022/observation.images.rgb.head/episode_00221890.mp4",
+      "video_files": [
+        "videos/task-0022/observation.images.rgb.head/episode_00221890.mp4"
+      ],
+      "data_parquet_file": "data/task-0022/episode_00221890.parquet",
+      "episode_file": "meta/episodes/task-0022/episode_00221890.json",
+      "raw": {
+        "episode_index": 221890,
+        "tasks": [
+          "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+        ],
+        "length": 7401,
+        "distance_traveled": 25.2078,
+        "left_eef_displacement": 8.8372,
+        "right_eef_displacement": 9.9965
+      }
+    },
+    {
+      "task": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other.",
+      "task_name": "putting_shoes_on_rack",
+      "task_index": 22,
+      "episode_index": 221060,
+      "duration_minutes": 5.0233333333333325,
+      "video_file": "videos/task-0022/observation.images.rgb.head/episode_00221060.mp4",
+      "video_files": [
+        "videos/task-0022/observation.images.rgb.head/episode_00221060.mp4"
+      ],
+      "data_parquet_file": "data/task-0022/episode_00221060.parquet",
+      "episode_file": "meta/episodes/task-0022/episode_00221060.json",
+      "raw": {
+        "episode_index": 221060,
+        "tasks": [
+          "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+        ],
+        "length": 9042,
+        "distance_traveled": 26.6578,
+        "left_eef_displacement": 10.2933,
+        "right_eef_displacement": 11.0935
+      }
+    },
+    {
+      "task": "Put all six books from the bookcases in the living room into the box on the living room floor.",
+      "task_name": "boxing_books_up_for_storage",
+      "task_index": 23,
+      "episode_index": 232440,
+      "duration_minutes": 13.158888888888889,
+      "video_file": "videos/task-0023/observation.images.rgb.head/episode_00232440.mp4",
+      "video_files": [
+        "videos/task-0023/observation.images.rgb.head/episode_00232440.mp4"
+      ],
+      "data_parquet_file": "data/task-0023/episode_00232440.parquet",
+      "episode_file": "meta/episodes/task-0023/episode_00232440.json",
+      "raw": {
+        "episode_index": 232440,
+        "tasks": [
+          "Put all six books from the bookcases in the living room into the box on the living room floor."
+        ],
+        "length": 23686,
+        "distance_traveled": 31.151,
+        "left_eef_displacement": 26.0514,
+        "right_eef_displacement": 26.5511
+      }
+    },
+    {
+      "task": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet).",
+      "task_name": "storing_food",
+      "task_index": 24,
+      "episode_index": 242160,
+      "duration_minutes": 9.045,
+      "video_file": "videos/task-0024/observation.images.rgb.head/episode_00242160.mp4",
+      "video_files": [
+        "videos/task-0024/observation.images.rgb.head/episode_00242160.mp4"
+      ],
+      "data_parquet_file": "data/task-0024/episode_00242160.parquet",
+      "episode_file": "meta/episodes/task-0024/episode_00242160.json",
+      "raw": {
+        "episode_index": 242160,
+        "tasks": [
+          "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+        ],
+        "length": 16281,
+        "distance_traveled": 46.5729,
+        "left_eef_displacement": 28.9182,
+        "right_eef_displacement": 25.3106
+      }
+    },
+    {
+      "task": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet).",
+      "task_name": "storing_food",
+      "task_index": 24,
+      "episode_index": 241030,
+      "duration_minutes": 9.331666666666667,
+      "video_file": "videos/task-0024/observation.images.rgb.head/episode_00241030.mp4",
+      "video_files": [
+        "videos/task-0024/observation.images.rgb.head/episode_00241030.mp4"
+      ],
+      "data_parquet_file": "data/task-0024/episode_00241030.parquet",
+      "episode_file": "meta/episodes/task-0024/episode_00241030.json",
+      "raw": {
+        "episode_index": 241030,
+        "tasks": [
+          "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+        ],
+        "length": 16797,
+        "distance_traveled": 39.6029,
+        "left_eef_displacement": 28.9271,
+        "right_eef_displacement": 25.2272
+      }
+    },
+    {
+      "task": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end.",
+      "task_name": "clearing_food_from_table_into_fridge",
+      "task_index": 25,
+      "episode_index": 252230,
+      "duration_minutes": 5.735,
+      "video_file": "videos/task-0025/observation.images.rgb.head/episode_00252230.mp4",
+      "video_files": [
+        "videos/task-0025/observation.images.rgb.head/episode_00252230.mp4"
+      ],
+      "data_parquet_file": "data/task-0025/episode_00252230.parquet",
+      "episode_file": "meta/episodes/task-0025/episode_00252230.json",
+      "raw": {
+        "episode_index": 252230,
+        "tasks": [
+          "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+        ],
+        "length": 10323,
+        "distance_traveled": 29.5389,
+        "left_eef_displacement": 14.1794,
+        "right_eef_displacement": 16.4342
+      }
+    },
+    {
+      "task": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end.",
+      "task_name": "clearing_food_from_table_into_fridge",
+      "task_index": 25,
+      "episode_index": 250650,
+      "duration_minutes": 7.213333333333334,
+      "video_file": "videos/task-0025/observation.images.rgb.head/episode_00250650.mp4",
+      "video_files": [
+        "videos/task-0025/observation.images.rgb.head/episode_00250650.mp4"
+      ],
+      "data_parquet_file": "data/task-0025/episode_00250650.parquet",
+      "episode_file": "meta/episodes/task-0025/episode_00250650.json",
+      "raw": {
+        "episode_index": 250650,
+        "tasks": [
+          "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+        ],
+        "length": 12984,
+        "distance_traveled": 30.8348,
+        "left_eef_displacement": 16.657,
+        "right_eef_displacement": 16.3558
+      }
+    },
+    {
+      "task": "Place one candle, one butter cookie, one piece of Swiss cheese, and one bow from the table into each of the four wicker baskets on the floor in the living room.",
+      "task_name": "assembling_gift_baskets",
+      "task_index": 26,
+      "episode_index": 262710,
+      "duration_minutes": 17.980555555555554,
+      "video_file": "videos/task-0026/observation.images.rgb.head/episode_00262710.mp4",
+      "video_files": [
+        "videos/task-0026/observation.images.rgb.head/episode_00262710.mp4"
+      ],
+      "data_parquet_file": "data/task-0026/episode_00262710.parquet",
+      "episode_file": "meta/episodes/task-0026/episode_00262710.json",
+      "raw": {
+        "episode_index": 262710,
+        "tasks": [
+          "Place one candle, one butter cookie, one piece of Swiss cheese, and one bow from the table into each of the four wicker baskets on the floor in the living room."
+        ],
+        "length": 32365,
+        "distance_traveled": 80.4219,
+        "left_eef_displacement": 60.2327,
+        "right_eef_displacement": 55.4607
+      }
+    },
+    {
+      "task": "From the two baskets on the bedroom floor, take out the items and organize them in the bathroom: place both detergent bottles under the bathroom sink next to each other; put the box of sanitary napkins on the bathroom shelf; set the soap dispenser on the sink; make sure the cup remains on the sink; put both the toothpaste tube and the toothbrush inside the cup.",
+      "task_name": "sorting_household_items",
+      "task_index": 27,
+      "episode_index": 270230,
+      "duration_minutes": 8.577777777777778,
+      "video_file": "videos/task-0027/observation.images.rgb.head/episode_00270230.mp4",
+      "video_files": [
+        "videos/task-0027/observation.images.rgb.head/episode_00270230.mp4"
+      ],
+      "data_parquet_file": "data/task-0027/episode_00270230.parquet",
+      "episode_file": "meta/episodes/task-0027/episode_00270230.json",
+      "raw": {
+        "episode_index": 270230,
+        "tasks": [
+          "From the two baskets on the bedroom floor, take out the items and organize them in the bathroom: place both detergent bottles under the bathroom sink next to each other; put the box of sanitary napkins on the bathroom shelf; set the soap dispenser on the sink; make sure the cup remains on the sink; put both the toothpaste tube and the toothbrush inside the cup."
+        ],
+        "length": 15440,
+        "distance_traveled": 39.1815,
+        "left_eef_displacement": 23.3587,
+        "right_eef_displacement": 28.065
+      }
+    },
+    {
+      "task": "From the two baskets on the bedroom floor, take out the items and organize them in the bathroom: place both detergent bottles under the bathroom sink next to each other; put the box of sanitary napkins on the bathroom shelf; set the soap dispenser on the sink; make sure the cup remains on the sink; put both the toothpaste tube and the toothbrush inside the cup.",
+      "task_name": "sorting_household_items",
+      "task_index": 27,
+      "episode_index": 270160,
+      "duration_minutes": 9.850555555555555,
+      "video_file": "videos/task-0027/observation.images.rgb.head/episode_00270160.mp4",
+      "video_files": [
+        "videos/task-0027/observation.images.rgb.head/episode_00270160.mp4"
+      ],
+      "data_parquet_file": "data/task-0027/episode_00270160.parquet",
+      "episode_file": "meta/episodes/task-0027/episode_00270160.json",
+      "raw": {
+        "episode_index": 270160,
+        "tasks": [
+          "From the two baskets on the bedroom floor, take out the items and organize them in the bathroom: place both detergent bottles under the bathroom sink next to each other; put the box of sanitary napkins on the bathroom shelf; set the soap dispenser on the sink; make sure the cup remains on the sink; put both the toothpaste tube and the toothbrush inside the cup."
+        ],
+        "length": 17731,
+        "distance_traveled": 34.0913,
+        "left_eef_displacement": 28.5272,
+        "right_eef_displacement": 34.3472
+      }
+    },
+    {
+      "task": "In the bedroom, organize the workspace by keeping the computer under the desk, ensuring the monitor is on the desk, placing the keyboard on the desk next to the monitor, placing the mouse on the desk next to the keyboard, moving the folder from the swivel chair onto the desk next to the mouse, stacking the notebook on top of the folder with the pen on top of the notebook, and positioning the swivel chair next to the desk.",
+      "task_name": "getting_organized_for_work",
+      "task_index": 28,
+      "episode_index": 282320,
+      "duration_minutes": 10.882777777777779,
+      "video_file": "videos/task-0028/observation.images.rgb.head/episode_00282320.mp4",
+      "video_files": [
+        "videos/task-0028/observation.images.rgb.head/episode_00282320.mp4"
+      ],
+      "data_parquet_file": "data/task-0028/episode_00282320.parquet",
+      "episode_file": "meta/episodes/task-0028/episode_00282320.json",
+      "raw": {
+        "episode_index": 282320,
+        "tasks": [
+          "In the bedroom, organize the workspace by keeping the computer under the desk, ensuring the monitor is on the desk, placing the keyboard on the desk next to the monitor, placing the mouse on the desk next to the keyboard, moving the folder from the swivel chair onto the desk next to the mouse, stacking the notebook on top of the folder with the pen on top of the notebook, and positioning the swivel chair next to the desk."
+        ],
+        "length": 19589,
+        "distance_traveled": 32.7241,
+        "left_eef_displacement": 21.3438,
+        "right_eef_displacement": 30.5049
+      }
+    },
+    {
+      "task": "In the bedroom, organize the workspace by keeping the computer under the desk, ensuring the monitor is on the desk, placing the keyboard on the desk next to the monitor, placing the mouse on the desk next to the keyboard, moving the folder from the swivel chair onto the desk next to the mouse, stacking the notebook on top of the folder with the pen on top of the notebook, and positioning the swivel chair next to the desk.",
+      "task_name": "getting_organized_for_work",
+      "task_index": 28,
+      "episode_index": 280730,
+      "duration_minutes": 9.277222222222223,
+      "video_file": "videos/task-0028/observation.images.rgb.head/episode_00280730.mp4",
+      "video_files": [
+        "videos/task-0028/observation.images.rgb.head/episode_00280730.mp4"
+      ],
+      "data_parquet_file": "data/task-0028/episode_00280730.parquet",
+      "episode_file": "meta/episodes/task-0028/episode_00280730.json",
+      "raw": {
+        "episode_index": 280730,
+        "tasks": [
+          "In the bedroom, organize the workspace by keeping the computer under the desk, ensuring the monitor is on the desk, placing the keyboard on the desk next to the monitor, placing the mouse on the desk next to the keyboard, moving the folder from the swivel chair onto the desk next to the mouse, stacking the notebook on top of the folder with the pen on top of the notebook, and positioning the swivel chair next to the desk."
+        ],
+        "length": 16699,
+        "distance_traveled": 36.0989,
+        "left_eef_displacement": 21.4069,
+        "right_eef_displacement": 30.4442
+      }
+    },
+    {
+      "task": "In the child's room, clean up the desk: put both folders and both paperback books into the bookcase; put the pencil and both pens into the pencil case and leave the case on the desk; take the stapler out of the bookcase and place it on the desk; move the laptop from the bed onto the desk and close it.",
+      "task_name": "clean_up_your_desk",
+      "task_index": 29,
+      "episode_index": 292950,
+      "duration_minutes": 12.47,
+      "video_file": "videos/task-0029/observation.images.rgb.head/episode_00292950.mp4",
+      "video_files": [
+        "videos/task-0029/observation.images.rgb.head/episode_00292950.mp4"
+      ],
+      "data_parquet_file": "data/task-0029/episode_00292950.parquet",
+      "episode_file": "meta/episodes/task-0029/episode_00292950.json",
+      "raw": {
+        "episode_index": 292950,
+        "tasks": [
+          "In the child's room, clean up the desk: put both folders and both paperback books into the bookcase; put the pencil and both pens into the pencil case and leave the case on the desk; take the stapler out of the bookcase and place it on the desk; move the laptop from the bed onto the desk and close it."
+        ],
+        "length": 22446,
+        "distance_traveled": 28.6896,
+        "left_eef_displacement": 43.6765,
+        "right_eef_displacement": 38.0944
+      }
+    },
+    {
+      "task": "In the living room, place the newspaper from the table into the wood fireplace, then put both pieces of firewood from the floor on top of the newspaper. Use the cigar lighter to ignite any one of the items so that the whole pile catches fire, and then turn the lighter off.",
+      "task_name": "setting_the_fire",
+      "task_index": 30,
+      "episode_index": 301030,
+      "duration_minutes": 5.736111111111112,
+      "video_file": "videos/task-0030/observation.images.rgb.head/episode_00301030.mp4",
+      "video_files": [
+        "videos/task-0030/observation.images.rgb.head/episode_00301030.mp4"
+      ],
+      "data_parquet_file": "data/task-0030/episode_00301030.parquet",
+      "episode_file": "meta/episodes/task-0030/episode_00301030.json",
+      "raw": {
+        "episode_index": 301030,
+        "tasks": [
+          "In the living room, place the newspaper from the table into the wood fireplace, then put both pieces of firewood from the floor on top of the newspaper. Use the cigar lighter to ignite any one of the items so that the whole pile catches fire, and then turn the lighter off."
+        ],
+        "length": 10325,
+        "distance_traveled": 19.8916,
+        "left_eef_displacement": 11.2607,
+        "right_eef_displacement": 12.6225
+      }
+    },
+    {
+      "task": "In the living room, place the newspaper from the table into the wood fireplace, then put both pieces of firewood from the floor on top of the newspaper. Use the cigar lighter to ignite any one of the items so that the whole pile catches fire, and then turn the lighter off.",
+      "task_name": "setting_the_fire",
+      "task_index": 30,
+      "episode_index": 300210,
+      "duration_minutes": 7.295555555555556,
+      "video_file": "videos/task-0030/observation.images.rgb.head/episode_00300210.mp4",
+      "video_files": [
+        "videos/task-0030/observation.images.rgb.head/episode_00300210.mp4"
+      ],
+      "data_parquet_file": "data/task-0030/episode_00300210.parquet",
+      "episode_file": "meta/episodes/task-0030/episode_00300210.json",
+      "raw": {
+        "episode_index": 300210,
+        "tasks": [
+          "In the living room, place the newspaper from the table into the wood fireplace, then put both pieces of firewood from the floor on top of the newspaper. Use the cigar lighter to ignite any one of the items so that the whole pile catches fire, and then turn the lighter off."
+        ],
+        "length": 13132,
+        "distance_traveled": 17.7607,
+        "left_eef_displacement": 13.0453,
+        "right_eef_displacement": 15.0468
+      }
+    },
+    {
+      "task": "Wash the two dusty boxing gloves from the countertop in the utility room in the washer until they are no longer covered with dust.",
+      "task_name": "clean_boxing_gloves",
+      "task_index": 31,
+      "episode_index": 310870,
+      "duration_minutes": 4.242222222222222,
+      "video_file": "videos/task-0031/observation.images.rgb.head/episode_00310870.mp4",
+      "video_files": [
+        "videos/task-0031/observation.images.rgb.head/episode_00310870.mp4"
+      ],
+      "data_parquet_file": "data/task-0031/episode_00310870.parquet",
+      "episode_file": "meta/episodes/task-0031/episode_00310870.json",
+      "raw": {
+        "episode_index": 310870,
+        "tasks": [
+          "Wash the two dusty boxing gloves from the countertop in the utility room in the washer until they are no longer covered with dust."
+        ],
+        "length": 7636,
+        "distance_traveled": 12.8064,
+        "left_eef_displacement": 9.9098,
+        "right_eef_displacement": 12.8373
+      }
+    },
+    {
+      "task": "Wash the two dusty boxing gloves from the countertop in the utility room in the washer until they are no longer covered with dust.",
+      "task_name": "clean_boxing_gloves",
+      "task_index": 31,
+      "episode_index": 310300,
+      "duration_minutes": 6.443888888888889,
+      "video_file": "videos/task-0031/observation.images.rgb.head/episode_00310300.mp4",
+      "video_files": [
+        "videos/task-0031/observation.images.rgb.head/episode_00310300.mp4"
+      ],
+      "data_parquet_file": "data/task-0031/episode_00310300.parquet",
+      "episode_file": "meta/episodes/task-0031/episode_00310300.json",
+      "raw": {
+        "episode_index": 310300,
+        "tasks": [
+          "Wash the two dusty boxing gloves from the countertop in the utility room in the washer until they are no longer covered with dust."
+        ],
+        "length": 11599,
+        "distance_traveled": 13.1461,
+        "left_eef_displacement": 10.5293,
+        "right_eef_displacement": 11.7092
+      }
+    },
+    {
+      "task": "Wash the two dusty boxing gloves from the countertop in the utility room in the washer until they are no longer covered with dust.",
+      "task_name": "clean_boxing_gloves",
+      "task_index": 31,
+      "episode_index": 311380,
+      "duration_minutes": 2.941666666666667,
+      "video_file": "videos/task-0031/observation.images.rgb.head/episode_00311380.mp4",
+      "video_files": [
+        "videos/task-0031/observation.images.rgb.head/episode_00311380.mp4"
+      ],
+      "data_parquet_file": "data/task-0031/episode_00311380.parquet",
+      "episode_file": "meta/episodes/task-0031/episode_00311380.json",
+      "raw": {
+        "episode_index": 311380,
+        "tasks": [
+          "Wash the two dusty boxing gloves from the countertop in the utility room in the washer until they are no longer covered with dust."
+        ],
+        "length": 5295,
+        "distance_traveled": 10.1752,
+        "left_eef_displacement": 10.2939,
+        "right_eef_displacement": 11.1494
+      }
+    },
+    {
+      "task": "Wash the two baseball caps on the countertop in the utility room using the washer until they are no longer dirty.",
+      "task_name": "wash_a_baseball_cap",
+      "task_index": 32,
+      "episode_index": 320720,
+      "duration_minutes": 5.070555555555556,
+      "video_file": "videos/task-0032/observation.images.rgb.head/episode_00320720.mp4",
+      "video_files": [
+        "videos/task-0032/observation.images.rgb.head/episode_00320720.mp4"
+      ],
+      "data_parquet_file": "data/task-0032/episode_00320720.parquet",
+      "episode_file": "meta/episodes/task-0032/episode_00320720.json",
+      "raw": {
+        "episode_index": 320720,
+        "tasks": [
+          "Wash the two baseball caps on the countertop in the utility room using the washer until they are no longer dirty."
+        ],
+        "length": 9127,
+        "distance_traveled": 9.3392,
+        "left_eef_displacement": 10.9149,
+        "right_eef_displacement": 11.5745
+      }
+    },
+    {
+      "task": "Wash the two baseball caps on the countertop in the utility room using the washer until they are no longer dirty.",
+      "task_name": "wash_a_baseball_cap",
+      "task_index": 32,
+      "episode_index": 321580,
+      "duration_minutes": 4.967777777777778,
+      "video_file": "videos/task-0032/observation.images.rgb.head/episode_00321580.mp4",
+      "video_files": [
+        "videos/task-0032/observation.images.rgb.head/episode_00321580.mp4"
+      ],
+      "data_parquet_file": "data/task-0032/episode_00321580.parquet",
+      "episode_file": "meta/episodes/task-0032/episode_00321580.json",
+      "raw": {
+        "episode_index": 321580,
+        "tasks": [
+          "Wash the two baseball caps on the countertop in the utility room using the washer until they are no longer dirty."
+        ],
+        "length": 8942,
+        "distance_traveled": 12.3416,
+        "left_eef_displacement": 12.083,
+        "right_eef_displacement": 12.1745
+      }
+    },
+    {
+      "task": "Wash the two baseball caps on the countertop in the utility room using the washer until they are no longer dirty.",
+      "task_name": "wash_a_baseball_cap",
+      "task_index": 32,
+      "episode_index": 322140,
+      "duration_minutes": 3.712777777777778,
+      "video_file": "videos/task-0032/observation.images.rgb.head/episode_00322140.mp4",
+      "video_files": [
+        "videos/task-0032/observation.images.rgb.head/episode_00322140.mp4"
+      ],
+      "data_parquet_file": "data/task-0032/episode_00322140.parquet",
+      "episode_file": "meta/episodes/task-0032/episode_00322140.json",
+      "raw": {
+        "episode_index": 322140,
+        "tasks": [
+          "Wash the two baseball caps on the countertop in the utility room using the washer until they are no longer dirty."
+        ],
+        "length": 6683,
+        "distance_traveled": 9.8693,
+        "left_eef_displacement": 10.4243,
+        "right_eef_displacement": 10.5017
+      }
+    },
+    {
+      "task": "In the utility room, take the two teddy toys, the tennis ball, and the softball out of the cabinet and wash them in the washer so that both teddies are free of dirt and dust, the tennis ball has no debris, and the softball has no dirt.",
+      "task_name": "wash_dog_toys",
+      "task_index": 33,
+      "episode_index": 331100,
+      "duration_minutes": 5.3438888888888885,
+      "video_file": "videos/task-0033/observation.images.rgb.head/episode_00331100.mp4",
+      "video_files": [
+        "videos/task-0033/observation.images.rgb.head/episode_00331100.mp4"
+      ],
+      "data_parquet_file": "data/task-0033/episode_00331100.parquet",
+      "episode_file": "meta/episodes/task-0033/episode_00331100.json",
+      "raw": {
+        "episode_index": 331100,
+        "tasks": [
+          "In the utility room, take the two teddy toys, the tennis ball, and the softball out of the cabinet and wash them in the washer so that both teddies are free of dirt and dust, the tennis ball has no debris, and the softball has no dirt."
+        ],
+        "length": 9619,
+        "distance_traveled": 20.0165,
+        "left_eef_displacement": 15.701,
+        "right_eef_displacement": 16.3641
+      }
+    },
+    {
+      "task": "In the utility room, take the two teddy toys, the tennis ball, and the softball out of the cabinet and wash them in the washer so that both teddies are free of dirt and dust, the tennis ball has no debris, and the softball has no dirt.",
+      "task_name": "wash_dog_toys",
+      "task_index": 33,
+      "episode_index": 330480,
+      "duration_minutes": 6.516666666666667,
+      "video_file": "videos/task-0033/observation.images.rgb.head/episode_00330480.mp4",
+      "video_files": [
+        "videos/task-0033/observation.images.rgb.head/episode_00330480.mp4"
+      ],
+      "data_parquet_file": "data/task-0033/episode_00330480.parquet",
+      "episode_file": "meta/episodes/task-0033/episode_00330480.json",
+      "raw": {
+        "episode_index": 330480,
+        "tasks": [
+          "In the utility room, take the two teddy toys, the tennis ball, and the softball out of the cabinet and wash them in the washer so that both teddies are free of dirt and dust, the tennis ball has no debris, and the softball has no dirt."
+        ],
+        "length": 11730,
+        "distance_traveled": 21.0486,
+        "left_eef_displacement": 17.1528,
+        "right_eef_displacement": 16.1172
+      }
+    },
+    {
+      "task": "In the utility room, take the two teddy toys, the tennis ball, and the softball out of the cabinet and wash them in the washer so that both teddies are free of dirt and dust, the tennis ball has no debris, and the softball has no dirt.",
+      "task_name": "wash_dog_toys",
+      "task_index": 33,
+      "episode_index": 331130,
+      "duration_minutes": 5.321111111111111,
+      "video_file": "videos/task-0033/observation.images.rgb.head/episode_00331130.mp4",
+      "video_files": [
+        "videos/task-0033/observation.images.rgb.head/episode_00331130.mp4"
+      ],
+      "data_parquet_file": "data/task-0033/episode_00331130.parquet",
+      "episode_file": "meta/episodes/task-0033/episode_00331130.json",
+      "raw": {
+        "episode_index": 331130,
+        "tasks": [
+          "In the utility room, take the two teddy toys, the tennis ball, and the softball out of the cabinet and wash them in the washer so that both teddies are free of dirt and dust, the tennis ball has no debris, and the softball has no dirt."
+        ],
+        "length": 9578,
+        "distance_traveled": 19.1149,
+        "left_eef_displacement": 14.4273,
+        "right_eef_displacement": 14.9098
+      }
+    },
+    {
+      "task": "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen.",
+      "task_name": "hanging_pictures",
+      "task_index": 34,
+      "episode_index": 341450,
+      "duration_minutes": 1.4683333333333333,
+      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00341450.mp4",
+      "video_files": [
+        "videos/task-0034/observation.images.rgb.head/episode_00341450.mp4"
+      ],
+      "data_parquet_file": "data/task-0034/episode_00341450.parquet",
+      "episode_file": "meta/episodes/task-0034/episode_00341450.json",
+      "raw": {
+        "episode_index": 341450,
+        "tasks": [
+          "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen."
+        ],
+        "length": 2643,
+        "distance_traveled": 5.1961,
+        "left_eef_displacement": 3.2023,
+        "right_eef_displacement": 2.966
+      }
+    },
+    {
+      "task": "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen.",
+      "task_name": "hanging_pictures",
+      "task_index": 34,
+      "episode_index": 340850,
+      "duration_minutes": 1.0266666666666666,
+      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00340850.mp4",
+      "video_files": [
+        "videos/task-0034/observation.images.rgb.head/episode_00340850.mp4"
+      ],
+      "data_parquet_file": "data/task-0034/episode_00340850.parquet",
+      "episode_file": "meta/episodes/task-0034/episode_00340850.json",
+      "raw": {
+        "episode_index": 340850,
+        "tasks": [
+          "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen."
+        ],
+        "length": 1848,
+        "distance_traveled": 5.9309,
+        "left_eef_displacement": 0.8624,
+        "right_eef_displacement": 3.7059
+      }
+    },
+    {
+      "task": "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen.",
+      "task_name": "hanging_pictures",
+      "task_index": 34,
+      "episode_index": 342460,
+      "duration_minutes": 1.09,
+      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342460.mp4",
+      "video_files": [
+        "videos/task-0034/observation.images.rgb.head/episode_00342460.mp4"
+      ],
+      "data_parquet_file": "data/task-0034/episode_00342460.parquet",
+      "episode_file": "meta/episodes/task-0034/episode_00342460.json",
+      "raw": {
+        "episode_index": 342460,
+        "tasks": [
+          "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen."
+        ],
+        "length": 1962,
+        "distance_traveled": 7.0195,
+        "left_eef_displacement": 1.021,
+        "right_eef_displacement": 3.7433
+      }
+    },
+    {
+      "task": "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen.",
+      "task_name": "hanging_pictures",
+      "task_index": 34,
+      "episode_index": 341170,
+      "duration_minutes": 1.4216666666666666,
+      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00341170.mp4",
+      "video_files": [
+        "videos/task-0034/observation.images.rgb.head/episode_00341170.mp4"
+      ],
+      "data_parquet_file": "data/task-0034/episode_00341170.parquet",
+      "episode_file": "meta/episodes/task-0034/episode_00341170.json",
+      "raw": {
+        "episode_index": 341170,
+        "tasks": [
+          "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen."
+        ],
+        "length": 2559,
+        "distance_traveled": 5.4401,
+        "left_eef_displacement": 2.1247,
+        "right_eef_displacement": 4.8056
+      }
+    },
+    {
+      "task": "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen.",
+      "task_name": "hanging_pictures",
+      "task_index": 34,
+      "episode_index": 342700,
+      "duration_minutes": 1.7533333333333334,
+      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342700.mp4",
+      "video_files": [
+        "videos/task-0034/observation.images.rgb.head/episode_00342700.mp4"
+      ],
+      "data_parquet_file": "data/task-0034/episode_00342700.parquet",
+      "episode_file": "meta/episodes/task-0034/episode_00342700.json",
+      "raw": {
+        "episode_index": 342700,
+        "tasks": [
+          "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen."
+        ],
+        "length": 3156,
+        "distance_traveled": 7.8114,
+        "left_eef_displacement": 3.2748,
+        "right_eef_displacement": 3.9301
+      }
+    },
+    {
+      "task": "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen.",
+      "task_name": "hanging_pictures",
+      "task_index": 34,
+      "episode_index": 342610,
+      "duration_minutes": 1.143888888888889,
+      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342610.mp4",
+      "video_files": [
+        "videos/task-0034/observation.images.rgb.head/episode_00342610.mp4"
+      ],
+      "data_parquet_file": "data/task-0034/episode_00342610.parquet",
+      "episode_file": "meta/episodes/task-0034/episode_00342610.json",
+      "raw": {
+        "episode_index": 342610,
+        "tasks": [
+          "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen."
+        ],
+        "length": 2059,
+        "distance_traveled": 7.9083,
+        "left_eef_displacement": 2.9433,
+        "right_eef_displacement": 3.269
+      }
+    },
+    {
+      "task": "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen.",
+      "task_name": "hanging_pictures",
+      "task_index": 34,
+      "episode_index": 342350,
+      "duration_minutes": 1.2105555555555556,
+      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342350.mp4",
+      "video_files": [
+        "videos/task-0034/observation.images.rgb.head/episode_00342350.mp4"
+      ],
+      "data_parquet_file": "data/task-0034/episode_00342350.parquet",
+      "episode_file": "meta/episodes/task-0034/episode_00342350.json",
+      "raw": {
+        "episode_index": 342350,
+        "tasks": [
+          "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen."
+        ],
+        "length": 2179,
+        "distance_traveled": 6.1492,
+        "left_eef_displacement": 1.4748,
+        "right_eef_displacement": 4.0216
+      }
+    },
+    {
+      "task": "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen.",
+      "task_name": "hanging_pictures",
+      "task_index": 34,
+      "episode_index": 340220,
+      "duration_minutes": 1.1216666666666666,
+      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00340220.mp4",
+      "video_files": [
+        "videos/task-0034/observation.images.rgb.head/episode_00340220.mp4"
+      ],
+      "data_parquet_file": "data/task-0034/episode_00340220.parquet",
+      "episode_file": "meta/episodes/task-0034/episode_00340220.json",
+      "raw": {
+        "episode_index": 340220,
+        "tasks": [
+          "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen."
+        ],
+        "length": 2019,
+        "distance_traveled": 3.7125,
+        "left_eef_displacement": 0.8031,
+        "right_eef_displacement": 4.065
+      }
+    },
+    {
+      "task": "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen.",
+      "task_name": "hanging_pictures",
+      "task_index": 34,
+      "episode_index": 342240,
+      "duration_minutes": 1.241111111111111,
+      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342240.mp4",
+      "video_files": [
+        "videos/task-0034/observation.images.rgb.head/episode_00342240.mp4"
+      ],
+      "data_parquet_file": "data/task-0034/episode_00342240.parquet",
+      "episode_file": "meta/episodes/task-0034/episode_00342240.json",
+      "raw": {
+        "episode_index": 342240,
+        "tasks": [
+          "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen."
+        ],
+        "length": 2234,
+        "distance_traveled": 4.941,
+        "left_eef_displacement": 2.751,
+        "right_eef_displacement": 3.0511
+      }
+    },
+    {
+      "task": "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen.",
+      "task_name": "hanging_pictures",
+      "task_index": 34,
+      "episode_index": 342330,
+      "duration_minutes": 0.8716666666666666,
+      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342330.mp4",
+      "video_files": [
+        "videos/task-0034/observation.images.rgb.head/episode_00342330.mp4"
+      ],
+      "data_parquet_file": "data/task-0034/episode_00342330.parquet",
+      "episode_file": "meta/episodes/task-0034/episode_00342330.json",
+      "raw": {
+        "episode_index": 342330,
+        "tasks": [
+          "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen."
+        ],
+        "length": 1569,
+        "distance_traveled": 3.2868,
+        "left_eef_displacement": 0.7696,
+        "right_eef_displacement": 3.5942
+      }
+    },
+    {
+      "task": "Attach the digital camera to the camera tripod in the bedroom.",
+      "task_name": "attach_a_camera_to_a_tripod",
+      "task_index": 35,
+      "episode_index": 350540,
+      "duration_minutes": 2.7216666666666667,
+      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00350540.mp4",
+      "video_files": [
+        "videos/task-0035/observation.images.rgb.head/episode_00350540.mp4"
+      ],
+      "data_parquet_file": "data/task-0035/episode_00350540.parquet",
+      "episode_file": "meta/episodes/task-0035/episode_00350540.json",
+      "raw": {
+        "episode_index": 350540,
+        "tasks": [
+          "Attach the digital camera to the camera tripod in the bedroom."
+        ],
+        "length": 4899,
+        "distance_traveled": 2.5576,
+        "left_eef_displacement": 7.3298,
+        "right_eef_displacement": 5.6399
+      }
+    },
+    {
+      "task": "Attach the digital camera to the camera tripod in the bedroom.",
+      "task_name": "attach_a_camera_to_a_tripod",
+      "task_index": 35,
+      "episode_index": 351990,
+      "duration_minutes": 1.4544444444444444,
+      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00351990.mp4",
+      "video_files": [
+        "videos/task-0035/observation.images.rgb.head/episode_00351990.mp4"
+      ],
+      "data_parquet_file": "data/task-0035/episode_00351990.parquet",
+      "episode_file": "meta/episodes/task-0035/episode_00351990.json",
+      "raw": {
+        "episode_index": 351990,
+        "tasks": [
+          "Attach the digital camera to the camera tripod in the bedroom."
+        ],
+        "length": 2618,
+        "distance_traveled": 3.6434,
+        "left_eef_displacement": 6.0858,
+        "right_eef_displacement": 3.6427
+      }
+    },
+    {
+      "task": "Attach the digital camera to the camera tripod in the bedroom.",
+      "task_name": "attach_a_camera_to_a_tripod",
+      "task_index": 35,
+      "episode_index": 352830,
+      "duration_minutes": 2.2616666666666663,
+      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00352830.mp4",
+      "video_files": [
+        "videos/task-0035/observation.images.rgb.head/episode_00352830.mp4"
+      ],
+      "data_parquet_file": "data/task-0035/episode_00352830.parquet",
+      "episode_file": "meta/episodes/task-0035/episode_00352830.json",
+      "raw": {
+        "episode_index": 352830,
+        "tasks": [
+          "Attach the digital camera to the camera tripod in the bedroom."
+        ],
+        "length": 4071,
+        "distance_traveled": 4.1556,
+        "left_eef_displacement": 8.6846,
+        "right_eef_displacement": 7.9533
+      }
+    },
+    {
+      "task": "Attach the digital camera to the camera tripod in the bedroom.",
+      "task_name": "attach_a_camera_to_a_tripod",
+      "task_index": 35,
+      "episode_index": 350830,
+      "duration_minutes": 2.7305555555555556,
+      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00350830.mp4",
+      "video_files": [
+        "videos/task-0035/observation.images.rgb.head/episode_00350830.mp4"
+      ],
+      "data_parquet_file": "data/task-0035/episode_00350830.parquet",
+      "episode_file": "meta/episodes/task-0035/episode_00350830.json",
+      "raw": {
+        "episode_index": 350830,
+        "tasks": [
+          "Attach the digital camera to the camera tripod in the bedroom."
+        ],
+        "length": 4915,
+        "distance_traveled": 4.7253,
+        "left_eef_displacement": 9.3283,
+        "right_eef_displacement": 6.2536
+      }
+    },
+    {
+      "task": "Attach the digital camera to the camera tripod in the bedroom.",
+      "task_name": "attach_a_camera_to_a_tripod",
+      "task_index": 35,
+      "episode_index": 350520,
+      "duration_minutes": 2.6244444444444444,
+      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00350520.mp4",
+      "video_files": [
+        "videos/task-0035/observation.images.rgb.head/episode_00350520.mp4"
+      ],
+      "data_parquet_file": "data/task-0035/episode_00350520.parquet",
+      "episode_file": "meta/episodes/task-0035/episode_00350520.json",
+      "raw": {
+        "episode_index": 350520,
+        "tasks": [
+          "Attach the digital camera to the camera tripod in the bedroom."
+        ],
+        "length": 4724,
+        "distance_traveled": 3.6292,
+        "left_eef_displacement": 8.8824,
+        "right_eef_displacement": 5.7323
+      }
+    },
+    {
+      "task": "Attach the digital camera to the camera tripod in the bedroom.",
+      "task_name": "attach_a_camera_to_a_tripod",
+      "task_index": 35,
+      "episode_index": 351750,
+      "duration_minutes": 3.6572222222222224,
+      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00351750.mp4",
+      "video_files": [
+        "videos/task-0035/observation.images.rgb.head/episode_00351750.mp4"
+      ],
+      "data_parquet_file": "data/task-0035/episode_00351750.parquet",
+      "episode_file": "meta/episodes/task-0035/episode_00351750.json",
+      "raw": {
+        "episode_index": 351750,
+        "tasks": [
+          "Attach the digital camera to the camera tripod in the bedroom."
+        ],
+        "length": 6583,
+        "distance_traveled": 5.5121,
+        "left_eef_displacement": 9.2912,
+        "right_eef_displacement": 9.3868
+      }
+    },
+    {
+      "task": "Pick up the broom in the garden and sweep the mud off the patio floor until the floor is no longer covered in mud.",
+      "task_name": "clean_a_patio",
+      "task_index": 36,
+      "episode_index": 361360,
+      "duration_minutes": 7.3566666666666665,
+      "video_file": "videos/task-0036/observation.images.rgb.head/episode_00361360.mp4",
+      "video_files": [
+        "videos/task-0036/observation.images.rgb.head/episode_00361360.mp4"
+      ],
+      "data_parquet_file": "data/task-0036/episode_00361360.parquet",
+      "episode_file": "meta/episodes/task-0036/episode_00361360.json",
+      "raw": {
+        "episode_index": 361360,
+        "tasks": [
+          "Pick up the broom in the garden and sweep the mud off the patio floor until the floor is no longer covered in mud."
+        ],
+        "length": 13242,
+        "distance_traveled": 48.5534,
+        "left_eef_displacement": 9.4797,
+        "right_eef_displacement": 9.7843
+      }
+    },
+    {
+      "task": "Pick up the broom in the garden and sweep the mud off the patio floor until the floor is no longer covered in mud.",
+      "task_name": "clean_a_patio",
+      "task_index": 36,
+      "episode_index": 360930,
+      "duration_minutes": 5.828888888888889,
+      "video_file": "videos/task-0036/observation.images.rgb.head/episode_00360930.mp4",
+      "video_files": [
+        "videos/task-0036/observation.images.rgb.head/episode_00360930.mp4"
+      ],
+      "data_parquet_file": "data/task-0036/episode_00360930.parquet",
+      "episode_file": "meta/episodes/task-0036/episode_00360930.json",
+      "raw": {
+        "episode_index": 360930,
+        "tasks": [
+          "Pick up the broom in the garden and sweep the mud off the patio floor until the floor is no longer covered in mud."
+        ],
+        "length": 10492,
+        "distance_traveled": 33.7225,
+        "left_eef_displacement": 13.3687,
+        "right_eef_displacement": 21.802
+      }
+    },
+    {
+      "task": "In the bedroom, pick up the scrub brush from the desk and scrub the cornet (trumpet) on the desk until it's no longer covered in dust.",
+      "task_name": "clean_a_trumpet",
+      "task_index": 37,
+      "episode_index": 372210,
+      "duration_minutes": 2.243333333333333,
+      "video_file": "videos/task-0037/observation.images.rgb.head/episode_00372210.mp4",
+      "video_files": [
+        "videos/task-0037/observation.images.rgb.head/episode_00372210.mp4"
+      ],
+      "data_parquet_file": "data/task-0037/episode_00372210.parquet",
+      "episode_file": "meta/episodes/task-0037/episode_00372210.json",
+      "raw": {
+        "episode_index": 372210,
+        "tasks": [
+          "In the bedroom, pick up the scrub brush from the desk and scrub the cornet (trumpet) on the desk until it's no longer covered in dust."
+        ],
+        "length": 4038,
+        "distance_traveled": 2.5876,
+        "left_eef_displacement": 8.5262,
+        "right_eef_displacement": 10.054
+      }
+    },
+    {
+      "task": "In the bedroom, pick up the scrub brush from the desk and scrub the cornet (trumpet) on the desk until it's no longer covered in dust.",
+      "task_name": "clean_a_trumpet",
+      "task_index": 37,
+      "episode_index": 372350,
+      "duration_minutes": 2.576111111111111,
+      "video_file": "videos/task-0037/observation.images.rgb.head/episode_00372350.mp4",
+      "video_files": [
+        "videos/task-0037/observation.images.rgb.head/episode_00372350.mp4"
+      ],
+      "data_parquet_file": "data/task-0037/episode_00372350.parquet",
+      "episode_file": "meta/episodes/task-0037/episode_00372350.json",
+      "raw": {
+        "episode_index": 372350,
+        "tasks": [
+          "In the bedroom, pick up the scrub brush from the desk and scrub the cornet (trumpet) on the desk until it's no longer covered in dust."
+        ],
+        "length": 4637,
+        "distance_traveled": 4.0068,
+        "left_eef_displacement": 7.7957,
+        "right_eef_displacement": 11.787
+      }
+    },
+    {
+      "task": "In the bedroom, pick up the scrub brush from the desk and scrub the cornet (trumpet) on the desk until it's no longer covered in dust.",
+      "task_name": "clean_a_trumpet",
+      "task_index": 37,
+      "episode_index": 371720,
+      "duration_minutes": 3.2422222222222223,
+      "video_file": "videos/task-0037/observation.images.rgb.head/episode_00371720.mp4",
+      "video_files": [
+        "videos/task-0037/observation.images.rgb.head/episode_00371720.mp4"
+      ],
+      "data_parquet_file": "data/task-0037/episode_00371720.parquet",
+      "episode_file": "meta/episodes/task-0037/episode_00371720.json",
+      "raw": {
+        "episode_index": 371720,
+        "tasks": [
+          "In the bedroom, pick up the scrub brush from the desk and scrub the cornet (trumpet) on the desk until it's no longer covered in dust."
+        ],
+        "length": 5836,
+        "distance_traveled": 5.2722,
+        "left_eef_displacement": 9.0888,
+        "right_eef_displacement": 12.6341
+      }
+    },
+    {
+      "task": "In the bedroom, pick up the scrub brush from the desk and scrub the cornet (trumpet) on the desk until it's no longer covered in dust.",
+      "task_name": "clean_a_trumpet",
+      "task_index": 37,
+      "episode_index": 370700,
+      "duration_minutes": 3.0616666666666665,
+      "video_file": "videos/task-0037/observation.images.rgb.head/episode_00370700.mp4",
+      "video_files": [
+        "videos/task-0037/observation.images.rgb.head/episode_00370700.mp4"
+      ],
+      "data_parquet_file": "data/task-0037/episode_00370700.parquet",
+      "episode_file": "meta/episodes/task-0037/episode_00370700.json",
+      "raw": {
+        "episode_index": 370700,
+        "tasks": [
+          "In the bedroom, pick up the scrub brush from the desk and scrub the cornet (trumpet) on the desk until it's no longer covered in dust."
+        ],
+        "length": 5511,
+        "distance_traveled": 4.4911,
+        "left_eef_displacement": 4.8251,
+        "right_eef_displacement": 9.3695
+      }
+    },
+    {
+      "task": "In the bedroom, pick up the scrub brush from the desk and scrub the cornet (trumpet) on the desk until it's no longer covered in dust.",
+      "task_name": "clean_a_trumpet",
+      "task_index": 37,
+      "episode_index": 372380,
+      "duration_minutes": 2.7733333333333334,
+      "video_file": "videos/task-0037/observation.images.rgb.head/episode_00372380.mp4",
+      "video_files": [
+        "videos/task-0037/observation.images.rgb.head/episode_00372380.mp4"
+      ],
+      "data_parquet_file": "data/task-0037/episode_00372380.parquet",
+      "episode_file": "meta/episodes/task-0037/episode_00372380.json",
+      "raw": {
+        "episode_index": 372380,
+        "tasks": [
+          "In the bedroom, pick up the scrub brush from the desk and scrub the cornet (trumpet) on the desk until it's no longer covered in dust."
+        ],
+        "length": 4992,
+        "distance_traveled": 4.9595,
+        "left_eef_displacement": 8.38,
+        "right_eef_displacement": 12.0895
+      }
+    },
+    {
+      "task": "Pick up the pesticide atomizer in the garden and spray insectifuge to fully cover both potted plants in the garden.",
+      "task_name": "spraying_for_bugs",
+      "task_index": 38,
+      "episode_index": 381180,
+      "duration_minutes": 4.315555555555556,
+      "video_file": "videos/task-0038/observation.images.rgb.head/episode_00381180.mp4",
+      "video_files": [
+        "videos/task-0038/observation.images.rgb.head/episode_00381180.mp4"
+      ],
+      "data_parquet_file": "data/task-0038/episode_00381180.parquet",
+      "episode_file": "meta/episodes/task-0038/episode_00381180.json",
+      "raw": {
+        "episode_index": 381180,
+        "tasks": [
+          "Pick up the pesticide atomizer in the garden and spray insectifuge to fully cover both potted plants in the garden."
+        ],
+        "length": 7768,
+        "distance_traveled": 32.039,
+        "left_eef_displacement": 14.5025,
+        "right_eef_displacement": 7.2927
+      }
+    },
+    {
+      "task": "Pick up the pesticide atomizer in the garden and spray insectifuge to fully cover both potted plants in the garden.",
+      "task_name": "spraying_for_bugs",
+      "task_index": 38,
+      "episode_index": 382970,
+      "duration_minutes": 3.079444444444445,
+      "video_file": "videos/task-0038/observation.images.rgb.head/episode_00382970.mp4",
+      "video_files": [
+        "videos/task-0038/observation.images.rgb.head/episode_00382970.mp4"
+      ],
+      "data_parquet_file": "data/task-0038/episode_00382970.parquet",
+      "episode_file": "meta/episodes/task-0038/episode_00382970.json",
+      "raw": {
+        "episode_index": 382970,
+        "tasks": [
+          "Pick up the pesticide atomizer in the garden and spray insectifuge to fully cover both potted plants in the garden."
+        ],
+        "length": 5543,
+        "distance_traveled": 18.6714,
+        "left_eef_displacement": 8.5854,
+        "right_eef_displacement": 6.8674
+      }
+    },
+    {
+      "task": "Pick up the pesticide atomizer in the garden and spray insectifuge to fully cover both potted plants in the garden.",
+      "task_name": "spraying_for_bugs",
+      "task_index": 38,
+      "episode_index": 380180,
+      "duration_minutes": 3.603333333333333,
+      "video_file": "videos/task-0038/observation.images.rgb.head/episode_00380180.mp4",
+      "video_files": [
+        "videos/task-0038/observation.images.rgb.head/episode_00380180.mp4"
+      ],
+      "data_parquet_file": "data/task-0038/episode_00380180.parquet",
+      "episode_file": "meta/episodes/task-0038/episode_00380180.json",
+      "raw": {
+        "episode_index": 380180,
+        "tasks": [
+          "Pick up the pesticide atomizer in the garden and spray insectifuge to fully cover both potted plants in the garden."
+        ],
+        "length": 6486,
+        "distance_traveled": 16.4121,
+        "left_eef_displacement": 9.4667,
+        "right_eef_displacement": 8.8146
+      }
+    },
+    {
+      "task": "Pick up the pesticide atomizer in the garden and spray insectifuge to fully cover both potted plants in the garden.",
+      "task_name": "spraying_for_bugs",
+      "task_index": 38,
+      "episode_index": 380880,
+      "duration_minutes": 3.9183333333333334,
+      "video_file": "videos/task-0038/observation.images.rgb.head/episode_00380880.mp4",
+      "video_files": [
+        "videos/task-0038/observation.images.rgb.head/episode_00380880.mp4"
+      ],
+      "data_parquet_file": "data/task-0038/episode_00380880.parquet",
+      "episode_file": "meta/episodes/task-0038/episode_00380880.json",
+      "raw": {
+        "episode_index": 380880,
+        "tasks": [
+          "Pick up the pesticide atomizer in the garden and spray insectifuge to fully cover both potted plants in the garden."
+        ],
+        "length": 7053,
+        "distance_traveled": 16.2572,
+        "left_eef_displacement": 19.5387,
+        "right_eef_displacement": 6.6062
+      }
+    },
+    {
+      "task": "In the garden, pick up the pesticide atomizer on the floor and spray pesticide onto both trees until each tree trunk is fully covered.",
+      "task_name": "spraying_fruit_trees",
+      "task_index": 39,
+      "episode_index": 390120,
+      "duration_minutes": 4.569999999999999,
+      "video_file": "videos/task-0039/observation.images.rgb.head/episode_00390120.mp4",
+      "video_files": [
+        "videos/task-0039/observation.images.rgb.head/episode_00390120.mp4"
+      ],
+      "data_parquet_file": "data/task-0039/episode_00390120.parquet",
+      "episode_file": "meta/episodes/task-0039/episode_00390120.json",
+      "raw": {
+        "episode_index": 390120,
+        "tasks": [
+          "In the garden, pick up the pesticide atomizer on the floor and spray pesticide onto both trees until each tree trunk is fully covered."
+        ],
+        "length": 8226,
+        "distance_traveled": 33.1078,
+        "left_eef_displacement": 29.6704,
+        "right_eef_displacement": 8.7764
+      }
+    },
+    {
+      "task": "In the garden, pick up the pesticide atomizer on the floor and spray pesticide onto both trees until each tree trunk is fully covered.",
+      "task_name": "spraying_fruit_trees",
+      "task_index": 39,
+      "episode_index": 391370,
+      "duration_minutes": 4.207222222222223,
+      "video_file": "videos/task-0039/observation.images.rgb.head/episode_00391370.mp4",
+      "video_files": [
+        "videos/task-0039/observation.images.rgb.head/episode_00391370.mp4"
+      ],
+      "data_parquet_file": "data/task-0039/episode_00391370.parquet",
+      "episode_file": "meta/episodes/task-0039/episode_00391370.json",
+      "raw": {
+        "episode_index": 391370,
+        "tasks": [
+          "In the garden, pick up the pesticide atomizer on the floor and spray pesticide onto both trees until each tree trunk is fully covered."
+        ],
+        "length": 7573,
+        "distance_traveled": 39.5934,
+        "left_eef_displacement": 17.0046,
+        "right_eef_displacement": 6.7097
+      }
+    },
+    {
+      "task": "In the garden, pick up the pesticide atomizer on the floor and spray pesticide onto both trees until each tree trunk is fully covered.",
+      "task_name": "spraying_fruit_trees",
+      "task_index": 39,
+      "episode_index": 391750,
+      "duration_minutes": 4.357777777777778,
+      "video_file": "videos/task-0039/observation.images.rgb.head/episode_00391750.mp4",
+      "video_files": [
+        "videos/task-0039/observation.images.rgb.head/episode_00391750.mp4"
+      ],
+      "data_parquet_file": "data/task-0039/episode_00391750.parquet",
+      "episode_file": "meta/episodes/task-0039/episode_00391750.json",
+      "raw": {
+        "episode_index": 391750,
+        "tasks": [
+          "In the garden, pick up the pesticide atomizer on the floor and spray pesticide onto both trees until each tree trunk is fully covered."
+        ],
+        "length": 7844,
+        "distance_traveled": 40.4228,
+        "left_eef_displacement": 17.0507,
+        "right_eef_displacement": 7.4965
+      }
+    },
+    {
+      "task": "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag.",
+      "task_name": "make_microwave_popcorn",
+      "task_index": 40,
+      "episode_index": 400730,
+      "duration_minutes": 1.7744444444444445,
+      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00400730.mp4",
+      "video_files": [
+        "videos/task-0040/observation.images.rgb.head/episode_00400730.mp4"
+      ],
+      "data_parquet_file": "data/task-0040/episode_00400730.parquet",
+      "episode_file": "meta/episodes/task-0040/episode_00400730.json",
+      "raw": {
+        "episode_index": 400730,
+        "tasks": [
+          "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag."
+        ],
+        "length": 3194,
+        "distance_traveled": 7.5737,
+        "left_eef_displacement": 3.2881,
+        "right_eef_displacement": 9.0451
+      }
+    },
+    {
+      "task": "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag.",
+      "task_name": "make_microwave_popcorn",
+      "task_index": 40,
+      "episode_index": 400170,
+      "duration_minutes": 1.8122222222222222,
+      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00400170.mp4",
+      "video_files": [
+        "videos/task-0040/observation.images.rgb.head/episode_00400170.mp4"
+      ],
+      "data_parquet_file": "data/task-0040/episode_00400170.parquet",
+      "episode_file": "meta/episodes/task-0040/episode_00400170.json",
+      "raw": {
+        "episode_index": 400170,
+        "tasks": [
+          "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag."
+        ],
+        "length": 3262,
+        "distance_traveled": 6.3566,
+        "left_eef_displacement": 3.4102,
+        "right_eef_displacement": 9.1382
+      }
+    },
+    {
+      "task": "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag.",
+      "task_name": "make_microwave_popcorn",
+      "task_index": 40,
+      "episode_index": 400570,
+      "duration_minutes": 1.8133333333333332,
+      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00400570.mp4",
+      "video_files": [
+        "videos/task-0040/observation.images.rgb.head/episode_00400570.mp4"
+      ],
+      "data_parquet_file": "data/task-0040/episode_00400570.parquet",
+      "episode_file": "meta/episodes/task-0040/episode_00400570.json",
+      "raw": {
+        "episode_index": 400570,
+        "tasks": [
+          "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag."
+        ],
+        "length": 3264,
+        "distance_traveled": 7.3139,
+        "left_eef_displacement": 3.3879,
+        "right_eef_displacement": 8.477
+      }
+    },
+    {
+      "task": "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag.",
+      "task_name": "make_microwave_popcorn",
+      "task_index": 40,
+      "episode_index": 401950,
+      "duration_minutes": 1.1616666666666666,
+      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00401950.mp4",
+      "video_files": [
+        "videos/task-0040/observation.images.rgb.head/episode_00401950.mp4"
+      ],
+      "data_parquet_file": "data/task-0040/episode_00401950.parquet",
+      "episode_file": "meta/episodes/task-0040/episode_00401950.json",
+      "raw": {
+        "episode_index": 401950,
+        "tasks": [
+          "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag."
+        ],
+        "length": 2091,
+        "distance_traveled": 6.7284,
+        "left_eef_displacement": 3.1373,
+        "right_eef_displacement": 7.8622
+      }
+    },
+    {
+      "task": "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag.",
+      "task_name": "make_microwave_popcorn",
+      "task_index": 40,
+      "episode_index": 402870,
+      "duration_minutes": 1.9627777777777777,
+      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00402870.mp4",
+      "video_files": [
+        "videos/task-0040/observation.images.rgb.head/episode_00402870.mp4"
+      ],
+      "data_parquet_file": "data/task-0040/episode_00402870.parquet",
+      "episode_file": "meta/episodes/task-0040/episode_00402870.json",
+      "raw": {
+        "episode_index": 402870,
+        "tasks": [
+          "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag."
+        ],
+        "length": 3533,
+        "distance_traveled": 11.1148,
+        "left_eef_displacement": 3.2104,
+        "right_eef_displacement": 9.0388
+      }
+    },
+    {
+      "task": "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag.",
+      "task_name": "make_microwave_popcorn",
+      "task_index": 40,
+      "episode_index": 400890,
+      "duration_minutes": 1.5638888888888889,
+      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00400890.mp4",
+      "video_files": [
+        "videos/task-0040/observation.images.rgb.head/episode_00400890.mp4"
+      ],
+      "data_parquet_file": "data/task-0040/episode_00400890.parquet",
+      "episode_file": "meta/episodes/task-0040/episode_00400890.json",
+      "raw": {
+        "episode_index": 400890,
+        "tasks": [
+          "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag."
+        ],
+        "length": 2815,
+        "distance_traveled": 6.2791,
+        "left_eef_displacement": 2.6126,
+        "right_eef_displacement": 7.1335
+      }
+    },
+    {
+      "task": "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag.",
+      "task_name": "make_microwave_popcorn",
+      "task_index": 40,
+      "episode_index": 400580,
+      "duration_minutes": 1.7494444444444446,
+      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00400580.mp4",
+      "video_files": [
+        "videos/task-0040/observation.images.rgb.head/episode_00400580.mp4"
+      ],
+      "data_parquet_file": "data/task-0040/episode_00400580.parquet",
+      "episode_file": "meta/episodes/task-0040/episode_00400580.json",
+      "raw": {
+        "episode_index": 400580,
+        "tasks": [
+          "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag."
+        ],
+        "length": 3149,
+        "distance_traveled": 7.5101,
+        "left_eef_displacement": 3.3705,
+        "right_eef_displacement": 7.956
+      }
+    },
+    {
+      "task": "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag.",
+      "task_name": "make_microwave_popcorn",
+      "task_index": 40,
+      "episode_index": 402720,
+      "duration_minutes": 1.9272222222222224,
+      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00402720.mp4",
+      "video_files": [
+        "videos/task-0040/observation.images.rgb.head/episode_00402720.mp4"
+      ],
+      "data_parquet_file": "data/task-0040/episode_00402720.parquet",
+      "episode_file": "meta/episodes/task-0040/episode_00402720.json",
+      "raw": {
+        "episode_index": 402720,
+        "tasks": [
+          "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag."
+        ],
+        "length": 3469,
+        "distance_traveled": 5.7796,
+        "left_eef_displacement": 2.8373,
+        "right_eef_displacement": 9.3535
+      }
+    },
+    {
+      "task": "From the kitchen refrigerator, take the cabbage and the chili, dice them on the chopping board with the knife, cook the diced cabbage and diced chili in the frying pan on the stove, and leave the cooked, diced cabbage and cooked, diced chili in the frying pan.",
+      "task_name": "cook_cabbage",
+      "task_index": 41,
+      "episode_index": 411840,
+      "duration_minutes": 7.094444444444445,
+      "video_file": "videos/task-0041/observation.images.rgb.head/episode_00411840.mp4",
+      "video_files": [
+        "videos/task-0041/observation.images.rgb.head/episode_00411840.mp4"
+      ],
+      "data_parquet_file": "data/task-0041/episode_00411840.parquet",
+      "episode_file": "meta/episodes/task-0041/episode_00411840.json",
+      "raw": {
+        "episode_index": 411840,
+        "tasks": [
+          "From the kitchen refrigerator, take the cabbage and the chili, dice them on the chopping board with the knife, cook the diced cabbage and diced chili in the frying pan on the stove, and leave the cooked, diced cabbage and cooked, diced chili in the frying pan."
+        ],
+        "length": 12770,
+        "distance_traveled": 21.7299,
+        "left_eef_displacement": 18.0217,
+        "right_eef_displacement": 18.5752
+      }
+    },
+    {
+      "task": "From the kitchen refrigerator, take the cabbage and the chili, dice them on the chopping board with the knife, cook the diced cabbage and diced chili in the frying pan on the stove, and leave the cooked, diced cabbage and cooked, diced chili in the frying pan.",
+      "task_name": "cook_cabbage",
+      "task_index": 41,
+      "episode_index": 411460,
+      "duration_minutes": 7.756111111111111,
+      "video_file": "videos/task-0041/observation.images.rgb.head/episode_00411460.mp4",
+      "video_files": [
+        "videos/task-0041/observation.images.rgb.head/episode_00411460.mp4"
+      ],
+      "data_parquet_file": "data/task-0041/episode_00411460.parquet",
+      "episode_file": "meta/episodes/task-0041/episode_00411460.json",
+      "raw": {
+        "episode_index": 411460,
+        "tasks": [
+          "From the kitchen refrigerator, take the cabbage and the chili, dice them on the chopping board with the knife, cook the diced cabbage and diced chili in the frying pan on the stove, and leave the cooked, diced cabbage and cooked, diced chili in the frying pan."
+        ],
+        "length": 13961,
+        "distance_traveled": 25.6592,
+        "left_eef_displacement": 18.8458,
+        "right_eef_displacement": 20.4839
+      }
+    },
+    {
+      "task": "In the kitchen, take the Vidalia onion out of the sink, dice it on the chopping board with the paring knife, put the diced onion into the bowl on the countertop, then place both the paring knife and the chopping board into the sink.",
+      "task_name": "chop_an_onion",
+      "task_index": 42,
+      "episode_index": 422370,
+      "duration_minutes": 3.0483333333333333,
+      "video_file": "videos/task-0042/observation.images.rgb.head/episode_00422370.mp4",
+      "video_files": [
+        "videos/task-0042/observation.images.rgb.head/episode_00422370.mp4"
+      ],
+      "data_parquet_file": "data/task-0042/episode_00422370.parquet",
+      "episode_file": "meta/episodes/task-0042/episode_00422370.json",
+      "raw": {
+        "episode_index": 422370,
+        "tasks": [
+          "In the kitchen, take the Vidalia onion out of the sink, dice it on the chopping board with the paring knife, put the diced onion into the bowl on the countertop, then place both the paring knife and the chopping board into the sink."
+        ],
+        "length": 5487,
+        "distance_traveled": 10.5365,
+        "left_eef_displacement": 5.1907,
+        "right_eef_displacement": 8.6225
+      }
+    },
+    {
+      "task": "In the kitchen, take the Vidalia onion out of the sink, dice it on the chopping board with the paring knife, put the diced onion into the bowl on the countertop, then place both the paring knife and the chopping board into the sink.",
+      "task_name": "chop_an_onion",
+      "task_index": 42,
+      "episode_index": 421680,
+      "duration_minutes": 3.579444444444445,
+      "video_file": "videos/task-0042/observation.images.rgb.head/episode_00421680.mp4",
+      "video_files": [
+        "videos/task-0042/observation.images.rgb.head/episode_00421680.mp4"
+      ],
+      "data_parquet_file": "data/task-0042/episode_00421680.parquet",
+      "episode_file": "meta/episodes/task-0042/episode_00421680.json",
+      "raw": {
+        "episode_index": 421680,
+        "tasks": [
+          "In the kitchen, take the Vidalia onion out of the sink, dice it on the chopping board with the paring knife, put the diced onion into the bowl on the countertop, then place both the paring knife and the chopping board into the sink."
+        ],
+        "length": 6443,
+        "distance_traveled": 12.6488,
+        "left_eef_displacement": 5.352,
+        "right_eef_displacement": 10.6545
+      }
+    },
+    {
+      "task": "In the kitchen, take the Vidalia onion out of the sink, dice it on the chopping board with the paring knife, put the diced onion into the bowl on the countertop, then place both the paring knife and the chopping board into the sink.",
+      "task_name": "chop_an_onion",
+      "task_index": 42,
+      "episode_index": 420630,
+      "duration_minutes": 3.9255555555555555,
+      "video_file": "videos/task-0042/observation.images.rgb.head/episode_00420630.mp4",
+      "video_files": [
+        "videos/task-0042/observation.images.rgb.head/episode_00420630.mp4"
+      ],
+      "data_parquet_file": "data/task-0042/episode_00420630.parquet",
+      "episode_file": "meta/episodes/task-0042/episode_00420630.json",
+      "raw": {
+        "episode_index": 420630,
+        "tasks": [
+          "In the kitchen, take the Vidalia onion out of the sink, dice it on the chopping board with the paring knife, put the diced onion into the bowl on the countertop, then place both the paring knife and the chopping board into the sink."
+        ],
+        "length": 7066,
+        "distance_traveled": 14.9205,
+        "left_eef_displacement": 5.2045,
+        "right_eef_displacement": 11.5924
+      }
+    },
+    {
+      "task": "In the kitchen, take the Vidalia onion out of the sink, dice it on the chopping board with the paring knife, put the diced onion into the bowl on the countertop, then place both the paring knife and the chopping board into the sink.",
+      "task_name": "chop_an_onion",
+      "task_index": 42,
+      "episode_index": 421090,
+      "duration_minutes": 4.166666666666667,
+      "video_file": "videos/task-0042/observation.images.rgb.head/episode_00421090.mp4",
+      "video_files": [
+        "videos/task-0042/observation.images.rgb.head/episode_00421090.mp4"
+      ],
+      "data_parquet_file": "data/task-0042/episode_00421090.parquet",
+      "episode_file": "meta/episodes/task-0042/episode_00421090.json",
+      "raw": {
+        "episode_index": 421090,
+        "tasks": [
+          "In the kitchen, take the Vidalia onion out of the sink, dice it on the chopping board with the paring knife, put the diced onion into the bowl on the countertop, then place both the paring knife and the chopping board into the sink."
+        ],
+        "length": 7500,
+        "distance_traveled": 12.5849,
+        "left_eef_displacement": 5.9733,
+        "right_eef_displacement": 13.7228
+      }
+    },
+    {
+      "task": "From the refrigerator in the kitchen, take out the two bell peppers, the two beets, and the zucchini. Then, on either chopping board on the countertop, use the parer to dice all of them so that only diced bell pepper, diced beet, and diced zucchini remain. Make sure the refrigerator is closed when you finish.",
+      "task_name": "slicing_vegetables",
+      "task_index": 43,
+      "episode_index": 430450,
+      "duration_minutes": 10.852222222222222,
+      "video_file": "videos/task-0043/observation.images.rgb.head/episode_00430450.mp4",
+      "video_files": [
+        "videos/task-0043/observation.images.rgb.head/episode_00430450.mp4"
+      ],
+      "data_parquet_file": "data/task-0043/episode_00430450.parquet",
+      "episode_file": "meta/episodes/task-0043/episode_00430450.json",
+      "raw": {
+        "episode_index": 430450,
+        "tasks": [
+          "From the refrigerator in the kitchen, take out the two bell peppers, the two beets, and the zucchini. Then, on either chopping board on the countertop, use the parer to dice all of them so that only diced bell pepper, diced beet, and diced zucchini remain. Make sure the refrigerator is closed when you finish."
+        ],
+        "length": 19534,
+        "distance_traveled": 32.8484,
+        "left_eef_displacement": 17.7181,
+        "right_eef_displacement": 25.0637
+      }
+    },
+    {
+      "task": "From the refrigerator in the kitchen, take out the two bell peppers, the two beets, and the zucchini. Then, on either chopping board on the countertop, use the parer to dice all of them so that only diced bell pepper, diced beet, and diced zucchini remain. Make sure the refrigerator is closed when you finish.",
+      "task_name": "slicing_vegetables",
+      "task_index": 43,
+      "episode_index": 430880,
+      "duration_minutes": 9.059444444444445,
+      "video_file": "videos/task-0043/observation.images.rgb.head/episode_00430880.mp4",
+      "video_files": [
+        "videos/task-0043/observation.images.rgb.head/episode_00430880.mp4"
+      ],
+      "data_parquet_file": "data/task-0043/episode_00430880.parquet",
+      "episode_file": "meta/episodes/task-0043/episode_00430880.json",
+      "raw": {
+        "episode_index": 430880,
+        "tasks": [
+          "From the refrigerator in the kitchen, take out the two bell peppers, the two beets, and the zucchini. Then, on either chopping board on the countertop, use the parer to dice all of them so that only diced bell pepper, diced beet, and diced zucchini remain. Make sure the refrigerator is closed when you finish."
+        ],
+        "length": 16307,
+        "distance_traveled": 28.4042,
+        "left_eef_displacement": 15.7991,
+        "right_eef_displacement": 23.1733
+      }
+    },
+    {
+      "task": "Chop the four logs on the driveway in the garden into eight half logs using the axe and the chopping block.",
+      "task_name": "chopping_wood",
+      "task_index": 44,
+      "episode_index": 442860,
+      "duration_minutes": 6.488333333333333,
+      "video_file": "videos/task-0044/observation.images.rgb.head/episode_00442860.mp4",
+      "video_files": [
+        "videos/task-0044/observation.images.rgb.head/episode_00442860.mp4"
+      ],
+      "data_parquet_file": "data/task-0044/episode_00442860.parquet",
+      "episode_file": "meta/episodes/task-0044/episode_00442860.json",
+      "raw": {
+        "episode_index": 442860,
+        "tasks": [
+          "Chop the four logs on the driveway in the garden into eight half logs using the axe and the chopping block."
+        ],
+        "length": 11679,
+        "distance_traveled": 24.0601,
+        "left_eef_displacement": 18.6402,
+        "right_eef_displacement": 17.2601
+      }
+    },
+    {
+      "task": "Chop the four logs on the driveway in the garden into eight half logs using the axe and the chopping block.",
+      "task_name": "chopping_wood",
+      "task_index": 44,
+      "episode_index": 442140,
+      "duration_minutes": 4.394444444444445,
+      "video_file": "videos/task-0044/observation.images.rgb.head/episode_00442140.mp4",
+      "video_files": [
+        "videos/task-0044/observation.images.rgb.head/episode_00442140.mp4"
+      ],
+      "data_parquet_file": "data/task-0044/episode_00442140.parquet",
+      "episode_file": "meta/episodes/task-0044/episode_00442140.json",
+      "raw": {
+        "episode_index": 442140,
+        "tasks": [
+          "Chop the four logs on the driveway in the garden into eight half logs using the axe and the chopping block."
+        ],
+        "length": 7910,
+        "distance_traveled": 28.4925,
+        "left_eef_displacement": 17.7371,
+        "right_eef_displacement": 15.5024
+      }
+    },
+    {
+      "task": "Chop the four logs on the driveway in the garden into eight half logs using the axe and the chopping block.",
+      "task_name": "chopping_wood",
+      "task_index": 44,
+      "episode_index": 441970,
+      "duration_minutes": 4.21,
+      "video_file": "videos/task-0044/observation.images.rgb.head/episode_00441970.mp4",
+      "video_files": [
+        "videos/task-0044/observation.images.rgb.head/episode_00441970.mp4"
+      ],
+      "data_parquet_file": "data/task-0044/episode_00441970.parquet",
+      "episode_file": "meta/episodes/task-0044/episode_00441970.json",
+      "raw": {
+        "episode_index": 441970,
+        "tasks": [
+          "Chop the four logs on the driveway in the garden into eight half logs using the axe and the chopping block."
+        ],
+        "length": 7578,
+        "distance_traveled": 19.4341,
+        "left_eef_displacement": 19.2046,
+        "right_eef_displacement": 15.2406
+      }
+    },
+    {
+      "task": "Take the two hot dogs out of the refrigerator in the kitchen and cook them in the microwave until both are cooked.",
+      "task_name": "cook_hot_dogs",
+      "task_index": 45,
+      "episode_index": 450700,
+      "duration_minutes": 4.2427777777777775,
+      "video_file": "videos/task-0045/observation.images.rgb.head/episode_00450700.mp4",
+      "video_files": [
+        "videos/task-0045/observation.images.rgb.head/episode_00450700.mp4"
+      ],
+      "data_parquet_file": "data/task-0045/episode_00450700.parquet",
+      "episode_file": "meta/episodes/task-0045/episode_00450700.json",
+      "raw": {
+        "episode_index": 450700,
+        "tasks": [
+          "Take the two hot dogs out of the refrigerator in the kitchen and cook them in the microwave until both are cooked."
+        ],
+        "length": 7637,
+        "distance_traveled": 17.9428,
+        "left_eef_displacement": 18.1331,
+        "right_eef_displacement": 16.5714
+      }
+    },
+    {
+      "task": "Take the two hot dogs out of the refrigerator in the kitchen and cook them in the microwave until both are cooked.",
+      "task_name": "cook_hot_dogs",
+      "task_index": 45,
+      "episode_index": 452770,
+      "duration_minutes": 4.277222222222222,
+      "video_file": "videos/task-0045/observation.images.rgb.head/episode_00452770.mp4",
+      "video_files": [
+        "videos/task-0045/observation.images.rgb.head/episode_00452770.mp4"
+      ],
+      "data_parquet_file": "data/task-0045/episode_00452770.parquet",
+      "episode_file": "meta/episodes/task-0045/episode_00452770.json",
+      "raw": {
+        "episode_index": 452770,
+        "tasks": [
+          "Take the two hot dogs out of the refrigerator in the kitchen and cook them in the microwave until both are cooked."
+        ],
+        "length": 7699,
+        "distance_traveled": 20.4536,
+        "left_eef_displacement": 10.3356,
+        "right_eef_displacement": 16.4642
+      }
+    },
+    {
+      "task": "Take the two hot dogs out of the refrigerator in the kitchen and cook them in the microwave until both are cooked.",
+      "task_name": "cook_hot_dogs",
+      "task_index": 45,
+      "episode_index": 452140,
+      "duration_minutes": 5.592222222222222,
+      "video_file": "videos/task-0045/observation.images.rgb.head/episode_00452140.mp4",
+      "video_files": [
+        "videos/task-0045/observation.images.rgb.head/episode_00452140.mp4"
+      ],
+      "data_parquet_file": "data/task-0045/episode_00452140.parquet",
+      "episode_file": "meta/episodes/task-0045/episode_00452140.json",
+      "raw": {
+        "episode_index": 452140,
+        "tasks": [
+          "Take the two hot dogs out of the refrigerator in the kitchen and cook them in the microwave until both are cooked."
+        ],
+        "length": 10066,
+        "distance_traveled": 22.4699,
+        "left_eef_displacement": 10.9062,
+        "right_eef_displacement": 17.0742
+      }
+    },
+    {
+      "task": "Take the tray with six slices of bacon out of the refrigerator in the kitchen, cook all six slices in the frying pan on the stove until they're cooked, and make sure the refrigerator is closed when you're done.",
+      "task_name": "cook_bacon",
+      "task_index": 46,
+      "episode_index": 461320,
+      "duration_minutes": 4.136666666666667,
+      "video_file": "videos/task-0046/observation.images.rgb.head/episode_00461320.mp4",
+      "video_files": [
+        "videos/task-0046/observation.images.rgb.head/episode_00461320.mp4"
+      ],
+      "data_parquet_file": "data/task-0046/episode_00461320.parquet",
+      "episode_file": "meta/episodes/task-0046/episode_00461320.json",
+      "raw": {
+        "episode_index": 461320,
+        "tasks": [
+          "Take the tray with six slices of bacon out of the refrigerator in the kitchen, cook all six slices in the frying pan on the stove until they're cooked, and make sure the refrigerator is closed when you're done."
+        ],
+        "length": 7446,
+        "distance_traveled": 14.2497,
+        "left_eef_displacement": 10.9846,
+        "right_eef_displacement": 10.1928
+      }
+    },
+    {
+      "task": "Take the tray with six slices of bacon out of the refrigerator in the kitchen, cook all six slices in the frying pan on the stove until they're cooked, and make sure the refrigerator is closed when you're done.",
+      "task_name": "cook_bacon",
+      "task_index": 46,
+      "episode_index": 462080,
+      "duration_minutes": 3.801111111111111,
+      "video_file": "videos/task-0046/observation.images.rgb.head/episode_00462080.mp4",
+      "video_files": [
+        "videos/task-0046/observation.images.rgb.head/episode_00462080.mp4"
+      ],
+      "data_parquet_file": "data/task-0046/episode_00462080.parquet",
+      "episode_file": "meta/episodes/task-0046/episode_00462080.json",
+      "raw": {
+        "episode_index": 462080,
+        "tasks": [
+          "Take the tray with six slices of bacon out of the refrigerator in the kitchen, cook all six slices in the frying pan on the stove until they're cooked, and make sure the refrigerator is closed when you're done."
+        ],
+        "length": 6842,
+        "distance_traveled": 20.4023,
+        "left_eef_displacement": 5.807,
+        "right_eef_displacement": 14.0199
+      }
+    },
+    {
+      "task": "Take the tray with six slices of bacon out of the refrigerator in the kitchen, cook all six slices in the frying pan on the stove until they're cooked, and make sure the refrigerator is closed when you're done.",
+      "task_name": "cook_bacon",
+      "task_index": 46,
+      "episode_index": 461250,
+      "duration_minutes": 4.081666666666667,
+      "video_file": "videos/task-0046/observation.images.rgb.head/episode_00461250.mp4",
+      "video_files": [
+        "videos/task-0046/observation.images.rgb.head/episode_00461250.mp4"
+      ],
+      "data_parquet_file": "data/task-0046/episode_00461250.parquet",
+      "episode_file": "meta/episodes/task-0046/episode_00461250.json",
+      "raw": {
+        "episode_index": 461250,
+        "tasks": [
+          "Take the tray with six slices of bacon out of the refrigerator in the kitchen, cook all six slices in the frying pan on the stove until they're cooked, and make sure the refrigerator is closed when you're done."
+        ],
+        "length": 7347,
+        "distance_traveled": 15.0328,
+        "left_eef_displacement": 7.1033,
+        "right_eef_displacement": 8.9834
+      }
+    },
+    {
+      "task": "In the kitchen, take the two apple pies from the plates on the countertop, put each pie into a separate tupperware container taken from the cabinet, place both tupperwares inside the refrigerator, close the refrigerator, and leave them until the pies are frozen.",
+      "task_name": "freeze_pies",
+      "task_index": 47,
+      "episode_index": 471200,
+      "duration_minutes": 7.022777777777778,
+      "video_file": "videos/task-0047/observation.images.rgb.head/episode_00471200.mp4",
+      "video_files": [
+        "videos/task-0047/observation.images.rgb.head/episode_00471200.mp4"
+      ],
+      "data_parquet_file": "data/task-0047/episode_00471200.parquet",
+      "episode_file": "meta/episodes/task-0047/episode_00471200.json",
+      "raw": {
+        "episode_index": 471200,
+        "tasks": [
+          "In the kitchen, take the two apple pies from the plates on the countertop, put each pie into a separate tupperware container taken from the cabinet, place both tupperwares inside the refrigerator, close the refrigerator, and leave them until the pies are frozen."
+        ],
+        "length": 12641,
+        "distance_traveled": 25.0729,
+        "left_eef_displacement": 25.7271,
+        "right_eef_displacement": 31.2961
+      }
+    },
+    {
+      "task": "In the kitchen, take the two apple pies from the plates on the countertop, put each pie into a separate tupperware container taken from the cabinet, place both tupperwares inside the refrigerator, close the refrigerator, and leave them until the pies are frozen.",
+      "task_name": "freeze_pies",
+      "task_index": 47,
+      "episode_index": 470710,
+      "duration_minutes": 7.078333333333333,
+      "video_file": "videos/task-0047/observation.images.rgb.head/episode_00470710.mp4",
+      "video_files": [
+        "videos/task-0047/observation.images.rgb.head/episode_00470710.mp4"
+      ],
+      "data_parquet_file": "data/task-0047/episode_00470710.parquet",
+      "episode_file": "meta/episodes/task-0047/episode_00470710.json",
+      "raw": {
+        "episode_index": 470710,
+        "tasks": [
+          "In the kitchen, take the two apple pies from the plates on the countertop, put each pie into a separate tupperware container taken from the cabinet, place both tupperwares inside the refrigerator, close the refrigerator, and leave them until the pies are frozen."
+        ],
+        "length": 12741,
+        "distance_traveled": 28.2765,
+        "left_eef_displacement": 26.0085,
+        "right_eef_displacement": 36.721
+      }
+    },
+    {
+      "task": "In the kitchen, open the refrigerator and the cabinet. Take the steak and the pineapple out of the refrigerator and take two bowls from the cabinet. On the chopping board on the countertop, use the carving knife to dice the steak and to dice the pineapple. Put only the diced steak into one bowl and only the diced pineapple into the other bowl - do not mix them. Place both bowls back inside the cabinet, then close the refrigerator and close the cabinet.",
+      "task_name": "canning_food",
+      "task_index": 48,
+      "episode_index": 480500,
+      "duration_minutes": 15.802222222222222,
+      "video_file": "videos/task-0048/observation.images.rgb.head/episode_00480500.mp4",
+      "video_files": [
+        "videos/task-0048/observation.images.rgb.head/episode_00480500.mp4"
+      ],
+      "data_parquet_file": "data/task-0048/episode_00480500.parquet",
+      "episode_file": "meta/episodes/task-0048/episode_00480500.json",
+      "raw": {
+        "episode_index": 480500,
+        "tasks": [
+          "In the kitchen, open the refrigerator and the cabinet. Take the steak and the pineapple out of the refrigerator and take two bowls from the cabinet. On the chopping board on the countertop, use the carving knife to dice the steak and to dice the pineapple. Put only the diced steak into one bowl and only the diced pineapple into the other bowl - do not mix them. Place both bowls back inside the cabinet, then close the refrigerator and close the cabinet."
+        ],
+        "length": 28444,
+        "distance_traveled": 56.1557,
+        "left_eef_displacement": 43.8202,
+        "right_eef_displacement": 40.5697
+      }
+    },
+    {
+      "task": "Make a pizza on the cookie sheet in the kitchen: take the grated cheese, the four pieces of pepperoni, and the two mushrooms from their tupperware containers in the refrigerator; chop the Vidalia onion on the chopping board with the knife, and also chop the two whole mushrooms in half; top the pizza dough that's already on the cookie sheet with the cheese, pepperoni, halved mushrooms, and chopped onion; bake it in the oven until it becomes a pizza, and leave the finished pizza on the cookie sheet.",
+      "task_name": "make_pizza",
+      "task_index": 49,
+      "episode_index": 491810,
+      "duration_minutes": 11.914444444444445,
+      "video_file": "videos/task-0049/observation.images.rgb.head/episode_00491810.mp4",
+      "video_files": [
+        "videos/task-0049/observation.images.rgb.head/episode_00491810.mp4"
+      ],
+      "data_parquet_file": "data/task-0049/episode_00491810.parquet",
+      "episode_file": "meta/episodes/task-0049/episode_00491810.json",
+      "raw": {
+        "episode_index": 491810,
+        "tasks": [
+          "Make a pizza on the cookie sheet in the kitchen: take the grated cheese, the four pieces of pepperoni, and the two mushrooms from their tupperware containers in the refrigerator; chop the Vidalia onion on the chopping board with the knife, and also chop the two whole mushrooms in half; top the pizza dough that's already on the cookie sheet with the cheese, pepperoni, halved mushrooms, and chopped onion; bake it in the oven until it becomes a pizza, and leave the finished pizza on the cookie sheet."
+        ],
+        "length": 21446,
+        "distance_traveled": 39.5525,
+        "left_eef_displacement": 34.2631,
+        "right_eef_displacement": 41.5359
+      }
+    },
+    {
+      "task": "Make a pizza on the cookie sheet in the kitchen: take the grated cheese, the four pieces of pepperoni, and the two mushrooms from their tupperware containers in the refrigerator; chop the Vidalia onion on the chopping board with the knife, and also chop the two whole mushrooms in half; top the pizza dough that's already on the cookie sheet with the cheese, pepperoni, halved mushrooms, and chopped onion; bake it in the oven until it becomes a pizza, and leave the finished pizza on the cookie sheet.",
+      "task_name": "make_pizza",
+      "task_index": 49,
+      "episode_index": 491770,
+      "duration_minutes": 12.321111111111112,
+      "video_file": "videos/task-0049/observation.images.rgb.head/episode_00491770.mp4",
+      "video_files": [
+        "videos/task-0049/observation.images.rgb.head/episode_00491770.mp4"
+      ],
+      "data_parquet_file": "data/task-0049/episode_00491770.parquet",
+      "episode_file": "meta/episodes/task-0049/episode_00491770.json",
+      "raw": {
+        "episode_index": 491770,
+        "tasks": [
+          "Make a pizza on the cookie sheet in the kitchen: take the grated cheese, the four pieces of pepperoni, and the two mushrooms from their tupperware containers in the refrigerator; chop the Vidalia onion on the chopping board with the knife, and also chop the two whole mushrooms in half; top the pizza dough that's already on the cookie sheet with the cheese, pepperoni, halved mushrooms, and chopped onion; bake it in the oven until it becomes a pizza, and leave the finished pizza on the cookie sheet."
+        ],
+        "length": 22178,
+        "distance_traveled": 39.4937,
+        "left_eef_displacement": 34.7877,
+        "right_eef_displacement": 46.2284
+      }
+    }
+  ]
+}
