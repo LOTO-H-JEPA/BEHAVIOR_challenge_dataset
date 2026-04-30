@@ -97,8 +97,8 @@ def save_json_file(file_path, data):
 
 def episode_task_name(episode):
     return (
-        episode.get("task")
-        or episode.get("task_name")
+        episode.get("task_name")
+        or episode.get("task")
         or episode.get("task_id")
         or "unknown_task"
     )
