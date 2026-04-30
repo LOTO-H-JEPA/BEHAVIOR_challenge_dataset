@@ -207,17 +207,30 @@ class BaseDataset:
         selected_count = len(selected_episodes) if isinstance(selected_episodes, list) else 0
 
         task_totals: dict[str, int] = {}
+        task_duration_totals: dict[str, float] = {}
+        fps = float(self.info.get("fps", 30.0))
         for episode in selected_episodes if isinstance(selected_episodes, list) else []:
             task_name = str(episode_task_name(episode))
             task_totals[task_name] = task_totals.get(task_name, 0) + 1
+            duration_minutes = episode_duration_minutes(episode, fps)
+            task_duration_totals[task_name] = (
+                task_duration_totals.get(task_name, 0.0) + duration_minutes
+            )
+
+        total_duration_minutes = sum(task_duration_totals.values())
 
         contribution_summary = "none"
         if selected_count > 0 and task_totals:
             sorted_totals = sorted(task_totals.items(), key=lambda item: (-item[1], item[0]))
-            contribution_summary = ", ".join(
-                f"{task}: {count} eps ({(count / selected_count) * 100:.1f}%)"
-                for task, count in sorted_totals
-            )
+            contribution_parts: list[str] = []
+            for task, count in sorted_totals:
+                duration_share_pct = 0.0
+                if total_duration_minutes > 0:
+                    duration_share_pct = (
+                        task_duration_totals.get(task, 0.0) / total_duration_minutes
+                    ) * 100
+                contribution_parts.append(f"{task}: {count} eps ({duration_share_pct:.1f}%)")
+            contribution_summary = ", ".join(contribution_parts)
 
         self.logger.info("Metadata preview:")
         self.logger.info(
