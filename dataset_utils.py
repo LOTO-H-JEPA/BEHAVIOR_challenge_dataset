@@ -2,7 +2,7 @@ import yaml
 import os
 import logging
 from datasets import load_dataset
-from huggingface_hub import hf_hub_download
+from huggingface_hub import hf_hub_download, snapshot_download
 
 
 # --- Logging setup: module-level logger with console handler and formatter ---
@@ -33,7 +33,12 @@ def load_yaml_config(config_filename):
 
 
 def load_from_huggingface(
-    repo_id, file_path=None, use_hub_download=False, token=None, **kwargs
+    repo_id,
+    file_path=None,
+    use_hub_download=False,
+    token=None,
+    download_mode="single_file",
+    **kwargs,
 ):
     """
     Load a dataset or file from a Hugging Face dataset repository.
@@ -48,10 +53,12 @@ def load_from_huggingface(
         Loaded dataset or local file path.
     """
     if use_hub_download and file_path:
-        logger.info(
-            f"Downloading file '{file_path}' from repo '{repo_id}' via huggingface_hub."
-        )
-        return hf_hub_download(repo_id=repo_id, filename=file_path, token=token)
-    else:
-        logger.info(f"Loading dataset '{repo_id}' via datasets.load_dataset.")
-        return load_dataset(repo_id, **kwargs)
+        if download_mode == "snapshot":
+            return snapshot_download(
+                repo_id=repo_id,
+                token=token,
+                allow_patterns=file_path,
+                **kwargs,
+            )
+        return hf_hub_download(repo_id=repo_id, filename=file_path, token=token, **kwargs)
+    return load_dataset(repo_id, **kwargs)

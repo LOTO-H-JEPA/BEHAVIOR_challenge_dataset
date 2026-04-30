@@ -46,25 +46,20 @@ class BaseDataset:
         self.kwargs = kwargs
         self.logger = logger
 
-        # Log a professional summary of the configuration
-        self.logger.info("BaseDataset initialized with configuration summary:")
-        self.logger.info(f"  camera_view_type: {self.camera_view_type}")
-        self.logger.info(f"  dataset_size: {self.dataset_size}")
-        self.logger.info(f"  eval_tasks: {self.eval_tasks}")
-        self.logger.info(f"  exclude_eval_tasks: {self.exclude_eval_tasks}")
-        self.logger.info(f"  include_eval_tasks_fully: {self.include_eval_tasks_fully}")
-        self.logger.info(f"  obs_resolution: {self.obs_resolution}")
-        self.logger.info(f"  fps: {self.fps}")
-        self.logger.info(f"  shard_size: {self.shard_size}")
-        self.logger.info(f"  base_dataset_destination: {self.base_dataset_destination}")
-        self.logger.info(
-            f"  encoded_dataset_destination: {self.encoded_dataset_destination}"
-        )
-        self.logger.info(
-            f"  encoded_dataset_destination_path: {self.encoded_dataset_destination_path}"
-        )
-        self.logger.info(f"  augmentation: {self.augmentation}")
-        self.logger.info(f"  encode_dataset: {self.encode_dataset}")
+        config_preview = {
+            "camera": self.camera_view_type,
+            "size": self.dataset_size,
+            "eval_tasks": len(self.eval_tasks),
+            "exclude_eval_tasks": len(self.exclude_eval_tasks),
+            "include_eval_tasks_fully": self.include_eval_tasks_fully,
+            "obs_resolution": self.obs_resolution,
+            "fps": self.fps,
+            "shard_size": self.shard_size,
+            "base_dst": self.base_dataset_destination,
+            "encoded_dst": self.encoded_dataset_destination,
+            "encode_dataset": self.encode_dataset,
+        }
+        self.logger.info(f"BaseDataset config: {config_preview}")
 
         # Build base dataset state immediately after initialization.
         self.meta = self.build_base_dataset()
@@ -110,17 +105,14 @@ class BaseDataset:
                     parsed = self._read_jsonl_file(local_path)
 
                 loaded_meta[file_path] = parsed
-                self.logger.info(f"Found and loaded: {file_path}")
             except Exception as exc:
-                self.logger.error(f"Missing or unreadable: {file_path} ({exc})")
+                self.logger.warning(f"Missing or unreadable: {file_path} ({exc})")
 
         found_count = len(loaded_meta)
         total_count = len(required_meta_files)
-        if found_count == total_count:
-            self.logger.info("All required /meta files were found and loaded.")
-        else:
-            self.logger.warning(
-                f"Loaded {found_count}/{total_count} required /meta files."
-            )
+        self.logger.info(
+            f"Base dataset metadata loaded: {found_count}/{total_count} files found "
+            f"({', '.join(sorted(loaded_meta.keys()))})"
+        )
 
         return loaded_meta
