@@ -142,19 +142,29 @@ class BaseDataset:
                     "task_name": task.get("task_name"),
                     "task": description,
                 }
-        #TODO lets assert if the task_lookup has 50 entries
+        expected_total_tasks = int(self.info.get("total_tasks", 50))
+        if len(task_lookup) != expected_total_tasks:
+            raise ValueError(
+                f"Expected {expected_total_tasks} tasks in tasks metadata, found {len(task_lookup)}."
+            )
 
         episode_index_lookup: dict[int, dict[str, Any]] = {}
         episodes_by_task_desc: dict[str, list[int]] = {}
         for episode in self.episodes:
             episode_id = episode.get("episode_index")
             if episode_id is None:
-                continue # TODO log warning 
+                self.logger.warning("Encountered episode entry without episode_index; skipping.")
+                continue
             episode_index_lookup[int(episode_id)] = episode
             for task_desc in (episode.get("tasks") or []):
                 if task_desc in task_lookup:
                     episodes_by_task_desc.setdefault(task_desc, []).append(int(episode_id))
-        #TODO log number of found ids per task and global sum of ids 
+        task_episode_counts = {task_desc: len(ids) for task_desc, ids in episodes_by_task_desc.items()}
+        total_task_episode_links = sum(task_episode_counts.values())
+        self.logger.info(
+            f"Found episode links for {len(task_episode_counts)}/{len(task_lookup)} tasks; "
+            f"total task-episode links={total_task_episode_links}."
+        )
         
         selected: list[dict[str, Any]] = []
         selected_hours = 0.0
@@ -179,8 +189,17 @@ class BaseDataset:
                 data_parquet_file = self.info["data_path"].format(**path_vars)
                 episode_file = self.info["metainfo_path"].format(**path_vars)
  
-                video_key = self.camera_view_type #TODO should handle  head only and all three                
+                if self.camera_view_type == "all":
+                    video_key = "observation.images.rgb.head"
+                elif self.camera_view_type in {"head", "left_wrist", "right_wrist"}:
+                    video_key = f"observation.images.rgb.{self.camera_view_type}"
+                else:
+                    raise ValueError(
+                        f"Unsupported camera_view_type '{self.camera_view_type}'. "
+                        "Expected one of: all, head, left_wrist, right_wrist."
+                    )
                 video_file = self.info["video_path"].format(**(path_vars | {"video_key": video_key}))
+                annotation_file = self.info["annotation_path"].format(**path_vars)
 
                 length = float(episode.get("length", 0.0))
                 duration_hours = (length / fps) / 3600.0
