@@ -3,6 +3,7 @@ from __future__ import annotations
 import random
 import re
 import time
+import os
 from pathlib import Path
 from typing import Any
 
@@ -270,31 +271,37 @@ class BaseDataset:
             unit_divisor=1024,
         )
 
-        for local_dir, remote_path, category in files_to_download:
-            try:
-                downloaded_path = load_from_huggingface(
-                    self.repo_id,
-                    file_path=remote_path,
-                    use_hub_download=True,
-                    token=self.token,
-                    local_dir=str(local_dir),
-                    local_dir_use_symlinks=False,
-                    **self.kwargs,
-                )
-                file_size = Path(downloaded_path).stat().st_size
-                bytes_downloaded += file_size
-                found_files += 1
-                if has_size_estimate:
-                    progress.update(file_sizes_by_path.get(remote_path, file_size))
-                else:
-                    progress.update(1)
-            except Exception as exc:
-                missing_files += 1
-                self.logger.warning(f"Failed to download [{category}] {remote_path}: {exc}")
-                if not has_size_estimate:
-                    progress.update(1)
-
-        progress.close()
+        previous_disable_pb = os.environ.get("HF_HUB_DISABLE_PROGRESS_BARS")
+        os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = "1"
+        try:
+            for local_dir, remote_path, category in files_to_download:
+                try:
+                    downloaded_path = load_from_huggingface(
+                        self.repo_id,
+                        file_path=remote_path,
+                        use_hub_download=True,
+                        token=self.token,
+                        local_dir=str(local_dir),
+                        **self.kwargs,
+                    )
+                    file_size = Path(downloaded_path).stat().st_size
+                    bytes_downloaded += file_size
+                    found_files += 1
+                    if has_size_estimate:
+                        progress.update(file_sizes_by_path.get(remote_path, file_size))
+                    else:
+                        progress.update(1)
+                except Exception as exc:
+                    missing_files += 1
+                    self.logger.warning(f"Failed to download [{category}] {remote_path}: {exc}")
+                    if not has_size_estimate:
+                        progress.update(1)
+        finally:
+            progress.close()
+            if previous_disable_pb is None:
+                os.environ.pop("HF_HUB_DISABLE_PROGRESS_BARS", None)
+            else:
+                os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = previous_disable_pb
 
         elapsed_seconds = time.time() - download_start
         gib_downloaded = bytes_downloaded / (1024 ** 3)
