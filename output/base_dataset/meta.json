@@ -14,12 +14,12 @@
       "task_index": 0,
       "episode_index": 2150,
       "duration_minutes": 1.5355555555555556,
-      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00002150.mp4",
+      "video_file": "videos/turning_on_radio/observation.images.rgb.head/episode_00002150.mp4",
       "video_files": [
-        "videos/task-0000/observation.images.rgb.head/episode_00002150.mp4"
+        "videos/turning_on_radio/observation.images.rgb.head/episode_00002150.mp4"
       ],
-      "data_parquet_file": "data/task-0000/episode_00002150.parquet",
-      "episode_file": "meta/episodes/task-0000/episode_00002150.json",
+      "data_parquet_file": "data/turning_on_radio/episode_00002150.parquet",
+      "episode_file": "meta/episodes/turning_on_radio/episode_00002150.json",
       "raw": {
         "episode_index": 2150,
         "tasks": [
@@ -37,12 +37,12 @@
       "task_index": 0,
       "episode_index": 310,
       "duration_minutes": 1.5744444444444445,
-      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000310.mp4",
+      "video_file": "videos/turning_on_radio/observation.images.rgb.head/episode_00000310.mp4",
       "video_files": [
-        "videos/task-0000/observation.images.rgb.head/episode_00000310.mp4"
+        "videos/turning_on_radio/observation.images.rgb.head/episode_00000310.mp4"
       ],
-      "data_parquet_file": "data/task-0000/episode_00000310.parquet",
-      "episode_file": "meta/episodes/task-0000/episode_00000310.json",
+      "data_parquet_file": "data/turning_on_radio/episode_00000310.parquet",
+      "episode_file": "meta/episodes/turning_on_radio/episode_00000310.json",
       "raw": {
         "episode_index": 310,
         "tasks": [
@@ -60,12 +60,12 @@
       "task_index": 0,
       "episode_index": 70,
       "duration_minutes": 1.28,
-      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000070.mp4",
+      "video_file": "videos/turning_on_radio/observation.images.rgb.head/episode_00000070.mp4",
       "video_files": [
-        "videos/task-0000/observation.images.rgb.head/episode_00000070.mp4"
+        "videos/turning_on_radio/observation.images.rgb.head/episode_00000070.mp4"
       ],
-      "data_parquet_file": "data/task-0000/episode_00000070.parquet",
-      "episode_file": "meta/episodes/task-0000/episode_00000070.json",
+      "data_parquet_file": "data/turning_on_radio/episode_00000070.parquet",
+      "episode_file": "meta/episodes/turning_on_radio/episode_00000070.json",
       "raw": {
         "episode_index": 70,
         "tasks": [
@@ -83,12 +83,12 @@
       "task_index": 0,
       "episode_index": 2820,
       "duration_minutes": 0.7316666666666667,
-      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00002820.mp4",
+      "video_file": "videos/turning_on_radio/observation.images.rgb.head/episode_00002820.mp4",
       "video_files": [
-        "videos/task-0000/observation.images.rgb.head/episode_00002820.mp4"
+        "videos/turning_on_radio/observation.images.rgb.head/episode_00002820.mp4"
       ],
-      "data_parquet_file": "data/task-0000/episode_00002820.parquet",
-      "episode_file": "meta/episodes/task-0000/episode_00002820.json",
+      "data_parquet_file": "data/turning_on_radio/episode_00002820.parquet",
+      "episode_file": "meta/episodes/turning_on_radio/episode_00002820.json",
       "raw": {
         "episode_index": 2820,
         "tasks": [
@@ -106,12 +106,12 @@
       "task_index": 0,
       "episode_index": 760,
       "duration_minutes": 1.535,
-      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000760.mp4",
+      "video_file": "videos/turning_on_radio/observation.images.rgb.head/episode_00000760.mp4",
       "video_files": [
-        "videos/task-0000/observation.images.rgb.head/episode_00000760.mp4"
+        "videos/turning_on_radio/observation.images.rgb.head/episode_00000760.mp4"
       ],
-      "data_parquet_file": "data/task-0000/episode_00000760.parquet",
-      "episode_file": "meta/episodes/task-0000/episode_00000760.json",
+      "data_parquet_file": "data/turning_on_radio/episode_00000760.parquet",
+      "episode_file": "meta/episodes/turning_on_radio/episode_00000760.json",
       "raw": {
         "episode_index": 760,
         "tasks": [
@@ -129,12 +129,12 @@
       "task_index": 0,
       "episode_index": 680,
       "duration_minutes": 1.1827777777777777,
-      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000680.mp4",
+      "video_file": "videos/turning_on_radio/observation.images.rgb.head/episode_00000680.mp4",
       "video_files": [
-        "videos/task-0000/observation.images.rgb.head/episode_00000680.mp4"
+        "videos/turning_on_radio/observation.images.rgb.head/episode_00000680.mp4"
       ],
-      "data_parquet_file": "data/task-0000/episode_00000680.parquet",
-      "episode_file": "meta/episodes/task-0000/episode_00000680.json",
+      "data_parquet_file": "data/turning_on_radio/episode_00000680.parquet",
+      "episode_file": "meta/episodes/turning_on_radio/episode_00000680.json",
       "raw": {
         "episode_index": 680,
         "tasks": [
@@ -152,12 +152,12 @@
       "task_index": 0,
       "episode_index": 630,
       "duration_minutes": 1.2572222222222222,
-      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000630.mp4",
+      "video_file": "videos/turning_on_radio/observation.images.rgb.head/episode_00000630.mp4",
       "video_files": [
-        "videos/task-0000/observation.images.rgb.head/episode_00000630.mp4"
+        "videos/turning_on_radio/observation.images.rgb.head/episode_00000630.mp4"
       ],
-      "data_parquet_file": "data/task-0000/episode_00000630.parquet",
-      "episode_file": "meta/episodes/task-0000/episode_00000630.json",
+      "data_parquet_file": "data/turning_on_radio/episode_00000630.parquet",
+      "episode_file": "meta/episodes/turning_on_radio/episode_00000630.json",
       "raw": {
         "episode_index": 630,
         "tasks": [
@@ -175,12 +175,12 @@
       "task_index": 0,
       "episode_index": 400,
       "duration_minutes": 1.2422222222222221,
-      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000400.mp4",
+      "video_file": "videos/turning_on_radio/observation.images.rgb.head/episode_00000400.mp4",
       "video_files": [
-        "videos/task-0000/observation.images.rgb.head/episode_00000400.mp4"
+        "videos/turning_on_radio/observation.images.rgb.head/episode_00000400.mp4"
       ],
-      "data_parquet_file": "data/task-0000/episode_00000400.parquet",
-      "episode_file": "meta/episodes/task-0000/episode_00000400.json",
+      "data_parquet_file": "data/turning_on_radio/episode_00000400.parquet",
+      "episode_file": "meta/episodes/turning_on_radio/episode_00000400.json",
       "raw": {
         "episode_index": 400,
         "tasks": [
@@ -198,12 +198,12 @@
       "task_index": 0,
       "episode_index": 2960,
       "duration_minutes": 0.9055555555555556,
-      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00002960.mp4",
+      "video_file": "videos/turning_on_radio/observation.images.rgb.head/episode_00002960.mp4",
       "video_files": [
-        "videos/task-0000/observation.images.rgb.head/episode_00002960.mp4"
+        "videos/turning_on_radio/observation.images.rgb.head/episode_00002960.mp4"
       ],
-      "data_parquet_file": "data/task-0000/episode_00002960.parquet",
-      "episode_file": "meta/episodes/task-0000/episode_00002960.json",
+      "data_parquet_file": "data/turning_on_radio/episode_00002960.parquet",
+      "episode_file": "meta/episodes/turning_on_radio/episode_00002960.json",
       "raw": {
         "episode_index": 2960,
         "tasks": [
@@ -221,12 +221,12 @@
       "task_index": 0,
       "episode_index": 300,
       "duration_minutes": 1.083888888888889,
-      "video_file": "videos/task-0000/observation.images.rgb.head/episode_00000300.mp4",
+      "video_file": "videos/turning_on_radio/observation.images.rgb.head/episode_00000300.mp4",
       "video_files": [
-        "videos/task-0000/observation.images.rgb.head/episode_00000300.mp4"
+        "videos/turning_on_radio/observation.images.rgb.head/episode_00000300.mp4"
       ],
-      "data_parquet_file": "data/task-0000/episode_00000300.parquet",
-      "episode_file": "meta/episodes/task-0000/episode_00000300.json",
+      "data_parquet_file": "data/turning_on_radio/episode_00000300.parquet",
+      "episode_file": "meta/episodes/turning_on_radio/episode_00000300.json",
       "raw": {
         "episode_index": 300,
         "tasks": [
@@ -244,12 +244,12 @@
       "task_index": 1,
       "episode_index": 12740,
       "duration_minutes": 2.945,
-      "video_file": "videos/task-0001/observation.images.rgb.head/episode_00012740.mp4",
+      "video_file": "videos/picking_up_trash/observation.images.rgb.head/episode_00012740.mp4",
       "video_files": [
-        "videos/task-0001/observation.images.rgb.head/episode_00012740.mp4"
+        "videos/picking_up_trash/observation.images.rgb.head/episode_00012740.mp4"
       ],
-      "data_parquet_file": "data/task-0001/episode_00012740.parquet",
-      "episode_file": "meta/episodes/task-0001/episode_00012740.json",
+      "data_parquet_file": "data/picking_up_trash/episode_00012740.parquet",
+      "episode_file": "meta/episodes/picking_up_trash/episode_00012740.json",
       "raw": {
         "episode_index": 12740,
         "tasks": [
@@ -267,12 +267,12 @@
       "task_index": 1,
       "episode_index": 12910,
       "duration_minutes": 2.6972222222222224,
-      "video_file": "videos/task-0001/observation.images.rgb.head/episode_00012910.mp4",
+      "video_file": "videos/picking_up_trash/observation.images.rgb.head/episode_00012910.mp4",
       "video_files": [
-        "videos/task-0001/observation.images.rgb.head/episode_00012910.mp4"
+        "videos/picking_up_trash/observation.images.rgb.head/episode_00012910.mp4"
       ],
-      "data_parquet_file": "data/task-0001/episode_00012910.parquet",
-      "episode_file": "meta/episodes/task-0001/episode_00012910.json",
+      "data_parquet_file": "data/picking_up_trash/episode_00012910.parquet",
+      "episode_file": "meta/episodes/picking_up_trash/episode_00012910.json",
       "raw": {
         "episode_index": 12910,
         "tasks": [
@@ -290,12 +290,12 @@
       "task_index": 1,
       "episode_index": 12260,
       "duration_minutes": 2.887222222222222,
-      "video_file": "videos/task-0001/observation.images.rgb.head/episode_00012260.mp4",
+      "video_file": "videos/picking_up_trash/observation.images.rgb.head/episode_00012260.mp4",
       "video_files": [
-        "videos/task-0001/observation.images.rgb.head/episode_00012260.mp4"
+        "videos/picking_up_trash/observation.images.rgb.head/episode_00012260.mp4"
       ],
-      "data_parquet_file": "data/task-0001/episode_00012260.parquet",
-      "episode_file": "meta/episodes/task-0001/episode_00012260.json",
+      "data_parquet_file": "data/picking_up_trash/episode_00012260.parquet",
+      "episode_file": "meta/episodes/picking_up_trash/episode_00012260.json",
       "raw": {
         "episode_index": 12260,
         "tasks": [
@@ -313,12 +313,12 @@
       "task_index": 1,
       "episode_index": 10320,
       "duration_minutes": 3.8088888888888888,
-      "video_file": "videos/task-0001/observation.images.rgb.head/episode_00010320.mp4",
+      "video_file": "videos/picking_up_trash/observation.images.rgb.head/episode_00010320.mp4",
       "video_files": [
-        "videos/task-0001/observation.images.rgb.head/episode_00010320.mp4"
+        "videos/picking_up_trash/observation.images.rgb.head/episode_00010320.mp4"
       ],
-      "data_parquet_file": "data/task-0001/episode_00010320.parquet",
-      "episode_file": "meta/episodes/task-0001/episode_00010320.json",
+      "data_parquet_file": "data/picking_up_trash/episode_00010320.parquet",
+      "episode_file": "meta/episodes/picking_up_trash/episode_00010320.json",
       "raw": {
         "episode_index": 10320,
         "tasks": [
@@ -336,12 +336,12 @@
       "task_index": 2,
       "episode_index": 22090,
       "duration_minutes": 6.444444444444445,
-      "video_file": "videos/task-0002/observation.images.rgb.head/episode_00022090.mp4",
+      "video_file": "videos/putting_away_Halloween_decorations/observation.images.rgb.head/episode_00022090.mp4",
       "video_files": [
-        "videos/task-0002/observation.images.rgb.head/episode_00022090.mp4"
+        "videos/putting_away_Halloween_decorations/observation.images.rgb.head/episode_00022090.mp4"
       ],
-      "data_parquet_file": "data/task-0002/episode_00022090.parquet",
-      "episode_file": "meta/episodes/task-0002/episode_00022090.json",
+      "data_parquet_file": "data/putting_away_Halloween_decorations/episode_00022090.parquet",
+      "episode_file": "meta/episodes/putting_away_Halloween_decorations/episode_00022090.json",
       "raw": {
         "episode_index": 22090,
         "tasks": [
@@ -359,12 +359,12 @@
       "task_index": 2,
       "episode_index": 21390,
       "duration_minutes": 8.068333333333333,
-      "video_file": "videos/task-0002/observation.images.rgb.head/episode_00021390.mp4",
+      "video_file": "videos/putting_away_Halloween_decorations/observation.images.rgb.head/episode_00021390.mp4",
       "video_files": [
-        "videos/task-0002/observation.images.rgb.head/episode_00021390.mp4"
+        "videos/putting_away_Halloween_decorations/observation.images.rgb.head/episode_00021390.mp4"
       ],
-      "data_parquet_file": "data/task-0002/episode_00021390.parquet",
-      "episode_file": "meta/episodes/task-0002/episode_00021390.json",
+      "data_parquet_file": "data/putting_away_Halloween_decorations/episode_00021390.parquet",
+      "episode_file": "meta/episodes/putting_away_Halloween_decorations/episode_00021390.json",
       "raw": {
         "episode_index": 21390,
         "tasks": [
@@ -382,12 +382,12 @@
       "task_index": 3,
       "episode_index": 30090,
       "duration_minutes": 5.507777777777777,
-      "video_file": "videos/task-0003/observation.images.rgb.head/episode_00030090.mp4",
+      "video_file": "videos/cleaning_up_plates_and_food/observation.images.rgb.head/episode_00030090.mp4",
       "video_files": [
-        "videos/task-0003/observation.images.rgb.head/episode_00030090.mp4"
+        "videos/cleaning_up_plates_and_food/observation.images.rgb.head/episode_00030090.mp4"
       ],
-      "data_parquet_file": "data/task-0003/episode_00030090.parquet",
-      "episode_file": "meta/episodes/task-0003/episode_00030090.json",
+      "data_parquet_file": "data/cleaning_up_plates_and_food/episode_00030090.parquet",
+      "episode_file": "meta/episodes/cleaning_up_plates_and_food/episode_00030090.json",
       "raw": {
         "episode_index": 30090,
         "tasks": [
@@ -405,12 +405,12 @@
       "task_index": 3,
       "episode_index": 30080,
       "duration_minutes": 9.360000000000001,
-      "video_file": "videos/task-0003/observation.images.rgb.head/episode_00030080.mp4",
+      "video_file": "videos/cleaning_up_plates_and_food/observation.images.rgb.head/episode_00030080.mp4",
       "video_files": [
-        "videos/task-0003/observation.images.rgb.head/episode_00030080.mp4"
+        "videos/cleaning_up_plates_and_food/observation.images.rgb.head/episode_00030080.mp4"
       ],
-      "data_parquet_file": "data/task-0003/episode_00030080.parquet",
-      "episode_file": "meta/episodes/task-0003/episode_00030080.json",
+      "data_parquet_file": "data/cleaning_up_plates_and_food/episode_00030080.parquet",
+      "episode_file": "meta/episodes/cleaning_up_plates_and_food/episode_00030080.json",
       "raw": {
         "episode_index": 30080,
         "tasks": [
@@ -428,12 +428,12 @@
       "task_index": 4,
       "episode_index": 40260,
       "duration_minutes": 7.689444444444445,
-      "video_file": "videos/task-0004/observation.images.rgb.head/episode_00040260.mp4",
+      "video_file": "videos/can_meat/observation.images.rgb.head/episode_00040260.mp4",
       "video_files": [
-        "videos/task-0004/observation.images.rgb.head/episode_00040260.mp4"
+        "videos/can_meat/observation.images.rgb.head/episode_00040260.mp4"
       ],
-      "data_parquet_file": "data/task-0004/episode_00040260.parquet",
-      "episode_file": "meta/episodes/task-0004/episode_00040260.json",
+      "data_parquet_file": "data/can_meat/episode_00040260.parquet",
+      "episode_file": "meta/episodes/can_meat/episode_00040260.json",
       "raw": {
         "episode_index": 40260,
         "tasks": [
@@ -451,12 +451,12 @@
       "task_index": 4,
       "episode_index": 40600,
       "duration_minutes": 7.804444444444444,
-      "video_file": "videos/task-0004/observation.images.rgb.head/episode_00040600.mp4",
+      "video_file": "videos/can_meat/observation.images.rgb.head/episode_00040600.mp4",
       "video_files": [
-        "videos/task-0004/observation.images.rgb.head/episode_00040600.mp4"
+        "videos/can_meat/observation.images.rgb.head/episode_00040600.mp4"
       ],
-      "data_parquet_file": "data/task-0004/episode_00040600.parquet",
-      "episode_file": "meta/episodes/task-0004/episode_00040600.json",
+      "data_parquet_file": "data/can_meat/episode_00040600.parquet",
+      "episode_file": "meta/episodes/can_meat/episode_00040600.json",
       "raw": {
         "episode_index": 40600,
         "tasks": [
@@ -474,12 +474,12 @@
       "task_index": 5,
       "episode_index": 50740,
       "duration_minutes": 4.849444444444444,
-      "video_file": "videos/task-0005/observation.images.rgb.head/episode_00050740.mp4",
+      "video_file": "videos/setting_mousetraps/observation.images.rgb.head/episode_00050740.mp4",
       "video_files": [
-        "videos/task-0005/observation.images.rgb.head/episode_00050740.mp4"
+        "videos/setting_mousetraps/observation.images.rgb.head/episode_00050740.mp4"
       ],
-      "data_parquet_file": "data/task-0005/episode_00050740.parquet",
-      "episode_file": "meta/episodes/task-0005/episode_00050740.json",
+      "data_parquet_file": "data/setting_mousetraps/episode_00050740.parquet",
+      "episode_file": "meta/episodes/setting_mousetraps/episode_00050740.json",
       "raw": {
         "episode_index": 50740,
         "tasks": [
@@ -497,12 +497,12 @@
       "task_index": 5,
       "episode_index": 51820,
       "duration_minutes": 5.615555555555556,
-      "video_file": "videos/task-0005/observation.images.rgb.head/episode_00051820.mp4",
+      "video_file": "videos/setting_mousetraps/observation.images.rgb.head/episode_00051820.mp4",
       "video_files": [
-        "videos/task-0005/observation.images.rgb.head/episode_00051820.mp4"
+        "videos/setting_mousetraps/observation.images.rgb.head/episode_00051820.mp4"
       ],
-      "data_parquet_file": "data/task-0005/episode_00051820.parquet",
-      "episode_file": "meta/episodes/task-0005/episode_00051820.json",
+      "data_parquet_file": "data/setting_mousetraps/episode_00051820.parquet",
+      "episode_file": "meta/episodes/setting_mousetraps/episode_00051820.json",
       "raw": {
         "episode_index": 51820,
         "tasks": [
@@ -520,12 +520,12 @@
       "task_index": 5,
       "episode_index": 52200,
       "duration_minutes": 6.736111111111112,
-      "video_file": "videos/task-0005/observation.images.rgb.head/episode_00052200.mp4",
+      "video_file": "videos/setting_mousetraps/observation.images.rgb.head/episode_00052200.mp4",
       "video_files": [
-        "videos/task-0005/observation.images.rgb.head/episode_00052200.mp4"
+        "videos/setting_mousetraps/observation.images.rgb.head/episode_00052200.mp4"
       ],
-      "data_parquet_file": "data/task-0005/episode_00052200.parquet",
-      "episode_file": "meta/episodes/task-0005/episode_00052200.json",
+      "data_parquet_file": "data/setting_mousetraps/episode_00052200.parquet",
+      "episode_file": "meta/episodes/setting_mousetraps/episode_00052200.json",
       "raw": {
         "episode_index": 52200,
         "tasks": [
@@ -543,12 +543,12 @@
       "task_index": 6,
       "episode_index": 60070,
       "duration_minutes": 5.966666666666667,
-      "video_file": "videos/task-0006/observation.images.rgb.head/episode_00060070.mp4",
+      "video_file": "videos/hiding_Easter_eggs/observation.images.rgb.head/episode_00060070.mp4",
       "video_files": [
-        "videos/task-0006/observation.images.rgb.head/episode_00060070.mp4"
+        "videos/hiding_Easter_eggs/observation.images.rgb.head/episode_00060070.mp4"
       ],
-      "data_parquet_file": "data/task-0006/episode_00060070.parquet",
-      "episode_file": "meta/episodes/task-0006/episode_00060070.json",
+      "data_parquet_file": "data/hiding_Easter_eggs/episode_00060070.parquet",
+      "episode_file": "meta/episodes/hiding_Easter_eggs/episode_00060070.json",
       "raw": {
         "episode_index": 60070,
         "tasks": [
@@ -566,12 +566,12 @@
       "task_index": 6,
       "episode_index": 62120,
       "duration_minutes": 3.1722222222222225,
-      "video_file": "videos/task-0006/observation.images.rgb.head/episode_00062120.mp4",
+      "video_file": "videos/hiding_Easter_eggs/observation.images.rgb.head/episode_00062120.mp4",
       "video_files": [
-        "videos/task-0006/observation.images.rgb.head/episode_00062120.mp4"
+        "videos/hiding_Easter_eggs/observation.images.rgb.head/episode_00062120.mp4"
       ],
-      "data_parquet_file": "data/task-0006/episode_00062120.parquet",
-      "episode_file": "meta/episodes/task-0006/episode_00062120.json",
+      "data_parquet_file": "data/hiding_Easter_eggs/episode_00062120.parquet",
+      "episode_file": "meta/episodes/hiding_Easter_eggs/episode_00062120.json",
       "raw": {
         "episode_index": 62120,
         "tasks": [
@@ -589,12 +589,12 @@
       "task_index": 6,
       "episode_index": 60740,
       "duration_minutes": 4.198333333333333,
-      "video_file": "videos/task-0006/observation.images.rgb.head/episode_00060740.mp4",
+      "video_file": "videos/hiding_Easter_eggs/observation.images.rgb.head/episode_00060740.mp4",
       "video_files": [
-        "videos/task-0006/observation.images.rgb.head/episode_00060740.mp4"
+        "videos/hiding_Easter_eggs/observation.images.rgb.head/episode_00060740.mp4"
       ],
-      "data_parquet_file": "data/task-0006/episode_00060740.parquet",
-      "episode_file": "meta/episodes/task-0006/episode_00060740.json",
+      "data_parquet_file": "data/hiding_Easter_eggs/episode_00060740.parquet",
+      "episode_file": "meta/episodes/hiding_Easter_eggs/episode_00060740.json",
       "raw": {
         "episode_index": 60740,
         "tasks": [
@@ -612,12 +612,12 @@
       "task_index": 7,
       "episode_index": 72710,
       "duration_minutes": 9.916111111111112,
-      "video_file": "videos/task-0007/observation.images.rgb.head/episode_00072710.mp4",
+      "video_file": "videos/picking_up_toys/observation.images.rgb.head/episode_00072710.mp4",
       "video_files": [
-        "videos/task-0007/observation.images.rgb.head/episode_00072710.mp4"
+        "videos/picking_up_toys/observation.images.rgb.head/episode_00072710.mp4"
       ],
-      "data_parquet_file": "data/task-0007/episode_00072710.parquet",
-      "episode_file": "meta/episodes/task-0007/episode_00072710.json",
+      "data_parquet_file": "data/picking_up_toys/episode_00072710.parquet",
+      "episode_file": "meta/episodes/picking_up_toys/episode_00072710.json",
       "raw": {
         "episode_index": 72710,
         "tasks": [
@@ -635,12 +635,12 @@
       "task_index": 7,
       "episode_index": 72460,
       "duration_minutes": 11.327222222222222,
-      "video_file": "videos/task-0007/observation.images.rgb.head/episode_00072460.mp4",
+      "video_file": "videos/picking_up_toys/observation.images.rgb.head/episode_00072460.mp4",
       "video_files": [
-        "videos/task-0007/observation.images.rgb.head/episode_00072460.mp4"
+        "videos/picking_up_toys/observation.images.rgb.head/episode_00072460.mp4"
       ],
-      "data_parquet_file": "data/task-0007/episode_00072460.parquet",
-      "episode_file": "meta/episodes/task-0007/episode_00072460.json",
+      "data_parquet_file": "data/picking_up_toys/episode_00072460.parquet",
+      "episode_file": "meta/episodes/picking_up_toys/episode_00072460.json",
       "raw": {
         "episode_index": 72460,
         "tasks": [
@@ -658,12 +658,12 @@
       "task_index": 8,
       "episode_index": 82480,
       "duration_minutes": 4.694444444444445,
-      "video_file": "videos/task-0008/observation.images.rgb.head/episode_00082480.mp4",
+      "video_file": "videos/rearranging_kitchen_furniture/observation.images.rgb.head/episode_00082480.mp4",
       "video_files": [
-        "videos/task-0008/observation.images.rgb.head/episode_00082480.mp4"
+        "videos/rearranging_kitchen_furniture/observation.images.rgb.head/episode_00082480.mp4"
       ],
-      "data_parquet_file": "data/task-0008/episode_00082480.parquet",
-      "episode_file": "meta/episodes/task-0008/episode_00082480.json",
+      "data_parquet_file": "data/rearranging_kitchen_furniture/episode_00082480.parquet",
+      "episode_file": "meta/episodes/rearranging_kitchen_furniture/episode_00082480.json",
       "raw": {
         "episode_index": 82480,
         "tasks": [
@@ -681,12 +681,12 @@
       "task_index": 8,
       "episode_index": 81550,
       "duration_minutes": 3.6133333333333337,
-      "video_file": "videos/task-0008/observation.images.rgb.head/episode_00081550.mp4",
+      "video_file": "videos/rearranging_kitchen_furniture/observation.images.rgb.head/episode_00081550.mp4",
       "video_files": [
-        "videos/task-0008/observation.images.rgb.head/episode_00081550.mp4"
+        "videos/rearranging_kitchen_furniture/observation.images.rgb.head/episode_00081550.mp4"
       ],
-      "data_parquet_file": "data/task-0008/episode_00081550.parquet",
-      "episode_file": "meta/episodes/task-0008/episode_00081550.json",
+      "data_parquet_file": "data/rearranging_kitchen_furniture/episode_00081550.parquet",
+      "episode_file": "meta/episodes/rearranging_kitchen_furniture/episode_00081550.json",
       "raw": {
         "episode_index": 81550,
         "tasks": [
@@ -704,12 +704,12 @@
       "task_index": 8,
       "episode_index": 81160,
       "duration_minutes": 5.61,
-      "video_file": "videos/task-0008/observation.images.rgb.head/episode_00081160.mp4",
+      "video_file": "videos/rearranging_kitchen_furniture/observation.images.rgb.head/episode_00081160.mp4",
       "video_files": [
-        "videos/task-0008/observation.images.rgb.head/episode_00081160.mp4"
+        "videos/rearranging_kitchen_furniture/observation.images.rgb.head/episode_00081160.mp4"
       ],
-      "data_parquet_file": "data/task-0008/episode_00081160.parquet",
-      "episode_file": "meta/episodes/task-0008/episode_00081160.json",
+      "data_parquet_file": "data/rearranging_kitchen_furniture/episode_00081160.parquet",
+      "episode_file": "meta/episodes/rearranging_kitchen_furniture/episode_00081160.json",
       "raw": {
         "episode_index": 81160,
         "tasks": [
@@ -727,12 +727,12 @@
       "task_index": 9,
       "episode_index": 91010,
       "duration_minutes": 6.84111111111111,
-      "video_file": "videos/task-0009/observation.images.rgb.head/episode_00091010.mp4",
+      "video_file": "videos/putting_up_Christmas_decorations_inside/observation.images.rgb.head/episode_00091010.mp4",
       "video_files": [
-        "videos/task-0009/observation.images.rgb.head/episode_00091010.mp4"
+        "videos/putting_up_Christmas_decorations_inside/observation.images.rgb.head/episode_00091010.mp4"
       ],
-      "data_parquet_file": "data/task-0009/episode_00091010.parquet",
-      "episode_file": "meta/episodes/task-0009/episode_00091010.json",
+      "data_parquet_file": "data/putting_up_Christmas_decorations_inside/episode_00091010.parquet",
+      "episode_file": "meta/episodes/putting_up_Christmas_decorations_inside/episode_00091010.json",
       "raw": {
         "episode_index": 91010,
         "tasks": [
@@ -750,12 +750,12 @@
       "task_index": 9,
       "episode_index": 91720,
       "duration_minutes": 6.822222222222222,
-      "video_file": "videos/task-0009/observation.images.rgb.head/episode_00091720.mp4",
+      "video_file": "videos/putting_up_Christmas_decorations_inside/observation.images.rgb.head/episode_00091720.mp4",
       "video_files": [
-        "videos/task-0009/observation.images.rgb.head/episode_00091720.mp4"
+        "videos/putting_up_Christmas_decorations_inside/observation.images.rgb.head/episode_00091720.mp4"
       ],
-      "data_parquet_file": "data/task-0009/episode_00091720.parquet",
-      "episode_file": "meta/episodes/task-0009/episode_00091720.json",
+      "data_parquet_file": "data/putting_up_Christmas_decorations_inside/episode_00091720.parquet",
+      "episode_file": "meta/episodes/putting_up_Christmas_decorations_inside/episode_00091720.json",
       "raw": {
         "episode_index": 91720,
         "tasks": [
@@ -773,12 +773,12 @@
       "task_index": 10,
       "episode_index": 102030,
       "duration_minutes": 3.125,
-      "video_file": "videos/task-0010/observation.images.rgb.head/episode_00102030.mp4",
+      "video_file": "videos/set_up_a_coffee_station_in_your_kitchen/observation.images.rgb.head/episode_00102030.mp4",
       "video_files": [
-        "videos/task-0010/observation.images.rgb.head/episode_00102030.mp4"
+        "videos/set_up_a_coffee_station_in_your_kitchen/observation.images.rgb.head/episode_00102030.mp4"
       ],
-      "data_parquet_file": "data/task-0010/episode_00102030.parquet",
-      "episode_file": "meta/episodes/task-0010/episode_00102030.json",
+      "data_parquet_file": "data/set_up_a_coffee_station_in_your_kitchen/episode_00102030.parquet",
+      "episode_file": "meta/episodes/set_up_a_coffee_station_in_your_kitchen/episode_00102030.json",
       "raw": {
         "episode_index": 102030,
         "tasks": [
@@ -796,12 +796,12 @@
       "task_index": 10,
       "episode_index": 100900,
       "duration_minutes": 2.6661111111111113,
-      "video_file": "videos/task-0010/observation.images.rgb.head/episode_00100900.mp4",
+      "video_file": "videos/set_up_a_coffee_station_in_your_kitchen/observation.images.rgb.head/episode_00100900.mp4",
       "video_files": [
-        "videos/task-0010/observation.images.rgb.head/episode_00100900.mp4"
+        "videos/set_up_a_coffee_station_in_your_kitchen/observation.images.rgb.head/episode_00100900.mp4"
       ],
-      "data_parquet_file": "data/task-0010/episode_00100900.parquet",
-      "episode_file": "meta/episodes/task-0010/episode_00100900.json",
+      "data_parquet_file": "data/set_up_a_coffee_station_in_your_kitchen/episode_00100900.parquet",
+      "episode_file": "meta/episodes/set_up_a_coffee_station_in_your_kitchen/episode_00100900.json",
       "raw": {
         "episode_index": 100900,
         "tasks": [
@@ -819,12 +819,12 @@
       "task_index": 10,
       "episode_index": 100020,
       "duration_minutes": 3.748888888888889,
-      "video_file": "videos/task-0010/observation.images.rgb.head/episode_00100020.mp4",
+      "video_file": "videos/set_up_a_coffee_station_in_your_kitchen/observation.images.rgb.head/episode_00100020.mp4",
       "video_files": [
-        "videos/task-0010/observation.images.rgb.head/episode_00100020.mp4"
+        "videos/set_up_a_coffee_station_in_your_kitchen/observation.images.rgb.head/episode_00100020.mp4"
       ],
-      "data_parquet_file": "data/task-0010/episode_00100020.parquet",
-      "episode_file": "meta/episodes/task-0010/episode_00100020.json",
+      "data_parquet_file": "data/set_up_a_coffee_station_in_your_kitchen/episode_00100020.parquet",
+      "episode_file": "meta/episodes/set_up_a_coffee_station_in_your_kitchen/episode_00100020.json",
       "raw": {
         "episode_index": 100020,
         "tasks": [
@@ -842,12 +842,12 @@
       "task_index": 10,
       "episode_index": 102970,
       "duration_minutes": 4.846666666666667,
-      "video_file": "videos/task-0010/observation.images.rgb.head/episode_00102970.mp4",
+      "video_file": "videos/set_up_a_coffee_station_in_your_kitchen/observation.images.rgb.head/episode_00102970.mp4",
       "video_files": [
-        "videos/task-0010/observation.images.rgb.head/episode_00102970.mp4"
+        "videos/set_up_a_coffee_station_in_your_kitchen/observation.images.rgb.head/episode_00102970.mp4"
       ],
-      "data_parquet_file": "data/task-0010/episode_00102970.parquet",
-      "episode_file": "meta/episodes/task-0010/episode_00102970.json",
+      "data_parquet_file": "data/set_up_a_coffee_station_in_your_kitchen/episode_00102970.parquet",
+      "episode_file": "meta/episodes/set_up_a_coffee_station_in_your_kitchen/episode_00102970.json",
       "raw": {
         "episode_index": 102970,
         "tasks": [
@@ -865,12 +865,12 @@
       "task_index": 11,
       "episode_index": 110570,
       "duration_minutes": 5.558888888888889,
-      "video_file": "videos/task-0011/observation.images.rgb.head/episode_00110570.mp4",
+      "video_file": "videos/putting_dishes_away_after_cleaning/observation.images.rgb.head/episode_00110570.mp4",
       "video_files": [
-        "videos/task-0011/observation.images.rgb.head/episode_00110570.mp4"
+        "videos/putting_dishes_away_after_cleaning/observation.images.rgb.head/episode_00110570.mp4"
       ],
-      "data_parquet_file": "data/task-0011/episode_00110570.parquet",
-      "episode_file": "meta/episodes/task-0011/episode_00110570.json",
+      "data_parquet_file": "data/putting_dishes_away_after_cleaning/episode_00110570.parquet",
+      "episode_file": "meta/episodes/putting_dishes_away_after_cleaning/episode_00110570.json",
       "raw": {
         "episode_index": 110570,
         "tasks": [
@@ -888,12 +888,12 @@
       "task_index": 11,
       "episode_index": 112650,
       "duration_minutes": 7.092777777777778,
-      "video_file": "videos/task-0011/observation.images.rgb.head/episode_00112650.mp4",
+      "video_file": "videos/putting_dishes_away_after_cleaning/observation.images.rgb.head/episode_00112650.mp4",
       "video_files": [
-        "videos/task-0011/observation.images.rgb.head/episode_00112650.mp4"
+        "videos/putting_dishes_away_after_cleaning/observation.images.rgb.head/episode_00112650.mp4"
       ],
-      "data_parquet_file": "data/task-0011/episode_00112650.parquet",
-      "episode_file": "meta/episodes/task-0011/episode_00112650.json",
+      "data_parquet_file": "data/putting_dishes_away_after_cleaning/episode_00112650.parquet",
+      "episode_file": "meta/episodes/putting_dishes_away_after_cleaning/episode_00112650.json",
       "raw": {
         "episode_index": 112650,
         "tasks": [
@@ -911,12 +911,12 @@
       "task_index": 12,
       "episode_index": 121580,
       "duration_minutes": 4.075555555555556,
-      "video_file": "videos/task-0012/observation.images.rgb.head/episode_00121580.mp4",
+      "video_file": "videos/preparing_lunch_box/observation.images.rgb.head/episode_00121580.mp4",
       "video_files": [
-        "videos/task-0012/observation.images.rgb.head/episode_00121580.mp4"
+        "videos/preparing_lunch_box/observation.images.rgb.head/episode_00121580.mp4"
       ],
-      "data_parquet_file": "data/task-0012/episode_00121580.parquet",
-      "episode_file": "meta/episodes/task-0012/episode_00121580.json",
+      "data_parquet_file": "data/preparing_lunch_box/episode_00121580.parquet",
+      "episode_file": "meta/episodes/preparing_lunch_box/episode_00121580.json",
       "raw": {
         "episode_index": 121580,
         "tasks": [
@@ -934,12 +934,12 @@
       "task_index": 12,
       "episode_index": 121310,
       "duration_minutes": 4.638888888888888,
-      "video_file": "videos/task-0012/observation.images.rgb.head/episode_00121310.mp4",
+      "video_file": "videos/preparing_lunch_box/observation.images.rgb.head/episode_00121310.mp4",
       "video_files": [
-        "videos/task-0012/observation.images.rgb.head/episode_00121310.mp4"
+        "videos/preparing_lunch_box/observation.images.rgb.head/episode_00121310.mp4"
       ],
-      "data_parquet_file": "data/task-0012/episode_00121310.parquet",
-      "episode_file": "meta/episodes/task-0012/episode_00121310.json",
+      "data_parquet_file": "data/preparing_lunch_box/episode_00121310.parquet",
+      "episode_file": "meta/episodes/preparing_lunch_box/episode_00121310.json",
       "raw": {
         "episode_index": 121310,
         "tasks": [
@@ -957,12 +957,12 @@
       "task_index": 12,
       "episode_index": 121090,
       "duration_minutes": 5.010000000000001,
-      "video_file": "videos/task-0012/observation.images.rgb.head/episode_00121090.mp4",
+      "video_file": "videos/preparing_lunch_box/observation.images.rgb.head/episode_00121090.mp4",
       "video_files": [
-        "videos/task-0012/observation.images.rgb.head/episode_00121090.mp4"
+        "videos/preparing_lunch_box/observation.images.rgb.head/episode_00121090.mp4"
       ],
-      "data_parquet_file": "data/task-0012/episode_00121090.parquet",
-      "episode_file": "meta/episodes/task-0012/episode_00121090.json",
+      "data_parquet_file": "data/preparing_lunch_box/episode_00121090.parquet",
+      "episode_file": "meta/episodes/preparing_lunch_box/episode_00121090.json",
       "raw": {
         "episode_index": 121090,
         "tasks": [
@@ -980,12 +980,12 @@
       "task_index": 13,
       "episode_index": 130590,
       "duration_minutes": 10.07,
-      "video_file": "videos/task-0013/observation.images.rgb.head/episode_00130590.mp4",
+      "video_file": "videos/loading_the_car/observation.images.rgb.head/episode_00130590.mp4",
       "video_files": [
-        "videos/task-0013/observation.images.rgb.head/episode_00130590.mp4"
+        "videos/loading_the_car/observation.images.rgb.head/episode_00130590.mp4"
       ],
-      "data_parquet_file": "data/task-0013/episode_00130590.parquet",
-      "episode_file": "meta/episodes/task-0013/episode_00130590.json",
+      "data_parquet_file": "data/loading_the_car/episode_00130590.parquet",
+      "episode_file": "meta/episodes/loading_the_car/episode_00130590.json",
       "raw": {
         "episode_index": 130590,
         "tasks": [
@@ -1003,12 +1003,12 @@
       "task_index": 13,
       "episode_index": 130890,
       "duration_minutes": 10.948333333333332,
-      "video_file": "videos/task-0013/observation.images.rgb.head/episode_00130890.mp4",
+      "video_file": "videos/loading_the_car/observation.images.rgb.head/episode_00130890.mp4",
       "video_files": [
-        "videos/task-0013/observation.images.rgb.head/episode_00130890.mp4"
+        "videos/loading_the_car/observation.images.rgb.head/episode_00130890.mp4"
       ],
-      "data_parquet_file": "data/task-0013/episode_00130890.parquet",
-      "episode_file": "meta/episodes/task-0013/episode_00130890.json",
+      "data_parquet_file": "data/loading_the_car/episode_00130890.parquet",
+      "episode_file": "meta/episodes/loading_the_car/episode_00130890.json",
       "raw": {
         "episode_index": 130890,
         "tasks": [
@@ -1026,12 +1026,12 @@
       "task_index": 14,
       "episode_index": 142770,
       "duration_minutes": 7.225555555555556,
-      "video_file": "videos/task-0014/observation.images.rgb.head/episode_00142770.mp4",
+      "video_file": "videos/carrying_in_groceries/observation.images.rgb.head/episode_00142770.mp4",
       "video_files": [
-        "videos/task-0014/observation.images.rgb.head/episode_00142770.mp4"
+        "videos/carrying_in_groceries/observation.images.rgb.head/episode_00142770.mp4"
       ],
-      "data_parquet_file": "data/task-0014/episode_00142770.parquet",
-      "episode_file": "meta/episodes/task-0014/episode_00142770.json",
+      "data_parquet_file": "data/carrying_in_groceries/episode_00142770.parquet",
+      "episode_file": "meta/episodes/carrying_in_groceries/episode_00142770.json",
       "raw": {
         "episode_index": 142770,
         "tasks": [
@@ -1049,12 +1049,12 @@
       "task_index": 14,
       "episode_index": 141530,
       "duration_minutes": 7.612777777777778,
-      "video_file": "videos/task-0014/observation.images.rgb.head/episode_00141530.mp4",
+      "video_file": "videos/carrying_in_groceries/observation.images.rgb.head/episode_00141530.mp4",
       "video_files": [
-        "videos/task-0014/observation.images.rgb.head/episode_00141530.mp4"
+        "videos/carrying_in_groceries/observation.images.rgb.head/episode_00141530.mp4"
       ],
-      "data_parquet_file": "data/task-0014/episode_00141530.parquet",
-      "episode_file": "meta/episodes/task-0014/episode_00141530.json",
+      "data_parquet_file": "data/carrying_in_groceries/episode_00141530.parquet",
+      "episode_file": "meta/episodes/carrying_in_groceries/episode_00141530.json",
       "raw": {
         "episode_index": 141530,
         "tasks": [
@@ -1072,12 +1072,12 @@
       "task_index": 15,
       "episode_index": 150270,
       "duration_minutes": 8.581666666666667,
-      "video_file": "videos/task-0015/observation.images.rgb.head/episode_00150270.mp4",
+      "video_file": "videos/bringing_in_wood/observation.images.rgb.head/episode_00150270.mp4",
       "video_files": [
-        "videos/task-0015/observation.images.rgb.head/episode_00150270.mp4"
+        "videos/bringing_in_wood/observation.images.rgb.head/episode_00150270.mp4"
       ],
-      "data_parquet_file": "data/task-0015/episode_00150270.parquet",
-      "episode_file": "meta/episodes/task-0015/episode_00150270.json",
+      "data_parquet_file": "data/bringing_in_wood/episode_00150270.parquet",
+      "episode_file": "meta/episodes/bringing_in_wood/episode_00150270.json",
       "raw": {
         "episode_index": 150270,
         "tasks": [
@@ -1095,12 +1095,12 @@
       "task_index": 15,
       "episode_index": 150240,
       "duration_minutes": 7.3100000000000005,
-      "video_file": "videos/task-0015/observation.images.rgb.head/episode_00150240.mp4",
+      "video_file": "videos/bringing_in_wood/observation.images.rgb.head/episode_00150240.mp4",
       "video_files": [
-        "videos/task-0015/observation.images.rgb.head/episode_00150240.mp4"
+        "videos/bringing_in_wood/observation.images.rgb.head/episode_00150240.mp4"
       ],
-      "data_parquet_file": "data/task-0015/episode_00150240.parquet",
-      "episode_file": "meta/episodes/task-0015/episode_00150240.json",
+      "data_parquet_file": "data/bringing_in_wood/episode_00150240.parquet",
+      "episode_file": "meta/episodes/bringing_in_wood/episode_00150240.json",
       "raw": {
         "episode_index": 150240,
         "tasks": [
@@ -1118,12 +1118,12 @@
       "task_index": 16,
       "episode_index": 161230,
       "duration_minutes": 7.577777777777778,
-      "video_file": "videos/task-0016/observation.images.rgb.head/episode_00161230.mp4",
+      "video_file": "videos/moving_boxes_to_storage/observation.images.rgb.head/episode_00161230.mp4",
       "video_files": [
-        "videos/task-0016/observation.images.rgb.head/episode_00161230.mp4"
+        "videos/moving_boxes_to_storage/observation.images.rgb.head/episode_00161230.mp4"
       ],
-      "data_parquet_file": "data/task-0016/episode_00161230.parquet",
-      "episode_file": "meta/episodes/task-0016/episode_00161230.json",
+      "data_parquet_file": "data/moving_boxes_to_storage/episode_00161230.parquet",
+      "episode_file": "meta/episodes/moving_boxes_to_storage/episode_00161230.json",
       "raw": {
         "episode_index": 161230,
         "tasks": [
@@ -1141,12 +1141,12 @@
       "task_index": 16,
       "episode_index": 160270,
       "duration_minutes": 7.422777777777778,
-      "video_file": "videos/task-0016/observation.images.rgb.head/episode_00160270.mp4",
+      "video_file": "videos/moving_boxes_to_storage/observation.images.rgb.head/episode_00160270.mp4",
       "video_files": [
-        "videos/task-0016/observation.images.rgb.head/episode_00160270.mp4"
+        "videos/moving_boxes_to_storage/observation.images.rgb.head/episode_00160270.mp4"
       ],
-      "data_parquet_file": "data/task-0016/episode_00160270.parquet",
-      "episode_file": "meta/episodes/task-0016/episode_00160270.json",
+      "data_parquet_file": "data/moving_boxes_to_storage/episode_00160270.parquet",
+      "episode_file": "meta/episodes/moving_boxes_to_storage/episode_00160270.json",
       "raw": {
         "episode_index": 160270,
         "tasks": [
@@ -1164,12 +1164,12 @@
       "task_index": 17,
       "episode_index": 170970,
       "duration_minutes": 5.788888888888889,
-      "video_file": "videos/task-0017/observation.images.rgb.head/episode_00170970.mp4",
+      "video_file": "videos/bringing_water/observation.images.rgb.head/episode_00170970.mp4",
       "video_files": [
-        "videos/task-0017/observation.images.rgb.head/episode_00170970.mp4"
+        "videos/bringing_water/observation.images.rgb.head/episode_00170970.mp4"
       ],
-      "data_parquet_file": "data/task-0017/episode_00170970.parquet",
-      "episode_file": "meta/episodes/task-0017/episode_00170970.json",
+      "data_parquet_file": "data/bringing_water/episode_00170970.parquet",
+      "episode_file": "meta/episodes/bringing_water/episode_00170970.json",
       "raw": {
         "episode_index": 170970,
         "tasks": [
@@ -1187,12 +1187,12 @@
       "task_index": 17,
       "episode_index": 170940,
       "duration_minutes": 5.913333333333333,
-      "video_file": "videos/task-0017/observation.images.rgb.head/episode_00170940.mp4",
+      "video_file": "videos/bringing_water/observation.images.rgb.head/episode_00170940.mp4",
       "video_files": [
-        "videos/task-0017/observation.images.rgb.head/episode_00170940.mp4"
+        "videos/bringing_water/observation.images.rgb.head/episode_00170940.mp4"
       ],
-      "data_parquet_file": "data/task-0017/episode_00170940.parquet",
-      "episode_file": "meta/episodes/task-0017/episode_00170940.json",
+      "data_parquet_file": "data/bringing_water/episode_00170940.parquet",
+      "episode_file": "meta/episodes/bringing_water/episode_00170940.json",
       "raw": {
         "episode_index": 170940,
         "tasks": [
@@ -1210,12 +1210,12 @@
       "task_index": 17,
       "episode_index": 171950,
       "duration_minutes": 5.253333333333333,
-      "video_file": "videos/task-0017/observation.images.rgb.head/episode_00171950.mp4",
+      "video_file": "videos/bringing_water/observation.images.rgb.head/episode_00171950.mp4",
       "video_files": [
-        "videos/task-0017/observation.images.rgb.head/episode_00171950.mp4"
+        "videos/bringing_water/observation.images.rgb.head/episode_00171950.mp4"
       ],
-      "data_parquet_file": "data/task-0017/episode_00171950.parquet",
-      "episode_file": "meta/episodes/task-0017/episode_00171950.json",
+      "data_parquet_file": "data/bringing_water/episode_00171950.parquet",
+      "episode_file": "meta/episodes/bringing_water/episode_00171950.json",
       "raw": {
         "episode_index": 171950,
         "tasks": [
@@ -1233,12 +1233,12 @@
       "task_index": 18,
       "episode_index": 180990,
       "duration_minutes": 5.752777777777778,
-      "video_file": "videos/task-0018/observation.images.rgb.head/episode_00180990.mp4",
+      "video_file": "videos/tidying_bedroom/observation.images.rgb.head/episode_00180990.mp4",
       "video_files": [
-        "videos/task-0018/observation.images.rgb.head/episode_00180990.mp4"
+        "videos/tidying_bedroom/observation.images.rgb.head/episode_00180990.mp4"
       ],
-      "data_parquet_file": "data/task-0018/episode_00180990.parquet",
-      "episode_file": "meta/episodes/task-0018/episode_00180990.json",
+      "data_parquet_file": "data/tidying_bedroom/episode_00180990.parquet",
+      "episode_file": "meta/episodes/tidying_bedroom/episode_00180990.json",
       "raw": {
         "episode_index": 180990,
         "tasks": [
@@ -1256,12 +1256,12 @@
       "task_index": 18,
       "episode_index": 180200,
       "duration_minutes": 5.479444444444444,
-      "video_file": "videos/task-0018/observation.images.rgb.head/episode_00180200.mp4",
+      "video_file": "videos/tidying_bedroom/observation.images.rgb.head/episode_00180200.mp4",
       "video_files": [
-        "videos/task-0018/observation.images.rgb.head/episode_00180200.mp4"
+        "videos/tidying_bedroom/observation.images.rgb.head/episode_00180200.mp4"
       ],
-      "data_parquet_file": "data/task-0018/episode_00180200.parquet",
-      "episode_file": "meta/episodes/task-0018/episode_00180200.json",
+      "data_parquet_file": "data/tidying_bedroom/episode_00180200.parquet",
+      "episode_file": "meta/episodes/tidying_bedroom/episode_00180200.json",
       "raw": {
         "episode_index": 180200,
         "tasks": [
@@ -1279,12 +1279,12 @@
       "task_index": 18,
       "episode_index": 182790,
       "duration_minutes": 7.177222222222222,
-      "video_file": "videos/task-0018/observation.images.rgb.head/episode_00182790.mp4",
+      "video_file": "videos/tidying_bedroom/observation.images.rgb.head/episode_00182790.mp4",
       "video_files": [
-        "videos/task-0018/observation.images.rgb.head/episode_00182790.mp4"
+        "videos/tidying_bedroom/observation.images.rgb.head/episode_00182790.mp4"
       ],
-      "data_parquet_file": "data/task-0018/episode_00182790.parquet",
-      "episode_file": "meta/episodes/task-0018/episode_00182790.json",
+      "data_parquet_file": "data/tidying_bedroom/episode_00182790.parquet",
+      "episode_file": "meta/episodes/tidying_bedroom/episode_00182790.json",
       "raw": {
         "episode_index": 182790,
         "tasks": [
@@ -1302,12 +1302,12 @@
       "task_index": 20,
       "episode_index": 201420,
       "duration_minutes": 10.712222222222222,
-      "video_file": "videos/task-0020/observation.images.rgb.head/episode_00201420.mp4",
+      "video_file": "videos/sorting_vegetables/observation.images.rgb.head/episode_00201420.mp4",
       "video_files": [
-        "videos/task-0020/observation.images.rgb.head/episode_00201420.mp4"
+        "videos/sorting_vegetables/observation.images.rgb.head/episode_00201420.mp4"
       ],
-      "data_parquet_file": "data/task-0020/episode_00201420.parquet",
-      "episode_file": "meta/episodes/task-0020/episode_00201420.json",
+      "data_parquet_file": "data/sorting_vegetables/episode_00201420.parquet",
+      "episode_file": "meta/episodes/sorting_vegetables/episode_00201420.json",
       "raw": {
         "episode_index": 201420,
         "tasks": [
@@ -1325,12 +1325,12 @@
       "task_index": 20,
       "episode_index": 201720,
       "duration_minutes": 6.434444444444444,
-      "video_file": "videos/task-0020/observation.images.rgb.head/episode_00201720.mp4",
+      "video_file": "videos/sorting_vegetables/observation.images.rgb.head/episode_00201720.mp4",
       "video_files": [
-        "videos/task-0020/observation.images.rgb.head/episode_00201720.mp4"
+        "videos/sorting_vegetables/observation.images.rgb.head/episode_00201720.mp4"
       ],
-      "data_parquet_file": "data/task-0020/episode_00201720.parquet",
-      "episode_file": "meta/episodes/task-0020/episode_00201720.json",
+      "data_parquet_file": "data/sorting_vegetables/episode_00201720.parquet",
+      "episode_file": "meta/episodes/sorting_vegetables/episode_00201720.json",
       "raw": {
         "episode_index": 201720,
         "tasks": [
@@ -1348,12 +1348,12 @@
       "task_index": 21,
       "episode_index": 210380,
       "duration_minutes": 13.418888888888889,
-      "video_file": "videos/task-0021/observation.images.rgb.head/episode_00210380.mp4",
+      "video_file": "videos/collecting_childrens_toys/observation.images.rgb.head/episode_00210380.mp4",
       "video_files": [
-        "videos/task-0021/observation.images.rgb.head/episode_00210380.mp4"
+        "videos/collecting_childrens_toys/observation.images.rgb.head/episode_00210380.mp4"
       ],
-      "data_parquet_file": "data/task-0021/episode_00210380.parquet",
-      "episode_file": "meta/episodes/task-0021/episode_00210380.json",
+      "data_parquet_file": "data/collecting_childrens_toys/episode_00210380.parquet",
+      "episode_file": "meta/episodes/collecting_childrens_toys/episode_00210380.json",
       "raw": {
         "episode_index": 210380,
         "tasks": [
@@ -1371,12 +1371,12 @@
       "task_index": 22,
       "episode_index": 221330,
       "duration_minutes": 4.095,
-      "video_file": "videos/task-0022/observation.images.rgb.head/episode_00221330.mp4",
+      "video_file": "videos/putting_shoes_on_rack/observation.images.rgb.head/episode_00221330.mp4",
       "video_files": [
-        "videos/task-0022/observation.images.rgb.head/episode_00221330.mp4"
+        "videos/putting_shoes_on_rack/observation.images.rgb.head/episode_00221330.mp4"
       ],
-      "data_parquet_file": "data/task-0022/episode_00221330.parquet",
-      "episode_file": "meta/episodes/task-0022/episode_00221330.json",
+      "data_parquet_file": "data/putting_shoes_on_rack/episode_00221330.parquet",
+      "episode_file": "meta/episodes/putting_shoes_on_rack/episode_00221330.json",
       "raw": {
         "episode_index": 221330,
         "tasks": [
@@ -1394,12 +1394,12 @@
       "task_index": 22,
       "episode_index": 220250,
       "duration_minutes": 3.4922222222222223,
-      "video_file": "videos/task-0022/observation.images.rgb.head/episode_00220250.mp4",
+      "video_file": "videos/putting_shoes_on_rack/observation.images.rgb.head/episode_00220250.mp4",
       "video_files": [
-        "videos/task-0022/observation.images.rgb.head/episode_00220250.mp4"
+        "videos/putting_shoes_on_rack/observation.images.rgb.head/episode_00220250.mp4"
       ],
-      "data_parquet_file": "data/task-0022/episode_00220250.parquet",
-      "episode_file": "meta/episodes/task-0022/episode_00220250.json",
+      "data_parquet_file": "data/putting_shoes_on_rack/episode_00220250.parquet",
+      "episode_file": "meta/episodes/putting_shoes_on_rack/episode_00220250.json",
       "raw": {
         "episode_index": 220250,
         "tasks": [
@@ -1417,12 +1417,12 @@
       "task_index": 22,
       "episode_index": 221890,
       "duration_minutes": 4.111666666666666,
-      "video_file": "videos/task-0022/observation.images.rgb.head/episode_00221890.mp4",
+      "video_file": "videos/putting_shoes_on_rack/observation.images.rgb.head/episode_00221890.mp4",
       "video_files": [
-        "videos/task-0022/observation.images.rgb.head/episode_00221890.mp4"
+        "videos/putting_shoes_on_rack/observation.images.rgb.head/episode_00221890.mp4"
       ],
-      "data_parquet_file": "data/task-0022/episode_00221890.parquet",
-      "episode_file": "meta/episodes/task-0022/episode_00221890.json",
+      "data_parquet_file": "data/putting_shoes_on_rack/episode_00221890.parquet",
+      "episode_file": "meta/episodes/putting_shoes_on_rack/episode_00221890.json",
       "raw": {
         "episode_index": 221890,
         "tasks": [
@@ -1440,12 +1440,12 @@
       "task_index": 22,
       "episode_index": 221060,
       "duration_minutes": 5.0233333333333325,
-      "video_file": "videos/task-0022/observation.images.rgb.head/episode_00221060.mp4",
+      "video_file": "videos/putting_shoes_on_rack/observation.images.rgb.head/episode_00221060.mp4",
       "video_files": [
-        "videos/task-0022/observation.images.rgb.head/episode_00221060.mp4"
+        "videos/putting_shoes_on_rack/observation.images.rgb.head/episode_00221060.mp4"
       ],
-      "data_parquet_file": "data/task-0022/episode_00221060.parquet",
-      "episode_file": "meta/episodes/task-0022/episode_00221060.json",
+      "data_parquet_file": "data/putting_shoes_on_rack/episode_00221060.parquet",
+      "episode_file": "meta/episodes/putting_shoes_on_rack/episode_00221060.json",
       "raw": {
         "episode_index": 221060,
         "tasks": [
@@ -1463,12 +1463,12 @@
       "task_index": 23,
       "episode_index": 232440,
       "duration_minutes": 13.158888888888889,
-      "video_file": "videos/task-0023/observation.images.rgb.head/episode_00232440.mp4",
+      "video_file": "videos/boxing_books_up_for_storage/observation.images.rgb.head/episode_00232440.mp4",
       "video_files": [
-        "videos/task-0023/observation.images.rgb.head/episode_00232440.mp4"
+        "videos/boxing_books_up_for_storage/observation.images.rgb.head/episode_00232440.mp4"
       ],
-      "data_parquet_file": "data/task-0023/episode_00232440.parquet",
-      "episode_file": "meta/episodes/task-0023/episode_00232440.json",
+      "data_parquet_file": "data/boxing_books_up_for_storage/episode_00232440.parquet",
+      "episode_file": "meta/episodes/boxing_books_up_for_storage/episode_00232440.json",
       "raw": {
         "episode_index": 232440,
         "tasks": [
@@ -1486,12 +1486,12 @@
       "task_index": 24,
       "episode_index": 242160,
       "duration_minutes": 9.045,
-      "video_file": "videos/task-0024/observation.images.rgb.head/episode_00242160.mp4",
+      "video_file": "videos/storing_food/observation.images.rgb.head/episode_00242160.mp4",
       "video_files": [
-        "videos/task-0024/observation.images.rgb.head/episode_00242160.mp4"
+        "videos/storing_food/observation.images.rgb.head/episode_00242160.mp4"
       ],
-      "data_parquet_file": "data/task-0024/episode_00242160.parquet",
-      "episode_file": "meta/episodes/task-0024/episode_00242160.json",
+      "data_parquet_file": "data/storing_food/episode_00242160.parquet",
+      "episode_file": "meta/episodes/storing_food/episode_00242160.json",
       "raw": {
         "episode_index": 242160,
         "tasks": [
@@ -1509,12 +1509,12 @@
       "task_index": 24,
       "episode_index": 241030,
       "duration_minutes": 9.331666666666667,
-      "video_file": "videos/task-0024/observation.images.rgb.head/episode_00241030.mp4",
+      "video_file": "videos/storing_food/observation.images.rgb.head/episode_00241030.mp4",
       "video_files": [
-        "videos/task-0024/observation.images.rgb.head/episode_00241030.mp4"
+        "videos/storing_food/observation.images.rgb.head/episode_00241030.mp4"
       ],
-      "data_parquet_file": "data/task-0024/episode_00241030.parquet",
-      "episode_file": "meta/episodes/task-0024/episode_00241030.json",
+      "data_parquet_file": "data/storing_food/episode_00241030.parquet",
+      "episode_file": "meta/episodes/storing_food/episode_00241030.json",
       "raw": {
         "episode_index": 241030,
         "tasks": [
@@ -1532,12 +1532,12 @@
       "task_index": 25,
       "episode_index": 252230,
       "duration_minutes": 5.735,
-      "video_file": "videos/task-0025/observation.images.rgb.head/episode_00252230.mp4",
+      "video_file": "videos/clearing_food_from_table_into_fridge/observation.images.rgb.head/episode_00252230.mp4",
       "video_files": [
-        "videos/task-0025/observation.images.rgb.head/episode_00252230.mp4"
+        "videos/clearing_food_from_table_into_fridge/observation.images.rgb.head/episode_00252230.mp4"
       ],
-      "data_parquet_file": "data/task-0025/episode_00252230.parquet",
-      "episode_file": "meta/episodes/task-0025/episode_00252230.json",
+      "data_parquet_file": "data/clearing_food_from_table_into_fridge/episode_00252230.parquet",
+      "episode_file": "meta/episodes/clearing_food_from_table_into_fridge/episode_00252230.json",
       "raw": {
         "episode_index": 252230,
         "tasks": [
@@ -1555,12 +1555,12 @@
       "task_index": 25,
       "episode_index": 250650,
       "duration_minutes": 7.213333333333334,
-      "video_file": "videos/task-0025/observation.images.rgb.head/episode_00250650.mp4",
+      "video_file": "videos/clearing_food_from_table_into_fridge/observation.images.rgb.head/episode_00250650.mp4",
       "video_files": [
-        "videos/task-0025/observation.images.rgb.head/episode_00250650.mp4"
+        "videos/clearing_food_from_table_into_fridge/observation.images.rgb.head/episode_00250650.mp4"
       ],
-      "data_parquet_file": "data/task-0025/episode_00250650.parquet",
-      "episode_file": "meta/episodes/task-0025/episode_00250650.json",
+      "data_parquet_file": "data/clearing_food_from_table_into_fridge/episode_00250650.parquet",
+      "episode_file": "meta/episodes/clearing_food_from_table_into_fridge/episode_00250650.json",
       "raw": {
         "episode_index": 250650,
         "tasks": [
@@ -1578,12 +1578,12 @@
       "task_index": 26,
       "episode_index": 262710,
       "duration_minutes": 17.980555555555554,
-      "video_file": "videos/task-0026/observation.images.rgb.head/episode_00262710.mp4",
+      "video_file": "videos/assembling_gift_baskets/observation.images.rgb.head/episode_00262710.mp4",
       "video_files": [
-        "videos/task-0026/observation.images.rgb.head/episode_00262710.mp4"
+        "videos/assembling_gift_baskets/observation.images.rgb.head/episode_00262710.mp4"
       ],
-      "data_parquet_file": "data/task-0026/episode_00262710.parquet",
-      "episode_file": "meta/episodes/task-0026/episode_00262710.json",
+      "data_parquet_file": "data/assembling_gift_baskets/episode_00262710.parquet",
+      "episode_file": "meta/episodes/assembling_gift_baskets/episode_00262710.json",
       "raw": {
         "episode_index": 262710,
         "tasks": [
@@ -1601,12 +1601,12 @@
       "task_index": 27,
       "episode_index": 270230,
       "duration_minutes": 8.577777777777778,
-      "video_file": "videos/task-0027/observation.images.rgb.head/episode_00270230.mp4",
+      "video_file": "videos/sorting_household_items/observation.images.rgb.head/episode_00270230.mp4",
       "video_files": [
-        "videos/task-0027/observation.images.rgb.head/episode_00270230.mp4"
+        "videos/sorting_household_items/observation.images.rgb.head/episode_00270230.mp4"
       ],
-      "data_parquet_file": "data/task-0027/episode_00270230.parquet",
-      "episode_file": "meta/episodes/task-0027/episode_00270230.json",
+      "data_parquet_file": "data/sorting_household_items/episode_00270230.parquet",
+      "episode_file": "meta/episodes/sorting_household_items/episode_00270230.json",
       "raw": {
         "episode_index": 270230,
         "tasks": [
@@ -1624,12 +1624,12 @@
       "task_index": 27,
       "episode_index": 270160,
       "duration_minutes": 9.850555555555555,
-      "video_file": "videos/task-0027/observation.images.rgb.head/episode_00270160.mp4",
+      "video_file": "videos/sorting_household_items/observation.images.rgb.head/episode_00270160.mp4",
       "video_files": [
-        "videos/task-0027/observation.images.rgb.head/episode_00270160.mp4"
+        "videos/sorting_household_items/observation.images.rgb.head/episode_00270160.mp4"
       ],
-      "data_parquet_file": "data/task-0027/episode_00270160.parquet",
-      "episode_file": "meta/episodes/task-0027/episode_00270160.json",
+      "data_parquet_file": "data/sorting_household_items/episode_00270160.parquet",
+      "episode_file": "meta/episodes/sorting_household_items/episode_00270160.json",
       "raw": {
         "episode_index": 270160,
         "tasks": [
@@ -1647,12 +1647,12 @@
       "task_index": 28,
       "episode_index": 282320,
       "duration_minutes": 10.882777777777779,
-      "video_file": "videos/task-0028/observation.images.rgb.head/episode_00282320.mp4",
+      "video_file": "videos/getting_organized_for_work/observation.images.rgb.head/episode_00282320.mp4",
       "video_files": [
-        "videos/task-0028/observation.images.rgb.head/episode_00282320.mp4"
+        "videos/getting_organized_for_work/observation.images.rgb.head/episode_00282320.mp4"
       ],
-      "data_parquet_file": "data/task-0028/episode_00282320.parquet",
-      "episode_file": "meta/episodes/task-0028/episode_00282320.json",
+      "data_parquet_file": "data/getting_organized_for_work/episode_00282320.parquet",
+      "episode_file": "meta/episodes/getting_organized_for_work/episode_00282320.json",
       "raw": {
         "episode_index": 282320,
         "tasks": [
@@ -1670,12 +1670,12 @@
       "task_index": 28,
       "episode_index": 280730,
       "duration_minutes": 9.277222222222223,
-      "video_file": "videos/task-0028/observation.images.rgb.head/episode_00280730.mp4",
+      "video_file": "videos/getting_organized_for_work/observation.images.rgb.head/episode_00280730.mp4",
       "video_files": [
-        "videos/task-0028/observation.images.rgb.head/episode_00280730.mp4"
+        "videos/getting_organized_for_work/observation.images.rgb.head/episode_00280730.mp4"
       ],
-      "data_parquet_file": "data/task-0028/episode_00280730.parquet",
-      "episode_file": "meta/episodes/task-0028/episode_00280730.json",
+      "data_parquet_file": "data/getting_organized_for_work/episode_00280730.parquet",
+      "episode_file": "meta/episodes/getting_organized_for_work/episode_00280730.json",
       "raw": {
         "episode_index": 280730,
         "tasks": [
@@ -1693,12 +1693,12 @@
       "task_index": 29,
       "episode_index": 292950,
       "duration_minutes": 12.47,
-      "video_file": "videos/task-0029/observation.images.rgb.head/episode_00292950.mp4",
+      "video_file": "videos/clean_up_your_desk/observation.images.rgb.head/episode_00292950.mp4",
       "video_files": [
-        "videos/task-0029/observation.images.rgb.head/episode_00292950.mp4"
+        "videos/clean_up_your_desk/observation.images.rgb.head/episode_00292950.mp4"
       ],
-      "data_parquet_file": "data/task-0029/episode_00292950.parquet",
-      "episode_file": "meta/episodes/task-0029/episode_00292950.json",
+      "data_parquet_file": "data/clean_up_your_desk/episode_00292950.parquet",
+      "episode_file": "meta/episodes/clean_up_your_desk/episode_00292950.json",
       "raw": {
         "episode_index": 292950,
         "tasks": [
@@ -1716,12 +1716,12 @@
       "task_index": 30,
       "episode_index": 301030,
       "duration_minutes": 5.736111111111112,
-      "video_file": "videos/task-0030/observation.images.rgb.head/episode_00301030.mp4",
+      "video_file": "videos/setting_the_fire/observation.images.rgb.head/episode_00301030.mp4",
       "video_files": [
-        "videos/task-0030/observation.images.rgb.head/episode_00301030.mp4"
+        "videos/setting_the_fire/observation.images.rgb.head/episode_00301030.mp4"
       ],
-      "data_parquet_file": "data/task-0030/episode_00301030.parquet",
-      "episode_file": "meta/episodes/task-0030/episode_00301030.json",
+      "data_parquet_file": "data/setting_the_fire/episode_00301030.parquet",
+      "episode_file": "meta/episodes/setting_the_fire/episode_00301030.json",
       "raw": {
         "episode_index": 301030,
         "tasks": [
@@ -1739,12 +1739,12 @@
       "task_index": 30,
       "episode_index": 300210,
       "duration_minutes": 7.295555555555556,
-      "video_file": "videos/task-0030/observation.images.rgb.head/episode_00300210.mp4",
+      "video_file": "videos/setting_the_fire/observation.images.rgb.head/episode_00300210.mp4",
       "video_files": [
-        "videos/task-0030/observation.images.rgb.head/episode_00300210.mp4"
+        "videos/setting_the_fire/observation.images.rgb.head/episode_00300210.mp4"
       ],
-      "data_parquet_file": "data/task-0030/episode_00300210.parquet",
-      "episode_file": "meta/episodes/task-0030/episode_00300210.json",
+      "data_parquet_file": "data/setting_the_fire/episode_00300210.parquet",
+      "episode_file": "meta/episodes/setting_the_fire/episode_00300210.json",
       "raw": {
         "episode_index": 300210,
         "tasks": [
@@ -1762,12 +1762,12 @@
       "task_index": 31,
       "episode_index": 310870,
       "duration_minutes": 4.242222222222222,
-      "video_file": "videos/task-0031/observation.images.rgb.head/episode_00310870.mp4",
+      "video_file": "videos/clean_boxing_gloves/observation.images.rgb.head/episode_00310870.mp4",
       "video_files": [
-        "videos/task-0031/observation.images.rgb.head/episode_00310870.mp4"
+        "videos/clean_boxing_gloves/observation.images.rgb.head/episode_00310870.mp4"
       ],
-      "data_parquet_file": "data/task-0031/episode_00310870.parquet",
-      "episode_file": "meta/episodes/task-0031/episode_00310870.json",
+      "data_parquet_file": "data/clean_boxing_gloves/episode_00310870.parquet",
+      "episode_file": "meta/episodes/clean_boxing_gloves/episode_00310870.json",
       "raw": {
         "episode_index": 310870,
         "tasks": [
@@ -1785,12 +1785,12 @@
       "task_index": 31,
       "episode_index": 310300,
       "duration_minutes": 6.443888888888889,
-      "video_file": "videos/task-0031/observation.images.rgb.head/episode_00310300.mp4",
+      "video_file": "videos/clean_boxing_gloves/observation.images.rgb.head/episode_00310300.mp4",
       "video_files": [
-        "videos/task-0031/observation.images.rgb.head/episode_00310300.mp4"
+        "videos/clean_boxing_gloves/observation.images.rgb.head/episode_00310300.mp4"
       ],
-      "data_parquet_file": "data/task-0031/episode_00310300.parquet",
-      "episode_file": "meta/episodes/task-0031/episode_00310300.json",
+      "data_parquet_file": "data/clean_boxing_gloves/episode_00310300.parquet",
+      "episode_file": "meta/episodes/clean_boxing_gloves/episode_00310300.json",
       "raw": {
         "episode_index": 310300,
         "tasks": [
@@ -1808,12 +1808,12 @@
       "task_index": 31,
       "episode_index": 311380,
       "duration_minutes": 2.941666666666667,
-      "video_file": "videos/task-0031/observation.images.rgb.head/episode_00311380.mp4",
+      "video_file": "videos/clean_boxing_gloves/observation.images.rgb.head/episode_00311380.mp4",
       "video_files": [
-        "videos/task-0031/observation.images.rgb.head/episode_00311380.mp4"
+        "videos/clean_boxing_gloves/observation.images.rgb.head/episode_00311380.mp4"
       ],
-      "data_parquet_file": "data/task-0031/episode_00311380.parquet",
-      "episode_file": "meta/episodes/task-0031/episode_00311380.json",
+      "data_parquet_file": "data/clean_boxing_gloves/episode_00311380.parquet",
+      "episode_file": "meta/episodes/clean_boxing_gloves/episode_00311380.json",
       "raw": {
         "episode_index": 311380,
         "tasks": [
@@ -1831,12 +1831,12 @@
       "task_index": 32,
       "episode_index": 320720,
       "duration_minutes": 5.070555555555556,
-      "video_file": "videos/task-0032/observation.images.rgb.head/episode_00320720.mp4",
+      "video_file": "videos/wash_a_baseball_cap/observation.images.rgb.head/episode_00320720.mp4",
       "video_files": [
-        "videos/task-0032/observation.images.rgb.head/episode_00320720.mp4"
+        "videos/wash_a_baseball_cap/observation.images.rgb.head/episode_00320720.mp4"
       ],
-      "data_parquet_file": "data/task-0032/episode_00320720.parquet",
-      "episode_file": "meta/episodes/task-0032/episode_00320720.json",
+      "data_parquet_file": "data/wash_a_baseball_cap/episode_00320720.parquet",
+      "episode_file": "meta/episodes/wash_a_baseball_cap/episode_00320720.json",
       "raw": {
         "episode_index": 320720,
         "tasks": [
@@ -1854,12 +1854,12 @@
       "task_index": 32,
       "episode_index": 321580,
       "duration_minutes": 4.967777777777778,
-      "video_file": "videos/task-0032/observation.images.rgb.head/episode_00321580.mp4",
+      "video_file": "videos/wash_a_baseball_cap/observation.images.rgb.head/episode_00321580.mp4",
       "video_files": [
-        "videos/task-0032/observation.images.rgb.head/episode_00321580.mp4"
+        "videos/wash_a_baseball_cap/observation.images.rgb.head/episode_00321580.mp4"
       ],
-      "data_parquet_file": "data/task-0032/episode_00321580.parquet",
-      "episode_file": "meta/episodes/task-0032/episode_00321580.json",
+      "data_parquet_file": "data/wash_a_baseball_cap/episode_00321580.parquet",
+      "episode_file": "meta/episodes/wash_a_baseball_cap/episode_00321580.json",
       "raw": {
         "episode_index": 321580,
         "tasks": [
@@ -1877,12 +1877,12 @@
       "task_index": 32,
       "episode_index": 322140,
       "duration_minutes": 3.712777777777778,
-      "video_file": "videos/task-0032/observation.images.rgb.head/episode_00322140.mp4",
+      "video_file": "videos/wash_a_baseball_cap/observation.images.rgb.head/episode_00322140.mp4",
       "video_files": [
-        "videos/task-0032/observation.images.rgb.head/episode_00322140.mp4"
+        "videos/wash_a_baseball_cap/observation.images.rgb.head/episode_00322140.mp4"
       ],
-      "data_parquet_file": "data/task-0032/episode_00322140.parquet",
-      "episode_file": "meta/episodes/task-0032/episode_00322140.json",
+      "data_parquet_file": "data/wash_a_baseball_cap/episode_00322140.parquet",
+      "episode_file": "meta/episodes/wash_a_baseball_cap/episode_00322140.json",
       "raw": {
         "episode_index": 322140,
         "tasks": [
@@ -1900,12 +1900,12 @@
       "task_index": 33,
       "episode_index": 331100,
       "duration_minutes": 5.3438888888888885,
-      "video_file": "videos/task-0033/observation.images.rgb.head/episode_00331100.mp4",
+      "video_file": "videos/wash_dog_toys/observation.images.rgb.head/episode_00331100.mp4",
       "video_files": [
-        "videos/task-0033/observation.images.rgb.head/episode_00331100.mp4"
+        "videos/wash_dog_toys/observation.images.rgb.head/episode_00331100.mp4"
       ],
-      "data_parquet_file": "data/task-0033/episode_00331100.parquet",
-      "episode_file": "meta/episodes/task-0033/episode_00331100.json",
+      "data_parquet_file": "data/wash_dog_toys/episode_00331100.parquet",
+      "episode_file": "meta/episodes/wash_dog_toys/episode_00331100.json",
       "raw": {
         "episode_index": 331100,
         "tasks": [
@@ -1923,12 +1923,12 @@
       "task_index": 33,
       "episode_index": 330480,
       "duration_minutes": 6.516666666666667,
-      "video_file": "videos/task-0033/observation.images.rgb.head/episode_00330480.mp4",
+      "video_file": "videos/wash_dog_toys/observation.images.rgb.head/episode_00330480.mp4",
       "video_files": [
-        "videos/task-0033/observation.images.rgb.head/episode_00330480.mp4"
+        "videos/wash_dog_toys/observation.images.rgb.head/episode_00330480.mp4"
       ],
-      "data_parquet_file": "data/task-0033/episode_00330480.parquet",
-      "episode_file": "meta/episodes/task-0033/episode_00330480.json",
+      "data_parquet_file": "data/wash_dog_toys/episode_00330480.parquet",
+      "episode_file": "meta/episodes/wash_dog_toys/episode_00330480.json",
       "raw": {
         "episode_index": 330480,
         "tasks": [
@@ -1946,12 +1946,12 @@
       "task_index": 33,
       "episode_index": 331130,
       "duration_minutes": 5.321111111111111,
-      "video_file": "videos/task-0033/observation.images.rgb.head/episode_00331130.mp4",
+      "video_file": "videos/wash_dog_toys/observation.images.rgb.head/episode_00331130.mp4",
       "video_files": [
-        "videos/task-0033/observation.images.rgb.head/episode_00331130.mp4"
+        "videos/wash_dog_toys/observation.images.rgb.head/episode_00331130.mp4"
       ],
-      "data_parquet_file": "data/task-0033/episode_00331130.parquet",
-      "episode_file": "meta/episodes/task-0033/episode_00331130.json",
+      "data_parquet_file": "data/wash_dog_toys/episode_00331130.parquet",
+      "episode_file": "meta/episodes/wash_dog_toys/episode_00331130.json",
       "raw": {
         "episode_index": 331130,
         "tasks": [
@@ -1969,12 +1969,12 @@
       "task_index": 34,
       "episode_index": 341450,
       "duration_minutes": 1.4683333333333333,
-      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00341450.mp4",
+      "video_file": "videos/hanging_pictures/observation.images.rgb.head/episode_00341450.mp4",
       "video_files": [
-        "videos/task-0034/observation.images.rgb.head/episode_00341450.mp4"
+        "videos/hanging_pictures/observation.images.rgb.head/episode_00341450.mp4"
       ],
-      "data_parquet_file": "data/task-0034/episode_00341450.parquet",
-      "episode_file": "meta/episodes/task-0034/episode_00341450.json",
+      "data_parquet_file": "data/hanging_pictures/episode_00341450.parquet",
+      "episode_file": "meta/episodes/hanging_pictures/episode_00341450.json",
       "raw": {
         "episode_index": 341450,
         "tasks": [
@@ -1992,12 +1992,12 @@
       "task_index": 34,
       "episode_index": 340850,
       "duration_minutes": 1.0266666666666666,
-      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00340850.mp4",
+      "video_file": "videos/hanging_pictures/observation.images.rgb.head/episode_00340850.mp4",
       "video_files": [
-        "videos/task-0034/observation.images.rgb.head/episode_00340850.mp4"
+        "videos/hanging_pictures/observation.images.rgb.head/episode_00340850.mp4"
       ],
-      "data_parquet_file": "data/task-0034/episode_00340850.parquet",
-      "episode_file": "meta/episodes/task-0034/episode_00340850.json",
+      "data_parquet_file": "data/hanging_pictures/episode_00340850.parquet",
+      "episode_file": "meta/episodes/hanging_pictures/episode_00340850.json",
       "raw": {
         "episode_index": 340850,
         "tasks": [
@@ -2015,12 +2015,12 @@
       "task_index": 34,
       "episode_index": 342460,
       "duration_minutes": 1.09,
-      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342460.mp4",
+      "video_file": "videos/hanging_pictures/observation.images.rgb.head/episode_00342460.mp4",
       "video_files": [
-        "videos/task-0034/observation.images.rgb.head/episode_00342460.mp4"
+        "videos/hanging_pictures/observation.images.rgb.head/episode_00342460.mp4"
       ],
-      "data_parquet_file": "data/task-0034/episode_00342460.parquet",
-      "episode_file": "meta/episodes/task-0034/episode_00342460.json",
+      "data_parquet_file": "data/hanging_pictures/episode_00342460.parquet",
+      "episode_file": "meta/episodes/hanging_pictures/episode_00342460.json",
       "raw": {
         "episode_index": 342460,
         "tasks": [
@@ -2038,12 +2038,12 @@
       "task_index": 34,
       "episode_index": 341170,
       "duration_minutes": 1.4216666666666666,
-      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00341170.mp4",
+      "video_file": "videos/hanging_pictures/observation.images.rgb.head/episode_00341170.mp4",
       "video_files": [
-        "videos/task-0034/observation.images.rgb.head/episode_00341170.mp4"
+        "videos/hanging_pictures/observation.images.rgb.head/episode_00341170.mp4"
       ],
-      "data_parquet_file": "data/task-0034/episode_00341170.parquet",
-      "episode_file": "meta/episodes/task-0034/episode_00341170.json",
+      "data_parquet_file": "data/hanging_pictures/episode_00341170.parquet",
+      "episode_file": "meta/episodes/hanging_pictures/episode_00341170.json",
       "raw": {
         "episode_index": 341170,
         "tasks": [
@@ -2061,12 +2061,12 @@
       "task_index": 34,
       "episode_index": 342700,
       "duration_minutes": 1.7533333333333334,
-      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342700.mp4",
+      "video_file": "videos/hanging_pictures/observation.images.rgb.head/episode_00342700.mp4",
       "video_files": [
-        "videos/task-0034/observation.images.rgb.head/episode_00342700.mp4"
+        "videos/hanging_pictures/observation.images.rgb.head/episode_00342700.mp4"
       ],
-      "data_parquet_file": "data/task-0034/episode_00342700.parquet",
-      "episode_file": "meta/episodes/task-0034/episode_00342700.json",
+      "data_parquet_file": "data/hanging_pictures/episode_00342700.parquet",
+      "episode_file": "meta/episodes/hanging_pictures/episode_00342700.json",
       "raw": {
         "episode_index": 342700,
         "tasks": [
@@ -2084,12 +2084,12 @@
       "task_index": 34,
       "episode_index": 342610,
       "duration_minutes": 1.143888888888889,
-      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342610.mp4",
+      "video_file": "videos/hanging_pictures/observation.images.rgb.head/episode_00342610.mp4",
       "video_files": [
-        "videos/task-0034/observation.images.rgb.head/episode_00342610.mp4"
+        "videos/hanging_pictures/observation.images.rgb.head/episode_00342610.mp4"
       ],
-      "data_parquet_file": "data/task-0034/episode_00342610.parquet",
-      "episode_file": "meta/episodes/task-0034/episode_00342610.json",
+      "data_parquet_file": "data/hanging_pictures/episode_00342610.parquet",
+      "episode_file": "meta/episodes/hanging_pictures/episode_00342610.json",
       "raw": {
         "episode_index": 342610,
         "tasks": [
@@ -2107,12 +2107,12 @@
       "task_index": 34,
       "episode_index": 342350,
       "duration_minutes": 1.2105555555555556,
-      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342350.mp4",
+      "video_file": "videos/hanging_pictures/observation.images.rgb.head/episode_00342350.mp4",
       "video_files": [
-        "videos/task-0034/observation.images.rgb.head/episode_00342350.mp4"
+        "videos/hanging_pictures/observation.images.rgb.head/episode_00342350.mp4"
       ],
-      "data_parquet_file": "data/task-0034/episode_00342350.parquet",
-      "episode_file": "meta/episodes/task-0034/episode_00342350.json",
+      "data_parquet_file": "data/hanging_pictures/episode_00342350.parquet",
+      "episode_file": "meta/episodes/hanging_pictures/episode_00342350.json",
       "raw": {
         "episode_index": 342350,
         "tasks": [
@@ -2130,12 +2130,12 @@
       "task_index": 34,
       "episode_index": 340220,
       "duration_minutes": 1.1216666666666666,
-      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00340220.mp4",
+      "video_file": "videos/hanging_pictures/observation.images.rgb.head/episode_00340220.mp4",
       "video_files": [
-        "videos/task-0034/observation.images.rgb.head/episode_00340220.mp4"
+        "videos/hanging_pictures/observation.images.rgb.head/episode_00340220.mp4"
       ],
-      "data_parquet_file": "data/task-0034/episode_00340220.parquet",
-      "episode_file": "meta/episodes/task-0034/episode_00340220.json",
+      "data_parquet_file": "data/hanging_pictures/episode_00340220.parquet",
+      "episode_file": "meta/episodes/hanging_pictures/episode_00340220.json",
       "raw": {
         "episode_index": 340220,
         "tasks": [
@@ -2153,12 +2153,12 @@
       "task_index": 34,
       "episode_index": 342240,
       "duration_minutes": 1.241111111111111,
-      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342240.mp4",
+      "video_file": "videos/hanging_pictures/observation.images.rgb.head/episode_00342240.mp4",
       "video_files": [
-        "videos/task-0034/observation.images.rgb.head/episode_00342240.mp4"
+        "videos/hanging_pictures/observation.images.rgb.head/episode_00342240.mp4"
       ],
-      "data_parquet_file": "data/task-0034/episode_00342240.parquet",
-      "episode_file": "meta/episodes/task-0034/episode_00342240.json",
+      "data_parquet_file": "data/hanging_pictures/episode_00342240.parquet",
+      "episode_file": "meta/episodes/hanging_pictures/episode_00342240.json",
       "raw": {
         "episode_index": 342240,
         "tasks": [
@@ -2176,12 +2176,12 @@
       "task_index": 34,
       "episode_index": 342330,
       "duration_minutes": 0.8716666666666666,
-      "video_file": "videos/task-0034/observation.images.rgb.head/episode_00342330.mp4",
+      "video_file": "videos/hanging_pictures/observation.images.rgb.head/episode_00342330.mp4",
       "video_files": [
-        "videos/task-0034/observation.images.rgb.head/episode_00342330.mp4"
+        "videos/hanging_pictures/observation.images.rgb.head/episode_00342330.mp4"
       ],
-      "data_parquet_file": "data/task-0034/episode_00342330.parquet",
-      "episode_file": "meta/episodes/task-0034/episode_00342330.json",
+      "data_parquet_file": "data/hanging_pictures/episode_00342330.parquet",
+      "episode_file": "meta/episodes/hanging_pictures/episode_00342330.json",
       "raw": {
         "episode_index": 342330,
         "tasks": [
@@ -2199,12 +2199,12 @@
       "task_index": 35,
       "episode_index": 350540,
       "duration_minutes": 2.7216666666666667,
-      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00350540.mp4",
+      "video_file": "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00350540.mp4",
       "video_files": [
-        "videos/task-0035/observation.images.rgb.head/episode_00350540.mp4"
+        "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00350540.mp4"
       ],
-      "data_parquet_file": "data/task-0035/episode_00350540.parquet",
-      "episode_file": "meta/episodes/task-0035/episode_00350540.json",
+      "data_parquet_file": "data/attach_a_camera_to_a_tripod/episode_00350540.parquet",
+      "episode_file": "meta/episodes/attach_a_camera_to_a_tripod/episode_00350540.json",
       "raw": {
         "episode_index": 350540,
         "tasks": [
@@ -2222,12 +2222,12 @@
       "task_index": 35,
       "episode_index": 351990,
       "duration_minutes": 1.4544444444444444,
-      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00351990.mp4",
+      "video_file": "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00351990.mp4",
       "video_files": [
-        "videos/task-0035/observation.images.rgb.head/episode_00351990.mp4"
+        "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00351990.mp4"
       ],
-      "data_parquet_file": "data/task-0035/episode_00351990.parquet",
-      "episode_file": "meta/episodes/task-0035/episode_00351990.json",
+      "data_parquet_file": "data/attach_a_camera_to_a_tripod/episode_00351990.parquet",
+      "episode_file": "meta/episodes/attach_a_camera_to_a_tripod/episode_00351990.json",
       "raw": {
         "episode_index": 351990,
         "tasks": [
@@ -2245,12 +2245,12 @@
       "task_index": 35,
       "episode_index": 352830,
       "duration_minutes": 2.2616666666666663,
-      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00352830.mp4",
+      "video_file": "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00352830.mp4",
       "video_files": [
-        "videos/task-0035/observation.images.rgb.head/episode_00352830.mp4"
+        "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00352830.mp4"
       ],
-      "data_parquet_file": "data/task-0035/episode_00352830.parquet",
-      "episode_file": "meta/episodes/task-0035/episode_00352830.json",
+      "data_parquet_file": "data/attach_a_camera_to_a_tripod/episode_00352830.parquet",
+      "episode_file": "meta/episodes/attach_a_camera_to_a_tripod/episode_00352830.json",
       "raw": {
         "episode_index": 352830,
         "tasks": [
@@ -2268,12 +2268,12 @@
       "task_index": 35,
       "episode_index": 350830,
       "duration_minutes": 2.7305555555555556,
-      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00350830.mp4",
+      "video_file": "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00350830.mp4",
       "video_files": [
-        "videos/task-0035/observation.images.rgb.head/episode_00350830.mp4"
+        "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00350830.mp4"
       ],
-      "data_parquet_file": "data/task-0035/episode_00350830.parquet",
-      "episode_file": "meta/episodes/task-0035/episode_00350830.json",
+      "data_parquet_file": "data/attach_a_camera_to_a_tripod/episode_00350830.parquet",
+      "episode_file": "meta/episodes/attach_a_camera_to_a_tripod/episode_00350830.json",
       "raw": {
         "episode_index": 350830,
         "tasks": [
@@ -2291,12 +2291,12 @@
       "task_index": 35,
       "episode_index": 350520,
       "duration_minutes": 2.6244444444444444,
-      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00350520.mp4",
+      "video_file": "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00350520.mp4",
       "video_files": [
-        "videos/task-0035/observation.images.rgb.head/episode_00350520.mp4"
+        "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00350520.mp4"
       ],
-      "data_parquet_file": "data/task-0035/episode_00350520.parquet",
-      "episode_file": "meta/episodes/task-0035/episode_00350520.json",
+      "data_parquet_file": "data/attach_a_camera_to_a_tripod/episode_00350520.parquet",
+      "episode_file": "meta/episodes/attach_a_camera_to_a_tripod/episode_00350520.json",
       "raw": {
         "episode_index": 350520,
         "tasks": [
@@ -2314,12 +2314,12 @@
       "task_index": 35,
       "episode_index": 351750,
       "duration_minutes": 3.6572222222222224,
-      "video_file": "videos/task-0035/observation.images.rgb.head/episode_00351750.mp4",
+      "video_file": "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00351750.mp4",
       "video_files": [
-        "videos/task-0035/observation.images.rgb.head/episode_00351750.mp4"
+        "videos/attach_a_camera_to_a_tripod/observation.images.rgb.head/episode_00351750.mp4"
       ],
-      "data_parquet_file": "data/task-0035/episode_00351750.parquet",
-      "episode_file": "meta/episodes/task-0035/episode_00351750.json",
+      "data_parquet_file": "data/attach_a_camera_to_a_tripod/episode_00351750.parquet",
+      "episode_file": "meta/episodes/attach_a_camera_to_a_tripod/episode_00351750.json",
       "raw": {
         "episode_index": 351750,
         "tasks": [
@@ -2337,12 +2337,12 @@
       "task_index": 36,
       "episode_index": 361360,
       "duration_minutes": 7.3566666666666665,
-      "video_file": "videos/task-0036/observation.images.rgb.head/episode_00361360.mp4",
+      "video_file": "videos/clean_a_patio/observation.images.rgb.head/episode_00361360.mp4",
       "video_files": [
-        "videos/task-0036/observation.images.rgb.head/episode_00361360.mp4"
+        "videos/clean_a_patio/observation.images.rgb.head/episode_00361360.mp4"
       ],
-      "data_parquet_file": "data/task-0036/episode_00361360.parquet",
-      "episode_file": "meta/episodes/task-0036/episode_00361360.json",
+      "data_parquet_file": "data/clean_a_patio/episode_00361360.parquet",
+      "episode_file": "meta/episodes/clean_a_patio/episode_00361360.json",
       "raw": {
         "episode_index": 361360,
         "tasks": [
@@ -2360,12 +2360,12 @@
       "task_index": 36,
       "episode_index": 360930,
       "duration_minutes": 5.828888888888889,
-      "video_file": "videos/task-0036/observation.images.rgb.head/episode_00360930.mp4",
+      "video_file": "videos/clean_a_patio/observation.images.rgb.head/episode_00360930.mp4",
       "video_files": [
-        "videos/task-0036/observation.images.rgb.head/episode_00360930.mp4"
+        "videos/clean_a_patio/observation.images.rgb.head/episode_00360930.mp4"
       ],
-      "data_parquet_file": "data/task-0036/episode_00360930.parquet",
-      "episode_file": "meta/episodes/task-0036/episode_00360930.json",
+      "data_parquet_file": "data/clean_a_patio/episode_00360930.parquet",
+      "episode_file": "meta/episodes/clean_a_patio/episode_00360930.json",
       "raw": {
         "episode_index": 360930,
         "tasks": [
@@ -2383,12 +2383,12 @@
       "task_index": 37,
       "episode_index": 372210,
       "duration_minutes": 2.243333333333333,
-      "video_file": "videos/task-0037/observation.images.rgb.head/episode_00372210.mp4",
+      "video_file": "videos/clean_a_trumpet/observation.images.rgb.head/episode_00372210.mp4",
       "video_files": [
-        "videos/task-0037/observation.images.rgb.head/episode_00372210.mp4"
+        "videos/clean_a_trumpet/observation.images.rgb.head/episode_00372210.mp4"
       ],
-      "data_parquet_file": "data/task-0037/episode_00372210.parquet",
-      "episode_file": "meta/episodes/task-0037/episode_00372210.json",
+      "data_parquet_file": "data/clean_a_trumpet/episode_00372210.parquet",
+      "episode_file": "meta/episodes/clean_a_trumpet/episode_00372210.json",
       "raw": {
         "episode_index": 372210,
         "tasks": [
@@ -2406,12 +2406,12 @@
       "task_index": 37,
       "episode_index": 372350,
       "duration_minutes": 2.576111111111111,
-      "video_file": "videos/task-0037/observation.images.rgb.head/episode_00372350.mp4",
+      "video_file": "videos/clean_a_trumpet/observation.images.rgb.head/episode_00372350.mp4",
       "video_files": [
-        "videos/task-0037/observation.images.rgb.head/episode_00372350.mp4"
+        "videos/clean_a_trumpet/observation.images.rgb.head/episode_00372350.mp4"
       ],
-      "data_parquet_file": "data/task-0037/episode_00372350.parquet",
-      "episode_file": "meta/episodes/task-0037/episode_00372350.json",
+      "data_parquet_file": "data/clean_a_trumpet/episode_00372350.parquet",
+      "episode_file": "meta/episodes/clean_a_trumpet/episode_00372350.json",
       "raw": {
         "episode_index": 372350,
         "tasks": [
@@ -2429,12 +2429,12 @@
       "task_index": 37,
       "episode_index": 371720,
       "duration_minutes": 3.2422222222222223,
-      "video_file": "videos/task-0037/observation.images.rgb.head/episode_00371720.mp4",
+      "video_file": "videos/clean_a_trumpet/observation.images.rgb.head/episode_00371720.mp4",
       "video_files": [
-        "videos/task-0037/observation.images.rgb.head/episode_00371720.mp4"
+        "videos/clean_a_trumpet/observation.images.rgb.head/episode_00371720.mp4"
       ],
-      "data_parquet_file": "data/task-0037/episode_00371720.parquet",
-      "episode_file": "meta/episodes/task-0037/episode_00371720.json",
+      "data_parquet_file": "data/clean_a_trumpet/episode_00371720.parquet",
+      "episode_file": "meta/episodes/clean_a_trumpet/episode_00371720.json",
       "raw": {
         "episode_index": 371720,
         "tasks": [
@@ -2452,12 +2452,12 @@
       "task_index": 37,
       "episode_index": 370700,
       "duration_minutes": 3.0616666666666665,
-      "video_file": "videos/task-0037/observation.images.rgb.head/episode_00370700.mp4",
+      "video_file": "videos/clean_a_trumpet/observation.images.rgb.head/episode_00370700.mp4",
       "video_files": [
-        "videos/task-0037/observation.images.rgb.head/episode_00370700.mp4"
+        "videos/clean_a_trumpet/observation.images.rgb.head/episode_00370700.mp4"
       ],
-      "data_parquet_file": "data/task-0037/episode_00370700.parquet",
-      "episode_file": "meta/episodes/task-0037/episode_00370700.json",
+      "data_parquet_file": "data/clean_a_trumpet/episode_00370700.parquet",
+      "episode_file": "meta/episodes/clean_a_trumpet/episode_00370700.json",
       "raw": {
         "episode_index": 370700,
         "tasks": [
@@ -2475,12 +2475,12 @@
       "task_index": 37,
       "episode_index": 372380,
       "duration_minutes": 2.7733333333333334,
-      "video_file": "videos/task-0037/observation.images.rgb.head/episode_00372380.mp4",
+      "video_file": "videos/clean_a_trumpet/observation.images.rgb.head/episode_00372380.mp4",
       "video_files": [
-        "videos/task-0037/observation.images.rgb.head/episode_00372380.mp4"
+        "videos/clean_a_trumpet/observation.images.rgb.head/episode_00372380.mp4"
       ],
-      "data_parquet_file": "data/task-0037/episode_00372380.parquet",
-      "episode_file": "meta/episodes/task-0037/episode_00372380.json",
+      "data_parquet_file": "data/clean_a_trumpet/episode_00372380.parquet",
+      "episode_file": "meta/episodes/clean_a_trumpet/episode_00372380.json",
       "raw": {
         "episode_index": 372380,
         "tasks": [
@@ -2498,12 +2498,12 @@
       "task_index": 38,
       "episode_index": 381180,
       "duration_minutes": 4.315555555555556,
-      "video_file": "videos/task-0038/observation.images.rgb.head/episode_00381180.mp4",
+      "video_file": "videos/spraying_for_bugs/observation.images.rgb.head/episode_00381180.mp4",
       "video_files": [
-        "videos/task-0038/observation.images.rgb.head/episode_00381180.mp4"
+        "videos/spraying_for_bugs/observation.images.rgb.head/episode_00381180.mp4"
       ],
-      "data_parquet_file": "data/task-0038/episode_00381180.parquet",
-      "episode_file": "meta/episodes/task-0038/episode_00381180.json",
+      "data_parquet_file": "data/spraying_for_bugs/episode_00381180.parquet",
+      "episode_file": "meta/episodes/spraying_for_bugs/episode_00381180.json",
       "raw": {
         "episode_index": 381180,
         "tasks": [
@@ -2521,12 +2521,12 @@
       "task_index": 38,
       "episode_index": 382970,
       "duration_minutes": 3.079444444444445,
-      "video_file": "videos/task-0038/observation.images.rgb.head/episode_00382970.mp4",
+      "video_file": "videos/spraying_for_bugs/observation.images.rgb.head/episode_00382970.mp4",
       "video_files": [
-        "videos/task-0038/observation.images.rgb.head/episode_00382970.mp4"
+        "videos/spraying_for_bugs/observation.images.rgb.head/episode_00382970.mp4"
       ],
-      "data_parquet_file": "data/task-0038/episode_00382970.parquet",
-      "episode_file": "meta/episodes/task-0038/episode_00382970.json",
+      "data_parquet_file": "data/spraying_for_bugs/episode_00382970.parquet",
+      "episode_file": "meta/episodes/spraying_for_bugs/episode_00382970.json",
       "raw": {
         "episode_index": 382970,
         "tasks": [
@@ -2544,12 +2544,12 @@
       "task_index": 38,
       "episode_index": 380180,
       "duration_minutes": 3.603333333333333,
-      "video_file": "videos/task-0038/observation.images.rgb.head/episode_00380180.mp4",
+      "video_file": "videos/spraying_for_bugs/observation.images.rgb.head/episode_00380180.mp4",
       "video_files": [
-        "videos/task-0038/observation.images.rgb.head/episode_00380180.mp4"
+        "videos/spraying_for_bugs/observation.images.rgb.head/episode_00380180.mp4"
       ],
-      "data_parquet_file": "data/task-0038/episode_00380180.parquet",
-      "episode_file": "meta/episodes/task-0038/episode_00380180.json",
+      "data_parquet_file": "data/spraying_for_bugs/episode_00380180.parquet",
+      "episode_file": "meta/episodes/spraying_for_bugs/episode_00380180.json",
       "raw": {
         "episode_index": 380180,
         "tasks": [
@@ -2567,12 +2567,12 @@
       "task_index": 38,
       "episode_index": 380880,
       "duration_minutes": 3.9183333333333334,
-      "video_file": "videos/task-0038/observation.images.rgb.head/episode_00380880.mp4",
+      "video_file": "videos/spraying_for_bugs/observation.images.rgb.head/episode_00380880.mp4",
       "video_files": [
-        "videos/task-0038/observation.images.rgb.head/episode_00380880.mp4"
+        "videos/spraying_for_bugs/observation.images.rgb.head/episode_00380880.mp4"
       ],
-      "data_parquet_file": "data/task-0038/episode_00380880.parquet",
-      "episode_file": "meta/episodes/task-0038/episode_00380880.json",
+      "data_parquet_file": "data/spraying_for_bugs/episode_00380880.parquet",
+      "episode_file": "meta/episodes/spraying_for_bugs/episode_00380880.json",
       "raw": {
         "episode_index": 380880,
         "tasks": [
@@ -2590,12 +2590,12 @@
       "task_index": 39,
       "episode_index": 390120,
       "duration_minutes": 4.569999999999999,
-      "video_file": "videos/task-0039/observation.images.rgb.head/episode_00390120.mp4",
+      "video_file": "videos/spraying_fruit_trees/observation.images.rgb.head/episode_00390120.mp4",
       "video_files": [
-        "videos/task-0039/observation.images.rgb.head/episode_00390120.mp4"
+        "videos/spraying_fruit_trees/observation.images.rgb.head/episode_00390120.mp4"
       ],
-      "data_parquet_file": "data/task-0039/episode_00390120.parquet",
-      "episode_file": "meta/episodes/task-0039/episode_00390120.json",
+      "data_parquet_file": "data/spraying_fruit_trees/episode_00390120.parquet",
+      "episode_file": "meta/episodes/spraying_fruit_trees/episode_00390120.json",
       "raw": {
         "episode_index": 390120,
         "tasks": [
@@ -2613,12 +2613,12 @@
       "task_index": 39,
       "episode_index": 391370,
       "duration_minutes": 4.207222222222223,
-      "video_file": "videos/task-0039/observation.images.rgb.head/episode_00391370.mp4",
+      "video_file": "videos/spraying_fruit_trees/observation.images.rgb.head/episode_00391370.mp4",
       "video_files": [
-        "videos/task-0039/observation.images.rgb.head/episode_00391370.mp4"
+        "videos/spraying_fruit_trees/observation.images.rgb.head/episode_00391370.mp4"
       ],
-      "data_parquet_file": "data/task-0039/episode_00391370.parquet",
-      "episode_file": "meta/episodes/task-0039/episode_00391370.json",
+      "data_parquet_file": "data/spraying_fruit_trees/episode_00391370.parquet",
+      "episode_file": "meta/episodes/spraying_fruit_trees/episode_00391370.json",
       "raw": {
         "episode_index": 391370,
         "tasks": [
@@ -2636,12 +2636,12 @@
       "task_index": 39,
       "episode_index": 391750,
       "duration_minutes": 4.357777777777778,
-      "video_file": "videos/task-0039/observation.images.rgb.head/episode_00391750.mp4",
+      "video_file": "videos/spraying_fruit_trees/observation.images.rgb.head/episode_00391750.mp4",
       "video_files": [
-        "videos/task-0039/observation.images.rgb.head/episode_00391750.mp4"
+        "videos/spraying_fruit_trees/observation.images.rgb.head/episode_00391750.mp4"
       ],
-      "data_parquet_file": "data/task-0039/episode_00391750.parquet",
-      "episode_file": "meta/episodes/task-0039/episode_00391750.json",
+      "data_parquet_file": "data/spraying_fruit_trees/episode_00391750.parquet",
+      "episode_file": "meta/episodes/spraying_fruit_trees/episode_00391750.json",
       "raw": {
         "episode_index": 391750,
         "tasks": [
@@ -2659,12 +2659,12 @@
       "task_index": 40,
       "episode_index": 400730,
       "duration_minutes": 1.7744444444444445,
-      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00400730.mp4",
+      "video_file": "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00400730.mp4",
       "video_files": [
-        "videos/task-0040/observation.images.rgb.head/episode_00400730.mp4"
+        "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00400730.mp4"
       ],
-      "data_parquet_file": "data/task-0040/episode_00400730.parquet",
-      "episode_file": "meta/episodes/task-0040/episode_00400730.json",
+      "data_parquet_file": "data/make_microwave_popcorn/episode_00400730.parquet",
+      "episode_file": "meta/episodes/make_microwave_popcorn/episode_00400730.json",
       "raw": {
         "episode_index": 400730,
         "tasks": [
@@ -2682,12 +2682,12 @@
       "task_index": 40,
       "episode_index": 400170,
       "duration_minutes": 1.8122222222222222,
-      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00400170.mp4",
+      "video_file": "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00400170.mp4",
       "video_files": [
-        "videos/task-0040/observation.images.rgb.head/episode_00400170.mp4"
+        "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00400170.mp4"
       ],
-      "data_parquet_file": "data/task-0040/episode_00400170.parquet",
-      "episode_file": "meta/episodes/task-0040/episode_00400170.json",
+      "data_parquet_file": "data/make_microwave_popcorn/episode_00400170.parquet",
+      "episode_file": "meta/episodes/make_microwave_popcorn/episode_00400170.json",
       "raw": {
         "episode_index": 400170,
         "tasks": [
@@ -2705,12 +2705,12 @@
       "task_index": 40,
       "episode_index": 400570,
       "duration_minutes": 1.8133333333333332,
-      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00400570.mp4",
+      "video_file": "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00400570.mp4",
       "video_files": [
-        "videos/task-0040/observation.images.rgb.head/episode_00400570.mp4"
+        "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00400570.mp4"
       ],
-      "data_parquet_file": "data/task-0040/episode_00400570.parquet",
-      "episode_file": "meta/episodes/task-0040/episode_00400570.json",
+      "data_parquet_file": "data/make_microwave_popcorn/episode_00400570.parquet",
+      "episode_file": "meta/episodes/make_microwave_popcorn/episode_00400570.json",
       "raw": {
         "episode_index": 400570,
         "tasks": [
@@ -2728,12 +2728,12 @@
       "task_index": 40,
       "episode_index": 401950,
       "duration_minutes": 1.1616666666666666,
-      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00401950.mp4",
+      "video_file": "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00401950.mp4",
       "video_files": [
-        "videos/task-0040/observation.images.rgb.head/episode_00401950.mp4"
+        "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00401950.mp4"
       ],
-      "data_parquet_file": "data/task-0040/episode_00401950.parquet",
-      "episode_file": "meta/episodes/task-0040/episode_00401950.json",
+      "data_parquet_file": "data/make_microwave_popcorn/episode_00401950.parquet",
+      "episode_file": "meta/episodes/make_microwave_popcorn/episode_00401950.json",
       "raw": {
         "episode_index": 401950,
         "tasks": [
@@ -2751,12 +2751,12 @@
       "task_index": 40,
       "episode_index": 402870,
       "duration_minutes": 1.9627777777777777,
-      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00402870.mp4",
+      "video_file": "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00402870.mp4",
       "video_files": [
-        "videos/task-0040/observation.images.rgb.head/episode_00402870.mp4"
+        "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00402870.mp4"
       ],
-      "data_parquet_file": "data/task-0040/episode_00402870.parquet",
-      "episode_file": "meta/episodes/task-0040/episode_00402870.json",
+      "data_parquet_file": "data/make_microwave_popcorn/episode_00402870.parquet",
+      "episode_file": "meta/episodes/make_microwave_popcorn/episode_00402870.json",
       "raw": {
         "episode_index": 402870,
         "tasks": [
@@ -2774,12 +2774,12 @@
       "task_index": 40,
       "episode_index": 400890,
       "duration_minutes": 1.5638888888888889,
-      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00400890.mp4",
+      "video_file": "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00400890.mp4",
       "video_files": [
-        "videos/task-0040/observation.images.rgb.head/episode_00400890.mp4"
+        "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00400890.mp4"
       ],
-      "data_parquet_file": "data/task-0040/episode_00400890.parquet",
-      "episode_file": "meta/episodes/task-0040/episode_00400890.json",
+      "data_parquet_file": "data/make_microwave_popcorn/episode_00400890.parquet",
+      "episode_file": "meta/episodes/make_microwave_popcorn/episode_00400890.json",
       "raw": {
         "episode_index": 400890,
         "tasks": [
@@ -2797,12 +2797,12 @@
       "task_index": 40,
       "episode_index": 400580,
       "duration_minutes": 1.7494444444444446,
-      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00400580.mp4",
+      "video_file": "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00400580.mp4",
       "video_files": [
-        "videos/task-0040/observation.images.rgb.head/episode_00400580.mp4"
+        "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00400580.mp4"
       ],
-      "data_parquet_file": "data/task-0040/episode_00400580.parquet",
-      "episode_file": "meta/episodes/task-0040/episode_00400580.json",
+      "data_parquet_file": "data/make_microwave_popcorn/episode_00400580.parquet",
+      "episode_file": "meta/episodes/make_microwave_popcorn/episode_00400580.json",
       "raw": {
         "episode_index": 400580,
         "tasks": [
@@ -2820,12 +2820,12 @@
       "task_index": 40,
       "episode_index": 402720,
       "duration_minutes": 1.9272222222222224,
-      "video_file": "videos/task-0040/observation.images.rgb.head/episode_00402720.mp4",
+      "video_file": "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00402720.mp4",
       "video_files": [
-        "videos/task-0040/observation.images.rgb.head/episode_00402720.mp4"
+        "videos/make_microwave_popcorn/observation.images.rgb.head/episode_00402720.mp4"
       ],
-      "data_parquet_file": "data/task-0040/episode_00402720.parquet",
-      "episode_file": "meta/episodes/task-0040/episode_00402720.json",
+      "data_parquet_file": "data/make_microwave_popcorn/episode_00402720.parquet",
+      "episode_file": "meta/episodes/make_microwave_popcorn/episode_00402720.json",
       "raw": {
         "episode_index": 402720,
         "tasks": [
@@ -2843,12 +2843,12 @@
       "task_index": 41,
       "episode_index": 411840,
       "duration_minutes": 7.094444444444445,
-      "video_file": "videos/task-0041/observation.images.rgb.head/episode_00411840.mp4",
+      "video_file": "videos/cook_cabbage/observation.images.rgb.head/episode_00411840.mp4",
       "video_files": [
-        "videos/task-0041/observation.images.rgb.head/episode_00411840.mp4"
+        "videos/cook_cabbage/observation.images.rgb.head/episode_00411840.mp4"
       ],
-      "data_parquet_file": "data/task-0041/episode_00411840.parquet",
-      "episode_file": "meta/episodes/task-0041/episode_00411840.json",
+      "data_parquet_file": "data/cook_cabbage/episode_00411840.parquet",
+      "episode_file": "meta/episodes/cook_cabbage/episode_00411840.json",
       "raw": {
         "episode_index": 411840,
         "tasks": [
@@ -2866,12 +2866,12 @@
       "task_index": 41,
       "episode_index": 411460,
       "duration_minutes": 7.756111111111111,
-      "video_file": "videos/task-0041/observation.images.rgb.head/episode_00411460.mp4",
+      "video_file": "videos/cook_cabbage/observation.images.rgb.head/episode_00411460.mp4",
       "video_files": [
-        "videos/task-0041/observation.images.rgb.head/episode_00411460.mp4"
+        "videos/cook_cabbage/observation.images.rgb.head/episode_00411460.mp4"
       ],
-      "data_parquet_file": "data/task-0041/episode_00411460.parquet",
-      "episode_file": "meta/episodes/task-0041/episode_00411460.json",
+      "data_parquet_file": "data/cook_cabbage/episode_00411460.parquet",
+      "episode_file": "meta/episodes/cook_cabbage/episode_00411460.json",
       "raw": {
         "episode_index": 411460,
         "tasks": [
@@ -2889,12 +2889,12 @@
       "task_index": 42,
       "episode_index": 422370,
       "duration_minutes": 3.0483333333333333,
-      "video_file": "videos/task-0042/observation.images.rgb.head/episode_00422370.mp4",
+      "video_file": "videos/chop_an_onion/observation.images.rgb.head/episode_00422370.mp4",
       "video_files": [
-        "videos/task-0042/observation.images.rgb.head/episode_00422370.mp4"
+        "videos/chop_an_onion/observation.images.rgb.head/episode_00422370.mp4"
       ],
-      "data_parquet_file": "data/task-0042/episode_00422370.parquet",
-      "episode_file": "meta/episodes/task-0042/episode_00422370.json",
+      "data_parquet_file": "data/chop_an_onion/episode_00422370.parquet",
+      "episode_file": "meta/episodes/chop_an_onion/episode_00422370.json",
       "raw": {
         "episode_index": 422370,
         "tasks": [
@@ -2912,12 +2912,12 @@
       "task_index": 42,
       "episode_index": 421680,
       "duration_minutes": 3.579444444444445,
-      "video_file": "videos/task-0042/observation.images.rgb.head/episode_00421680.mp4",
+      "video_file": "videos/chop_an_onion/observation.images.rgb.head/episode_00421680.mp4",
       "video_files": [
-        "videos/task-0042/observation.images.rgb.head/episode_00421680.mp4"
+        "videos/chop_an_onion/observation.images.rgb.head/episode_00421680.mp4"
       ],
-      "data_parquet_file": "data/task-0042/episode_00421680.parquet",
-      "episode_file": "meta/episodes/task-0042/episode_00421680.json",
+      "data_parquet_file": "data/chop_an_onion/episode_00421680.parquet",
+      "episode_file": "meta/episodes/chop_an_onion/episode_00421680.json",
       "raw": {
         "episode_index": 421680,
         "tasks": [
@@ -2935,12 +2935,12 @@
       "task_index": 42,
       "episode_index": 420630,
       "duration_minutes": 3.9255555555555555,
-      "video_file": "videos/task-0042/observation.images.rgb.head/episode_00420630.mp4",
+      "video_file": "videos/chop_an_onion/observation.images.rgb.head/episode_00420630.mp4",
       "video_files": [
-        "videos/task-0042/observation.images.rgb.head/episode_00420630.mp4"
+        "videos/chop_an_onion/observation.images.rgb.head/episode_00420630.mp4"
       ],
-      "data_parquet_file": "data/task-0042/episode_00420630.parquet",
-      "episode_file": "meta/episodes/task-0042/episode_00420630.json",
+      "data_parquet_file": "data/chop_an_onion/episode_00420630.parquet",
+      "episode_file": "meta/episodes/chop_an_onion/episode_00420630.json",
       "raw": {
         "episode_index": 420630,
         "tasks": [
@@ -2958,12 +2958,12 @@
       "task_index": 42,
       "episode_index": 421090,
       "duration_minutes": 4.166666666666667,
-      "video_file": "videos/task-0042/observation.images.rgb.head/episode_00421090.mp4",
+      "video_file": "videos/chop_an_onion/observation.images.rgb.head/episode_00421090.mp4",
       "video_files": [
-        "videos/task-0042/observation.images.rgb.head/episode_00421090.mp4"
+        "videos/chop_an_onion/observation.images.rgb.head/episode_00421090.mp4"
       ],
-      "data_parquet_file": "data/task-0042/episode_00421090.parquet",
-      "episode_file": "meta/episodes/task-0042/episode_00421090.json",
+      "data_parquet_file": "data/chop_an_onion/episode_00421090.parquet",
+      "episode_file": "meta/episodes/chop_an_onion/episode_00421090.json",
       "raw": {
         "episode_index": 421090,
         "tasks": [
@@ -2981,12 +2981,12 @@
       "task_index": 43,
       "episode_index": 430450,
       "duration_minutes": 10.852222222222222,
-      "video_file": "videos/task-0043/observation.images.rgb.head/episode_00430450.mp4",
+      "video_file": "videos/slicing_vegetables/observation.images.rgb.head/episode_00430450.mp4",
       "video_files": [
-        "videos/task-0043/observation.images.rgb.head/episode_00430450.mp4"
+        "videos/slicing_vegetables/observation.images.rgb.head/episode_00430450.mp4"
       ],
-      "data_parquet_file": "data/task-0043/episode_00430450.parquet",
-      "episode_file": "meta/episodes/task-0043/episode_00430450.json",
+      "data_parquet_file": "data/slicing_vegetables/episode_00430450.parquet",
+      "episode_file": "meta/episodes/slicing_vegetables/episode_00430450.json",
       "raw": {
         "episode_index": 430450,
         "tasks": [
@@ -3004,12 +3004,12 @@
       "task_index": 43,
       "episode_index": 430880,
       "duration_minutes": 9.059444444444445,
-      "video_file": "videos/task-0043/observation.images.rgb.head/episode_00430880.mp4",
+      "video_file": "videos/slicing_vegetables/observation.images.rgb.head/episode_00430880.mp4",
       "video_files": [
-        "videos/task-0043/observation.images.rgb.head/episode_00430880.mp4"
+        "videos/slicing_vegetables/observation.images.rgb.head/episode_00430880.mp4"
       ],
-      "data_parquet_file": "data/task-0043/episode_00430880.parquet",
-      "episode_file": "meta/episodes/task-0043/episode_00430880.json",
+      "data_parquet_file": "data/slicing_vegetables/episode_00430880.parquet",
+      "episode_file": "meta/episodes/slicing_vegetables/episode_00430880.json",
       "raw": {
         "episode_index": 430880,
         "tasks": [
@@ -3027,12 +3027,12 @@
       "task_index": 44,
       "episode_index": 442860,
       "duration_minutes": 6.488333333333333,
-      "video_file": "videos/task-0044/observation.images.rgb.head/episode_00442860.mp4",
+      "video_file": "videos/chopping_wood/observation.images.rgb.head/episode_00442860.mp4",
       "video_files": [
-        "videos/task-0044/observation.images.rgb.head/episode_00442860.mp4"
+        "videos/chopping_wood/observation.images.rgb.head/episode_00442860.mp4"
       ],
-      "data_parquet_file": "data/task-0044/episode_00442860.parquet",
-      "episode_file": "meta/episodes/task-0044/episode_00442860.json",
+      "data_parquet_file": "data/chopping_wood/episode_00442860.parquet",
+      "episode_file": "meta/episodes/chopping_wood/episode_00442860.json",
       "raw": {
         "episode_index": 442860,
         "tasks": [
@@ -3050,12 +3050,12 @@
       "task_index": 44,
       "episode_index": 442140,
       "duration_minutes": 4.394444444444445,
-      "video_file": "videos/task-0044/observation.images.rgb.head/episode_00442140.mp4",
+      "video_file": "videos/chopping_wood/observation.images.rgb.head/episode_00442140.mp4",
       "video_files": [
-        "videos/task-0044/observation.images.rgb.head/episode_00442140.mp4"
+        "videos/chopping_wood/observation.images.rgb.head/episode_00442140.mp4"
       ],
-      "data_parquet_file": "data/task-0044/episode_00442140.parquet",
-      "episode_file": "meta/episodes/task-0044/episode_00442140.json",
+      "data_parquet_file": "data/chopping_wood/episode_00442140.parquet",
+      "episode_file": "meta/episodes/chopping_wood/episode_00442140.json",
       "raw": {
         "episode_index": 442140,
         "tasks": [
@@ -3073,12 +3073,12 @@
       "task_index": 44,
       "episode_index": 441970,
       "duration_minutes": 4.21,
-      "video_file": "videos/task-0044/observation.images.rgb.head/episode_00441970.mp4",
+      "video_file": "videos/chopping_wood/observation.images.rgb.head/episode_00441970.mp4",
       "video_files": [
-        "videos/task-0044/observation.images.rgb.head/episode_00441970.mp4"
+        "videos/chopping_wood/observation.images.rgb.head/episode_00441970.mp4"
       ],
-      "data_parquet_file": "data/task-0044/episode_00441970.parquet",
-      "episode_file": "meta/episodes/task-0044/episode_00441970.json",
+      "data_parquet_file": "data/chopping_wood/episode_00441970.parquet",
+      "episode_file": "meta/episodes/chopping_wood/episode_00441970.json",
       "raw": {
         "episode_index": 441970,
         "tasks": [
@@ -3096,12 +3096,12 @@
       "task_index": 45,
       "episode_index": 450700,
       "duration_minutes": 4.2427777777777775,
-      "video_file": "videos/task-0045/observation.images.rgb.head/episode_00450700.mp4",
+      "video_file": "videos/cook_hot_dogs/observation.images.rgb.head/episode_00450700.mp4",
       "video_files": [
-        "videos/task-0045/observation.images.rgb.head/episode_00450700.mp4"
+        "videos/cook_hot_dogs/observation.images.rgb.head/episode_00450700.mp4"
       ],
-      "data_parquet_file": "data/task-0045/episode_00450700.parquet",
-      "episode_file": "meta/episodes/task-0045/episode_00450700.json",
+      "data_parquet_file": "data/cook_hot_dogs/episode_00450700.parquet",
+      "episode_file": "meta/episodes/cook_hot_dogs/episode_00450700.json",
       "raw": {
         "episode_index": 450700,
         "tasks": [
@@ -3119,12 +3119,12 @@
       "task_index": 45,
       "episode_index": 452770,
       "duration_minutes": 4.277222222222222,
-      "video_file": "videos/task-0045/observation.images.rgb.head/episode_00452770.mp4",
+      "video_file": "videos/cook_hot_dogs/observation.images.rgb.head/episode_00452770.mp4",
       "video_files": [
-        "videos/task-0045/observation.images.rgb.head/episode_00452770.mp4"
+        "videos/cook_hot_dogs/observation.images.rgb.head/episode_00452770.mp4"
       ],
-      "data_parquet_file": "data/task-0045/episode_00452770.parquet",
-      "episode_file": "meta/episodes/task-0045/episode_00452770.json",
+      "data_parquet_file": "data/cook_hot_dogs/episode_00452770.parquet",
+      "episode_file": "meta/episodes/cook_hot_dogs/episode_00452770.json",
       "raw": {
         "episode_index": 452770,
         "tasks": [
@@ -3142,12 +3142,12 @@
       "task_index": 45,
       "episode_index": 452140,
       "duration_minutes": 5.592222222222222,
-      "video_file": "videos/task-0045/observation.images.rgb.head/episode_00452140.mp4",
+      "video_file": "videos/cook_hot_dogs/observation.images.rgb.head/episode_00452140.mp4",
       "video_files": [
-        "videos/task-0045/observation.images.rgb.head/episode_00452140.mp4"
+        "videos/cook_hot_dogs/observation.images.rgb.head/episode_00452140.mp4"
       ],
-      "data_parquet_file": "data/task-0045/episode_00452140.parquet",
-      "episode_file": "meta/episodes/task-0045/episode_00452140.json",
+      "data_parquet_file": "data/cook_hot_dogs/episode_00452140.parquet",
+      "episode_file": "meta/episodes/cook_hot_dogs/episode_00452140.json",
       "raw": {
         "episode_index": 452140,
         "tasks": [
@@ -3165,12 +3165,12 @@
       "task_index": 46,
       "episode_index": 461320,
       "duration_minutes": 4.136666666666667,
-      "video_file": "videos/task-0046/observation.images.rgb.head/episode_00461320.mp4",
+      "video_file": "videos/cook_bacon/observation.images.rgb.head/episode_00461320.mp4",
       "video_files": [
-        "videos/task-0046/observation.images.rgb.head/episode_00461320.mp4"
+        "videos/cook_bacon/observation.images.rgb.head/episode_00461320.mp4"
       ],
-      "data_parquet_file": "data/task-0046/episode_00461320.parquet",
-      "episode_file": "meta/episodes/task-0046/episode_00461320.json",
+      "data_parquet_file": "data/cook_bacon/episode_00461320.parquet",
+      "episode_file": "meta/episodes/cook_bacon/episode_00461320.json",
       "raw": {
         "episode_index": 461320,
         "tasks": [
@@ -3188,12 +3188,12 @@
       "task_index": 46,
       "episode_index": 462080,
       "duration_minutes": 3.801111111111111,
-      "video_file": "videos/task-0046/observation.images.rgb.head/episode_00462080.mp4",
+      "video_file": "videos/cook_bacon/observation.images.rgb.head/episode_00462080.mp4",
       "video_files": [
-        "videos/task-0046/observation.images.rgb.head/episode_00462080.mp4"
+        "videos/cook_bacon/observation.images.rgb.head/episode_00462080.mp4"
       ],
-      "data_parquet_file": "data/task-0046/episode_00462080.parquet",
-      "episode_file": "meta/episodes/task-0046/episode_00462080.json",
+      "data_parquet_file": "data/cook_bacon/episode_00462080.parquet",
+      "episode_file": "meta/episodes/cook_bacon/episode_00462080.json",
       "raw": {
         "episode_index": 462080,
         "tasks": [
@@ -3211,12 +3211,12 @@
       "task_index": 46,
       "episode_index": 461250,
       "duration_minutes": 4.081666666666667,
-      "video_file": "videos/task-0046/observation.images.rgb.head/episode_00461250.mp4",
+      "video_file": "videos/cook_bacon/observation.images.rgb.head/episode_00461250.mp4",
       "video_files": [
-        "videos/task-0046/observation.images.rgb.head/episode_00461250.mp4"
+        "videos/cook_bacon/observation.images.rgb.head/episode_00461250.mp4"
       ],
-      "data_parquet_file": "data/task-0046/episode_00461250.parquet",
-      "episode_file": "meta/episodes/task-0046/episode_00461250.json",
+      "data_parquet_file": "data/cook_bacon/episode_00461250.parquet",
+      "episode_file": "meta/episodes/cook_bacon/episode_00461250.json",
       "raw": {
         "episode_index": 461250,
         "tasks": [
@@ -3234,12 +3234,12 @@
       "task_index": 47,
       "episode_index": 471200,
       "duration_minutes": 7.022777777777778,
-      "video_file": "videos/task-0047/observation.images.rgb.head/episode_00471200.mp4",
+      "video_file": "videos/freeze_pies/observation.images.rgb.head/episode_00471200.mp4",
       "video_files": [
-        "videos/task-0047/observation.images.rgb.head/episode_00471200.mp4"
+        "videos/freeze_pies/observation.images.rgb.head/episode_00471200.mp4"
       ],
-      "data_parquet_file": "data/task-0047/episode_00471200.parquet",
-      "episode_file": "meta/episodes/task-0047/episode_00471200.json",
+      "data_parquet_file": "data/freeze_pies/episode_00471200.parquet",
+      "episode_file": "meta/episodes/freeze_pies/episode_00471200.json",
       "raw": {
         "episode_index": 471200,
         "tasks": [
@@ -3257,12 +3257,12 @@
       "task_index": 47,
       "episode_index": 470710,
       "duration_minutes": 7.078333333333333,
-      "video_file": "videos/task-0047/observation.images.rgb.head/episode_00470710.mp4",
+      "video_file": "videos/freeze_pies/observation.images.rgb.head/episode_00470710.mp4",
       "video_files": [
-        "videos/task-0047/observation.images.rgb.head/episode_00470710.mp4"
+        "videos/freeze_pies/observation.images.rgb.head/episode_00470710.mp4"
       ],
-      "data_parquet_file": "data/task-0047/episode_00470710.parquet",
-      "episode_file": "meta/episodes/task-0047/episode_00470710.json",
+      "data_parquet_file": "data/freeze_pies/episode_00470710.parquet",
+      "episode_file": "meta/episodes/freeze_pies/episode_00470710.json",
       "raw": {
         "episode_index": 470710,
         "tasks": [
@@ -3280,12 +3280,12 @@
       "task_index": 48,
       "episode_index": 480500,
       "duration_minutes": 15.802222222222222,
-      "video_file": "videos/task-0048/observation.images.rgb.head/episode_00480500.mp4",
+      "video_file": "videos/canning_food/observation.images.rgb.head/episode_00480500.mp4",
       "video_files": [
-        "videos/task-0048/observation.images.rgb.head/episode_00480500.mp4"
+        "videos/canning_food/observation.images.rgb.head/episode_00480500.mp4"
       ],
-      "data_parquet_file": "data/task-0048/episode_00480500.parquet",
-      "episode_file": "meta/episodes/task-0048/episode_00480500.json",
+      "data_parquet_file": "data/canning_food/episode_00480500.parquet",
+      "episode_file": "meta/episodes/canning_food/episode_00480500.json",
       "raw": {
         "episode_index": 480500,
         "tasks": [
@@ -3303,12 +3303,12 @@
       "task_index": 49,
       "episode_index": 491810,
       "duration_minutes": 11.914444444444445,
-      "video_file": "videos/task-0049/observation.images.rgb.head/episode_00491810.mp4",
+      "video_file": "videos/make_pizza/observation.images.rgb.head/episode_00491810.mp4",
       "video_files": [
-        "videos/task-0049/observation.images.rgb.head/episode_00491810.mp4"
+        "videos/make_pizza/observation.images.rgb.head/episode_00491810.mp4"
       ],
-      "data_parquet_file": "data/task-0049/episode_00491810.parquet",
-      "episode_file": "meta/episodes/task-0049/episode_00491810.json",
+      "data_parquet_file": "data/make_pizza/episode_00491810.parquet",
+      "episode_file": "meta/episodes/make_pizza/episode_00491810.json",
       "raw": {
         "episode_index": 491810,
         "tasks": [
@@ -3326,12 +3326,12 @@
       "task_index": 49,
       "episode_index": 491770,
       "duration_minutes": 12.321111111111112,
-      "video_file": "videos/task-0049/observation.images.rgb.head/episode_00491770.mp4",
+      "video_file": "videos/make_pizza/observation.images.rgb.head/episode_00491770.mp4",
       "video_files": [
-        "videos/task-0049/observation.images.rgb.head/episode_00491770.mp4"
+        "videos/make_pizza/observation.images.rgb.head/episode_00491770.mp4"
       ],
-      "data_parquet_file": "data/task-0049/episode_00491770.parquet",
-      "episode_file": "meta/episodes/task-0049/episode_00491770.json",
+      "data_parquet_file": "data/make_pizza/episode_00491770.parquet",
+      "episode_file": "meta/episodes/make_pizza/episode_00491770.json",
       "raw": {
         "episode_index": 491770,
         "tasks": [

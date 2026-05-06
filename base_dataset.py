@@ -450,6 +450,14 @@ class BaseDataset:
         data_parquet_file = self.info["data_path"].format(**path_vars)
         episode_file = self.info["metainfo_path"].format(**path_vars)
 
+        def _task_name_scoped_path(path: str) -> str:
+            if not task_name:
+                return path
+            return re.sub(r"^(videos|data|meta/episodes)/task-\d{4}/", rf"\1/{task_name}/", path)
+
+        data_parquet_file = _task_name_scoped_path(data_parquet_file)
+        episode_file = _task_name_scoped_path(episode_file)
+
         if self.camera_view_type in {"all"}:
             video_keys = [
                 "observation.images.rgb.head",
@@ -464,7 +472,9 @@ class BaseDataset:
                 "Expected one of: all, head, left_wrist, right_wrist."
             )
         video_files = [
-            self.info["video_path"].format(**(path_vars | {"video_key": video_key}))
+            _task_name_scoped_path(
+                self.info["video_path"].format(**(path_vars | {"video_key": video_key}))
+            )
             for video_key in video_keys
         ]
 
