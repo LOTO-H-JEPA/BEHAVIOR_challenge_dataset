@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import os
 
 import torch
 import yaml
@@ -19,7 +20,7 @@ class HFVJEPA2Encoder(torch.nn.Module):
         self.processor = AutoVideoProcessor.from_pretrained(hf_repo_id)
 
     def forward(self, video):
-        outputs = self.model(pixel_values=video)
+        outputs = self.model(pixel_values_videos=video)
         return outputs.last_hidden_state
 
 
@@ -53,6 +54,10 @@ def main(cfg_path: str):
     )
 
     preencoder = BehaviorEpisodePreencoder(encoder=encoder, device=device, dtype=dtype)
+    max_workers = max(1, ((os.cpu_count() or 1) - 1))
+    configured_workers = data_cfg.get("num_workers", 4)
+    num_workers = min(configured_workers, max_workers)
+
     preencoder.encode_full_episodes(
         dataset,
         output_dir=out_cfg.get("local_output_dir"),
@@ -60,7 +65,7 @@ def main(cfg_path: str):
         hf_path_prefix=out_cfg.get("hf_path_prefix", ""),
         episodes_per_shard=out_cfg.get("episodes_per_shard", 1),
         batch_size=data_cfg.get("batch_size", 8),
-        num_workers=data_cfg.get("num_workers", 4),
+        num_workers=num_workers,
         pin_memory=data_cfg.get("pin_mem", True),
         persistent_workers=data_cfg.get("persistent_workers", True),
         prefetch_factor=data_cfg.get("prefetch_factor", 2),
