@@ -23,13 +23,14 @@ class HFVJEPA2Encoder(torch.nn.Module):
         if video.ndim != 5:
             raise ValueError(f"Expected 5D video tensor, got {tuple(video.shape)}")
         # Final safety normalization to [B, C, T, H, W].
-        if video.shape[1] not in (1, 3):
-            if video.shape[2] in (1, 3):
+        if video.shape[1] != 3:
+            if video.shape[2] == 3:
                 video = video.permute(0, 2, 1, 3, 4)
-            elif video.shape[-1] in (1, 3):
+            elif video.shape[-1] == 3:
                 video = video.permute(0, 4, 1, 2, 3)
-        if video.shape[1] not in (1, 3):
+        if video.shape[1] != 3:
             raise ValueError(f"Unable to normalize video to channel-first layout, got shape={tuple(video.shape)}")
+        video = video.contiguous()
         outputs = self.model(pixel_values_videos=video)
         return outputs.last_hidden_state
 
