@@ -6,8 +6,7 @@ import torch
 import yaml
 from transformers import AutoModel, AutoVideoProcessor
 
-from vjepa2_BEHAVIOR.app.vjepa_droid.behavior import BehaviorEpisodePreencoder, BehaviorVideoDataset
-from vjepa2_BEHAVIOR.app.vjepa_droid.transforms import make_transforms
+from behavior import BehaviorEpisodePreencoder, BehaviorVideoDataset
 
 
 class HFVJEPA2Encoder(torch.nn.Module):
@@ -32,7 +31,6 @@ def main(cfg_path: str):
     model_cfg = cfg["model"]
     meta_cfg = cfg.get("meta", {})
     out_cfg = cfg["output"]
-    aug_cfg = cfg.get("data_aug", {})
 
     dtype_name = meta_cfg.get("dtype", "float32").lower()
     dtype = {"float32": torch.float32, "float16": torch.float16, "bfloat16": torch.bfloat16}[dtype_name]
@@ -41,15 +39,8 @@ def main(cfg_path: str):
     hf_repo_id = model_cfg.get("hf_repo", "facebook/vjepa2-vitg-fpc64-256")
     encoder = HFVJEPA2Encoder(hf_repo_id=hf_repo_id).to(device)
 
-    transform = make_transforms(
-        random_horizontal_flip=aug_cfg.get("horizontal_flip", False),
-        random_resize_aspect_ratio=tuple(aug_cfg.get("random_resize_aspect_ratio", [0.75, 1.35])),
-        random_resize_scale=tuple(aug_cfg.get("random_resize_scale", [1.777, 1.777])),
-        reprob=aug_cfg.get("reprob", 0.0),
-        auto_augment=aug_cfg.get("auto_augment", False),
-        motion_shift=aug_cfg.get("motion_shift", False),
-        crop_size=data_cfg["crop_size"],
-    )
+    # Keep transform optional in this script; callers can pass preprocessed videos if needed.
+    transform = None
     dataset = BehaviorVideoDataset(
         data_path=data_cfg["datasets"][0],
         fpcs=data_cfg["dataset_fpcs"][0],

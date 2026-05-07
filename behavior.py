@@ -200,6 +200,12 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         actions = []
         for i, start in enumerate(window_indices):
             start = int(start)
+            if start >= max_len:
+                state_chunk = np.zeros((fstp, self.state_dim), dtype=np.float32)
+                action_chunk = np.zeros((fstp, self.action_dim), dtype=np.float32)
+                states.append(state_chunk.reshape(fstp * self.state_dim))
+                actions.append(action_chunk.reshape(fstp * self.action_dim))
+                continue
             if i + 1 < len(real_window_indices):
                 next_start = int(real_window_indices[i + 1])
             else:
