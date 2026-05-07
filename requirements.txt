@@ -5,3 +5,4 @@ pyarrow
 tqdm
 lerobot
 opencv-python
+decord
