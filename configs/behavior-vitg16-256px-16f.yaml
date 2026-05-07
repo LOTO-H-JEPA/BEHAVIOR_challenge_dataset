@@ -3,7 +3,7 @@ app: vjepa_droid
 meta:
   dtype: float32
   use_sdpa: true
-  pretrain_checkpoint: /your_file_path/checkpoints/latest.pt
+  pretrain_checkpoint: /content/checkpoints/model.pth
   context_encoder_key: encoder
   target_encoder_key: target_encoder
 
@@ -15,7 +15,7 @@ model:
 
 data:
   datasets:
-    - /your_file_path/behavior/manifest.json
+    - /content/base_dataset/manifest.json
   dataset_fpcs:
     - 16
   batch_size: 8
