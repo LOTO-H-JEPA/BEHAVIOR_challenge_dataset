@@ -5,9 +5,9 @@ import argparse
 import torch
 import yaml
 
-from app.vjepa_droid.behavior import BehaviorEpisodePreencoder, BehaviorVideoDataset
-from app.vjepa_droid.transforms import make_transforms
-from app.vjepa_droid.utils import init_video_model, load_pretrained
+from vjepa2_BEHAVIOR.app.vjepa_droid.behavior import BehaviorEpisodePreencoder, BehaviorVideoDataset
+from vjepa2_BEHAVIOR.app.vjepa_droid.transforms import make_transforms
+from vjepa2_BEHAVIOR.app.vjepa_droid.utils import init_video_model, load_pretrained
 
 
 def main(cfg_path: str):

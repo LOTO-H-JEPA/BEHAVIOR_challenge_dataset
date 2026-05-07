@@ -12,7 +12,7 @@ from huggingface_hub import HfApi
 from huggingface_hub.utils import disable_progress_bars, enable_progress_bars
 from tqdm import tqdm
 
-from .base_dataset_utils import (
+from base_dataset_utils import (
     episode_duration_minutes,
     episode_task_name,
     load_from_huggingface,
@@ -47,7 +47,6 @@ class BaseDataset:
         self.eval_tasks = self.dataset_cfg["eval_tasks"]
         self.exclude_eval_tasks = self.dataset_cfg["exclude_eval_tasks"]
         self.base_dataset_destination = self.dataset_cfg["base_dataset_destination"]
-
         self.repo_id = "behavior-1k/2025-challenge-demos"
         self.use_hub_download = use_hub_download
         self.token = token
