@@ -1,6 +1,7 @@
 import io
 import json
 import os
+import subprocess
 from logging import getLogger
 from math import ceil
 from tqdm import tqdm
@@ -311,6 +312,22 @@ class BehaviorEpisodePreencoder:
             "valid_len": np.asarray([item["valid_len"] for item in batch], dtype=np.int64),
         }
 
+    @staticmethod
+    def _gpu_status():
+        try:
+            out = subprocess.check_output(
+                [
+                    "nvidia-smi",
+                    "--query-gpu=utilization.gpu,memory.used,memory.total",
+                    "--format=csv,noheader,nounits",
+                ],
+                stderr=subprocess.DEVNULL,
+            ).decode().strip().splitlines()[0]
+            util, mem_used, mem_total = [x.strip() for x in out.split(",")]
+            return f"gpu={util}% mem={mem_used}/{mem_total}MB"
+        except Exception:
+            return "gpu=n/a"
+
     @torch.inference_mode()
     def encode_full_episodes(self, dataset, output_dir=None, hf_repo_id=None, hf_path_prefix="", episodes_per_shard=1, batch_size=8, num_workers=4, pin_memory=True, persistent_workers=True, prefetch_factor=2):
         if output_dir:
@@ -352,7 +369,10 @@ class BehaviorEpisodePreencoder:
             active_episode_idx = None
             active_buffer = None
 
-        for batch in tqdm(data_loader, desc="Loading batches"):
+        pbar = tqdm(data_loader, desc="Loading batches")
+        for batch_idx, batch in enumerate(pbar):
+            if batch_idx % 10 == 0:
+                pbar.set_postfix_str(self._gpu_status())
             tokens = self.encoder(self._to_video_tensor(batch["video"]))
             if isinstance(tokens, (tuple, list)):
                 tokens = tokens[0]
