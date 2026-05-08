@@ -3,7 +3,7 @@ import json
 import os
 from logging import getLogger
 from math import ceil
-
+from tqdm import tqdm
 import numpy as np
 import pandas as pd
 import torch
@@ -322,7 +322,7 @@ class BehaviorEpisodePreencoder:
         )
         episode_buffers = {episode_idx: {"tokens": [], "actions": [], "states": [], "frame_indices": [], "starts": []} for episode_idx in range(len(dataset.episode_plans))}
 
-        for batch in data_loader:
+        for batch in tqdm(data_loader, desc="Loading batches"):
             tokens = self.encoder(self._to_video_tensor(batch["video"]))
             if isinstance(tokens, (tuple, list)):
                 tokens = tokens[0]
