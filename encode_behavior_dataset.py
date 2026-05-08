@@ -1,13 +1,44 @@
 #!/usr/bin/env python3
 
 import argparse
+import os
 
 import torch
 import yaml
-
-from vjepa2_BEHAVIOR.app.vjepa_droid.behavior import BehaviorEpisodePreencoder, BehaviorVideoDataset
+from transformers import AutoModel, AutoVideoProcessor
 from vjepa2_BEHAVIOR.app.vjepa_droid.transforms import make_transforms
-from vjepa2_BEHAVIOR.app.vjepa_droid.utils import init_video_model, load_pretrained
+
+from behavior import BehaviorEpisodePreencoder, BehaviorVideoDataset
+
+
+class HFVJEPA2Encoder(torch.nn.Module):
+    """Wrapper exposing HF V-JEPA2 encoder features as a plain tensor."""
+
+    def __init__(self, hf_repo_id: str):
+        super().__init__()
+        self.model = AutoModel.from_pretrained(hf_repo_id)
+        # Loaded for parity with official usage and future pre-processing hooks.
+        self.processor = AutoVideoProcessor.from_pretrained(hf_repo_id)
+
+    def forward(self, video):
+      #print("[HFVJEPA2] raw input:", tuple(video.shape), flush=True)
+
+      if video.ndim != 5:
+          raise ValueError(f"Expected 5D video tensor, got {tuple(video.shape)}")
+
+      # behavior.py currently gives us [B, C, T, H, W].
+      # Hugging Face VJEPA2 expects [B, T, C, H, W].
+      if video.shape[1] == 3:
+          video = video.permute(0, 2, 1, 3, 4).contiguous()
+      elif video.shape[2] == 3:
+          video = video.contiguous()
+      else:
+          raise ValueError(f"Unable to infer channel axis, got {tuple(video.shape)}")
+
+      print("[HFVJEPA2] for HF:", tuple(video.shape), flush=True)
+
+      outputs = self.model(pixel_values_videos=video)
+      return outputs.last_hidden_state
 
 
 def main(cfg_path: str):
@@ -18,38 +49,15 @@ def main(cfg_path: str):
     model_cfg = cfg["model"]
     meta_cfg = cfg.get("meta", {})
     out_cfg = cfg["output"]
-    aug_cfg = cfg.get("data_aug", {})
 
     dtype_name = meta_cfg.get("dtype", "float32").lower()
     dtype = {"float32": torch.float32, "float16": torch.float16, "bfloat16": torch.bfloat16}[dtype_name]
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    encoder, _ = init_video_model(
-        device=device,
-        patch_size=data_cfg["patch_size"],
-        max_num_frames=max(data_cfg["dataset_fpcs"]),
-        tubelet_size=data_cfg["tubelet_size"],
-        model_name=model_cfg["model_name"],
-        crop_size=data_cfg["crop_size"],
-        use_sdpa=meta_cfg.get("use_sdpa", False),
-        use_rope=model_cfg.get("use_rope", False),
-        use_silu=model_cfg.get("use_silu", False),
-        wide_silu=model_cfg.get("wide_silu", False),
-    )
+    hf_repo_id = model_cfg.get("hf_repo", "facebook/vjepa2-vitg-fpc64-256")
+    encoder = HFVJEPA2Encoder(hf_repo_id=hf_repo_id).to(device)
 
-    ckpt = meta_cfg.get("pretrain_checkpoint")
-    if ckpt:
-        encoder, _, _ = load_pretrained(
-            ckpt,
-            encoder=encoder,
-            predictor=None,
-            target_encoder=None,
-            context_encoder_key=meta_cfg.get("context_encoder_key", "encoder"),
-            target_encoder_key=meta_cfg.get("target_encoder_key", "target_encoder"),
-            load_predictor=False,
-            load_encoder=True,
-        )
-
+    aug_cfg = cfg.get("data_aug", {})
     transform = make_transforms(
         random_horizontal_flip=aug_cfg.get("horizontal_flip", False),
         random_resize_aspect_ratio=tuple(aug_cfg.get("random_resize_aspect_ratio", [0.75, 1.35])),
@@ -71,6 +79,10 @@ def main(cfg_path: str):
     )
 
     preencoder = BehaviorEpisodePreencoder(encoder=encoder, device=device, dtype=dtype)
+    max_workers = max(1, ((os.cpu_count() or 1) - 1))
+    configured_workers = data_cfg.get("num_workers", 4)
+    num_workers = min(configured_workers, max_workers)
+
     preencoder.encode_full_episodes(
         dataset,
         output_dir=out_cfg.get("local_output_dir"),
@@ -78,7 +90,7 @@ def main(cfg_path: str):
         hf_path_prefix=out_cfg.get("hf_path_prefix", ""),
         episodes_per_shard=out_cfg.get("episodes_per_shard", 1),
         batch_size=data_cfg.get("batch_size", 8),
-        num_workers=data_cfg.get("num_workers", 4),
+        num_workers=num_workers,
         pin_memory=data_cfg.get("pin_mem", True),
         persistent_workers=data_cfg.get("persistent_workers", True),
         prefetch_factor=data_cfg.get("prefetch_factor", 2),

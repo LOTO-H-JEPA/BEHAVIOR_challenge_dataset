@@ -3,12 +3,10 @@ app: vjepa_droid
 meta:
   dtype: float32
   use_sdpa: true
-  pretrain_checkpoint: /content/checkpoints/model.pth
-  context_encoder_key: encoder
-  target_encoder_key: target_encoder
 
 model:
   model_name: vit_giant2
+  hf_repo: facebook/vjepa2-vitg-fpc64-256
   use_rope: true
   use_silu: false
   wide_silu: true

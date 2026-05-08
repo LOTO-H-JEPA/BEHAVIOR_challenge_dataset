@@ -9,3 +9,4 @@ lerobot
 opencv-python
 decord
 pyyaml
+transformers

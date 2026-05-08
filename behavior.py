@@ -187,17 +187,30 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
             raise RuntimeError(f"No indices in episode plan for {vpath=}, {fstp=}, {max_len=}")
 
         end_idx = min(start_idx + self.fpc, len(indices))
-        window_indices = indices[start_idx:end_idx]
-        if len(window_indices) < self.fpc:
-            pad = np.full((self.fpc - len(window_indices),), window_indices[-1], dtype=np.int64)
-            window_indices = np.concatenate([window_indices, pad])
+        real_window_indices = indices[start_idx:end_idx]
+        if len(real_window_indices) < self.fpc:
+            pad = np.full((self.fpc - len(real_window_indices),), real_window_indices[-1], dtype=np.int64)
+            window_indices = np.concatenate([real_window_indices, pad])
+        else:
+            window_indices = real_window_indices
 
         raw_states = states
         raw_actions = full_actions[:, : self.action_dim]
         states = []
         actions = []
         for i, start in enumerate(window_indices):
-            end = window_indices[i + 1] if i + 1 < len(window_indices) else min(start + fstp, max_len)
+            start = int(start)
+            if start >= max_len:
+                state_chunk = np.zeros((fstp, self.state_dim), dtype=np.float32)
+                action_chunk = np.zeros((fstp, self.action_dim), dtype=np.float32)
+                states.append(state_chunk.reshape(fstp * self.state_dim))
+                actions.append(action_chunk.reshape(fstp * self.action_dim))
+                continue
+            if i + 1 < len(real_window_indices):
+                next_start = int(real_window_indices[i + 1])
+            else:
+                next_start = start + fstp
+            end = min(max(next_start, start + 1), max_len)
             state_chunk = raw_states[start:end]
             action_chunk = raw_actions[start:end]
 
@@ -264,8 +277,18 @@ class BehaviorEpisodePreencoder:
             video = video.unsqueeze(0)
         if video.ndim != 5:
             raise ValueError(f"Expected 5D video tensor, got shape={tuple(video.shape)}")
-        if video.shape[-1] in (1, 3):
+        # Normalize to [B, C, T, H, W] for 3D patch embedding.
+        if video.shape[1] in (1, 3):
+            # Already [B, C, T, H, W]
+            pass
+        elif video.shape[2] in (1, 3):
+            # [B, T, C, H, W] -> [B, C, T, H, W]
+            video = video.permute(0, 2, 1, 3, 4)
+        elif video.shape[-1] in (1, 3):
+            # [B, T, H, W, C] -> [B, C, T, H, W]
             video = video.permute(0, 4, 1, 2, 3)
+        else:
+            raise ValueError(f"Unable to infer channel axis for video shape={tuple(video.shape)}")
         return video.to(self.device, dtype=self.dtype, non_blocking=True)
 
     @staticmethod
