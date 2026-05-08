@@ -16,14 +16,14 @@ data:
     - /content/base_dataset/manifest.json
   dataset_fpcs:
     - 16
-  batch_size: 8
+  batch_size: 1
   fps: 5
   crop_size: 256
   patch_size: 16
   tubelet_size: 2
-  num_workers: 12
+  num_workers: 4
   persistent_workers: true
-  prefetch_factor: 4
+  prefetch_factor: 2
   pin_mem: true
   stereo_view: false
   camera_frame: false

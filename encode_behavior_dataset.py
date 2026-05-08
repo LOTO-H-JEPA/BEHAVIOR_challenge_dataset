@@ -2,7 +2,6 @@
 
 import argparse
 import os
-
 import torch
 import yaml
 from transformers import AutoModel, AutoVideoProcessor
@@ -17,15 +16,12 @@ class HFVJEPA2Encoder(torch.nn.Module):
     def __init__(self, hf_repo_id: str):
         super().__init__()
         self.model = AutoModel.from_pretrained(hf_repo_id)
-        # Loaded for parity with official usage and future pre-processing hooks.
         self.processor = AutoVideoProcessor.from_pretrained(hf_repo_id)
 
     def forward(self, video):
       #print("[HFVJEPA2] raw input:", tuple(video.shape), flush=True)
-
       if video.ndim != 5:
           raise ValueError(f"Expected 5D video tensor, got {tuple(video.shape)}")
-
       # behavior.py currently gives us [B, C, T, H, W].
       # Hugging Face VJEPA2 expects [B, T, C, H, W].
       if video.shape[1] == 3:
@@ -49,6 +45,7 @@ def main(cfg_path: str):
     model_cfg = cfg["model"]
     meta_cfg = cfg.get("meta", {})
     out_cfg = cfg["output"]
+    aug_cfg = cfg.get("data_aug", {})
 
     dtype_name = meta_cfg.get("dtype", "float32").lower()
     dtype = {"float32": torch.float32, "float16": torch.float16, "bfloat16": torch.bfloat16}[dtype_name]
@@ -56,8 +53,7 @@ def main(cfg_path: str):
 
     hf_repo_id = model_cfg.get("hf_repo", "facebook/vjepa2-vitg-fpc64-256")
     encoder = HFVJEPA2Encoder(hf_repo_id=hf_repo_id).to(device)
-
-    aug_cfg = cfg.get("data_aug", {})
+    
     transform = make_transforms(
         random_horizontal_flip=aug_cfg.get("horizontal_flip", False),
         random_resize_aspect_ratio=tuple(aug_cfg.get("random_resize_aspect_ratio", [0.75, 1.35])),
