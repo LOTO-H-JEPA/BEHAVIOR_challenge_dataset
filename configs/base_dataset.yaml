@@ -1,0 +1,12 @@
+
+dataset:
+  camera_view_type: head # head= only head camera, multi= head + left hand + right hand
+  dataset_size: 10 #in hours at the given hz for the base_dataset
+  seed: 42 # random seed used for deterministic episode sampling
+  eval_tasks: ["outfit_a_basic_toolbox"] # the task wihc shall completely included into the dataset
+  exclude_eval_tasks: True # exclude the eval task from the dataset completely
+  base_dataset_destination: "../base_dataset" # default is output/base_dataset, "hugging_face", "google_cloud"
+  
+
+
+   

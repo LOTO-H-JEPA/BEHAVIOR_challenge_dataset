@@ -1,0 +1,12 @@
+huggingface_hub[hf_xet]
+datasets
+pandas
+numpy
+torch
+pyarrow
+tqdm
+lerobot
+opencv-python
+decord
+pyyaml
+transformers

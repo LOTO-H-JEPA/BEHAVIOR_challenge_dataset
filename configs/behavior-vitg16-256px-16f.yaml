@@ -1,0 +1,50 @@
+app: vjepa_droid
+
+meta:
+  dtype: float32
+  use_sdpa: true
+
+model:
+  model_name: vit_giant2
+  hf_repo: facebook/vjepa2-vitg-fpc64-256
+  use_rope: true
+  use_silu: false
+  wide_silu: true
+
+data:
+  datasets:
+    - /content/base_dataset/manifest.json
+  dataset_fpcs:
+    - 16
+  batch_size: 1
+  fps: 5
+  crop_size: 256
+  patch_size: 16
+  tubelet_size: 2
+  num_workers: 4
+  persistent_workers: true
+  prefetch_factor: 2
+  pin_mem: true
+  stereo_view: false
+  camera_frame: false
+  state_start_idx: 0
+  state_dim: 7
+  action_dim: 23
+
+data_aug:
+  auto_augment: false
+  horizontal_flip: false
+  motion_shift: false
+  random_resize_aspect_ratio:
+    - 0.75
+    - 1.35
+  random_resize_scale:
+    - 1.777
+    - 1.777
+  reprob: 0.0
+
+output:
+  local_output_dir: null
+  hf_repo_id: quastAI/behavior2025-vjepa2-vitg-130h-demo-embeddings
+  hf_path_prefix: shards/vitg16-256px-8f
+  episodes_per_shard: 1
