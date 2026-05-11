@@ -388,7 +388,8 @@ class BehaviorEpisodePreencoder:
                     active_episode_idx = episode_idx
                     active_buffer = {"tokens": [], "actions": [], "states": [], "frame_indices": [], "starts": []}
 
-                active_buffer["tokens"].append(tokens[b, :valid_len])
+                tokens_per_frame = tokens.shape[1] // dataset.fpc
+                active_buffer["tokens"].append(tokens[b, :valid_len * tokens_per_frame])
                 active_buffer["actions"].append(batch["actions"][b, :valid_len])
                 active_buffer["states"].append(batch["states"][b, :valid_len])
                 active_buffer["frame_indices"].append(batch["frame_indices"][b, :valid_len])
