@@ -103,12 +103,15 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         vpath = sample["video_path"]
         ppath = sample["parquet_path"]
         vr = VideoReader(vpath, num_threads=-1, ctx=cpu(0))
-        vfps = vr.get_avg_fps()
+        try:
+            vfps = vr.get_avg_fps()
+            vlen = len(vr)
+        finally:
+            del vr
         fps = self.fps if self.fps is not None else vfps
         if fps <= 0:
             raise ValueError(f"fps must be > 0. Got fps={fps} for {vpath}")
         fstp = max(1, ceil(vfps / fps))
-        vlen = len(vr)
         parquet_len = len(pd.read_parquet(ppath, columns=["action"]))
         if abs(vlen - parquet_len) > 2:
             logger.warning(f"Length mismatch {vpath}: video={vlen}, parquet={parquet_len}")
@@ -144,12 +147,15 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         episode_idx, start_idx = self.windows[index]
         plan = self.episode_plans[episode_idx]
         sample = self.samples[plan["sample_idx"]]
-        while True:
+        max_retries = 10
+        for attempt in range(max_retries):
             try:
-                buffer, actions, states, extrinsics, indices = self.loadvideo_decord(sample, plan, start_idx=start_idx)
+                buffer, actions, states, indices = self.loadvideo_decord(sample, plan, start_idx=start_idx)
                 break
             except Exception as e:
-                logger.warning(f"Encountered exception when loading sample={sample} {e=}")
+                logger.warning(f"Attempt {attempt+1}/{max_retries} failed for sample={sample} {e=}")
+                if attempt == max_retries - 1:
+                    raise
                 episode_idx, start_idx = self.windows[np.random.randint(self.__len__())]
                 plan = self.episode_plans[episode_idx]
                 sample = self.samples[plan["sample_idx"]]
@@ -159,7 +165,6 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
             "video": buffer,
             "actions": actions,
             "states": states,
-            "extrinsics": extrinsics,
             "frame_indices": indices,
             "episode_idx": episode_idx,
             "start_idx": start_idx,
@@ -235,8 +240,7 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         buffer = vr.get_batch(window_indices).asnumpy()
         if self.transform is not None:
             buffer = self.transform(buffer)
-        extrinsics = np.zeros((states.shape[0], 6), dtype=np.float32)
-        return buffer, actions, states, extrinsics, window_indices
+        return buffer, actions, states, window_indices
 
     def _load_parquet(self, ppath):
         if not self.cache_parquet:
@@ -334,12 +338,12 @@ class BehaviorEpisodePreencoder:
             prefetch_factor=prefetch_factor if num_workers > 0 else None,
             collate_fn=self.behavior_preencode_collate,
         )
-        shard_data, shard_id, shard_bytes, encoded_episodes = [], 0, 0, 0
+        shard_data, shard_id, shard_bytes, encoded_episodes, total_shards_written = [], 0, 0, 0, 0
         active_episode_idx = None
         active_buffer = None
 
         def flush_active_episode():
-            nonlocal shard_data, shard_id, shard_bytes, encoded_episodes, active_episode_idx, active_buffer
+            nonlocal shard_data, shard_id, shard_bytes, encoded_episodes, active_episode_idx, active_buffer, total_shards_written
             if active_episode_idx is None or active_buffer is None or not active_buffer["tokens"]:
                 return
             order = np.argsort(active_buffer["starts"])
@@ -359,6 +363,7 @@ class BehaviorEpisodePreencoder:
             encoded_episodes += 1
             if shard_bytes >= max_shard_bytes:
                 self._write_shard(output_dir=output_dir, hf_repo_id=hf_repo_id, hf_path_prefix=hf_path_prefix, shard_id=shard_id, shard_data=shard_data)
+                total_shards_written += 1
                 shard_data, shard_id, shard_bytes = [], shard_id + 1, 0
             active_episode_idx = None
             active_buffer = None
@@ -372,6 +377,9 @@ class BehaviorEpisodePreencoder:
                 tokens = tokens[0]
             tokens = tokens.detach().cpu().float().numpy()
             # Reshape [B, N, D] -> [B, fpc, patches_per_frame, D] so axis 1 aligns with frames.
+            assert tokens.shape[1] % dataset.fpc == 0, (
+                f"Encoder output tokens ({tokens.shape[1]}) not divisible by fpc ({dataset.fpc})"
+            )
             tokens_per_frame = tokens.shape[1] // dataset.fpc
             tokens = tokens.reshape(tokens.shape[0], dataset.fpc, tokens_per_frame, tokens.shape[2])
             for b in range(tokens.shape[0]):
@@ -395,8 +403,9 @@ class BehaviorEpisodePreencoder:
 
         if shard_data:
             self._write_shard(output_dir=output_dir, hf_repo_id=hf_repo_id, hf_path_prefix=hf_path_prefix, shard_id=shard_id, shard_data=shard_data)
+            total_shards_written += 1
 
-        logger.info(f"Pre-encoding finished: {encoded_episodes} episodes encoded into {shard_id + 1} shards")
+        logger.info(f"Pre-encoding finished: {encoded_episodes} episodes encoded into {total_shards_written} shards")
 
     def _write_shard(self, shard_id, shard_data, output_dir=None, hf_repo_id=None, hf_path_prefix="", hf_repo_type="dataset"):
         shard_name = f"behavior_preencoded_shard_{shard_id:05d}.pt"
@@ -427,13 +436,21 @@ class BehaviorEpisodePreencoder:
             torch.save(shard, save_path)
             size_mb = os.path.getsize(save_path) / 1e6
             logger.info(f"Saved shard {shard_id} with {len(episode_index)} episodes ({size_mb:.1f} MB) at {save_path}")
-            self._update_shard_index(output_dir, shard_name, episode_index, shard["tokens"].nbytes + shard["actions"].nbytes + shard["states"].nbytes)
+            self._update_shard_index(output_dir, shard_name, episode_index, shard["tokens"].nbytes + shard["actions"].nbytes + shard["states"].nbytes + shard["frame_indices"].nbytes)
         if hf_repo_id:
             bio = io.BytesIO()
             torch.save(shard, bio)
             bio.seek(0)
             path_in_repo = f"{hf_path_prefix.strip('/')}/{shard_name}".lstrip("/")
-            HfApi().upload_file(path_or_fileobj=bio, path_in_repo=path_in_repo, repo_id=hf_repo_id, repo_type=hf_repo_type)
+            for attempt in range(3):
+                try:
+                    HfApi().upload_file(path_or_fileobj=bio, path_in_repo=path_in_repo, repo_id=hf_repo_id, repo_type=hf_repo_type)
+                    break
+                except Exception as e:
+                    if attempt == 2:
+                        raise
+                    logger.warning(f"HF upload attempt {attempt+1}/3 failed: {e}. Retrying...")
+                    bio.seek(0)
             logger.info(f"Uploaded shard {shard_id} with {len(episode_index)} episodes to hf://{hf_repo_id}/{path_in_repo}")
 
     @staticmethod
