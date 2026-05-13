@@ -36,7 +36,7 @@ data_aug:
   reprob: 0.0
 
 output:
-  local_output_dir:
+  local_output_dir: /content/output
   hf_repo_id: quastAI/behavior2025-vjepa2-vitg-130h-demo-embeddings
   hf_path_prefix: shards_256px_vit_16_g
   max_shard_bytes: 786432000  # 750 MiB

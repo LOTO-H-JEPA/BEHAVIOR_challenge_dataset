@@ -1,11 +1,12 @@
 import concurrent.futures
+import io
 import json
 import os
 import subprocess
+import tarfile
 from logging import getLogger
 from math import ceil
 from tqdm import tqdm
-from safetensors.numpy import save_file as safetensors_save
 import numpy as np
 import pandas as pd
 import torch
@@ -432,45 +433,41 @@ class BehaviorEpisodePreencoder:
         state["active_buffer"] = None
 
     def _write_shard(self, shard_id, shard_data, output_dir=None, hf_repo_id=None, hf_path_prefix="", hf_repo_type="dataset"):
-        shard_name = f"behavior_preencoded_shard_{shard_id:05d}.safetensors"
+        shard_name = f"behavior_preencoded_shard_{shard_id:05d}.tar"
 
-        # Build frame-boundary index and concatenate all episodes into flat arrays.
-        episode_index = []
-        cursor = 0
-        for ep in shard_data:
-            n = ep["tokens"].shape[0]
-            episode_index.append({
-                "episode_idx":   ep["episode_idx"],
-                "sample_idx":    ep["sample_idx"],
-                "frame_start":   cursor,
-                "frame_end":     cursor + n,
-            })
-            cursor += n
+        def _save_tar(path):
+            """Write each episode as a WebDataset sample inside a tar shard."""
+            with tarfile.open(path, "w") as tf:
+                for ep in shard_data:
+                    key = f"{ep['episode_idx']:06d}"
+                    for field in ("tokens", "actions", "states", "frame_indices"):
+                        buf = io.BytesIO()
+                        np.save(buf, ep[field])
+                        data = buf.getvalue()
+                        info = tarfile.TarInfo(name=f"{key}.{field}.npy")
+                        info.size = len(data)
+                        tf.addfile(info, io.BytesIO(data))
+                    meta = json.dumps({"episode_idx": ep["episode_idx"], "sample_idx": ep["sample_idx"]}).encode()
+                    info = tarfile.TarInfo(name=f"{key}.json")
+                    info.size = len(meta)
+                    tf.addfile(info, io.BytesIO(meta))
 
-        tensors = {
-            "tokens":        np.concatenate([ep["tokens"]        for ep in shard_data], axis=0),
-            "actions":       np.concatenate([ep["actions"]       for ep in shard_data], axis=0),
-            "states":        np.concatenate([ep["states"]        for ep in shard_data], axis=0),
-            "frame_indices": np.concatenate([ep["frame_indices"] for ep in shard_data], axis=0),
-        }
-        # Episode index stored as JSON in safetensors metadata.
-        metadata = {"episodes": json.dumps(episode_index)}
+        episode_index = [{"episode_idx": ep["episode_idx"], "sample_idx": ep["sample_idx"]} for ep in shard_data]
+        size_bytes = sum(ep["tokens"].nbytes + ep["actions"].nbytes + ep["states"].nbytes + ep["frame_indices"].nbytes for ep in shard_data)
 
         if output_dir:
             save_path = os.path.join(output_dir, shard_name)
-            safetensors_save(tensors, save_path, metadata=metadata)
-            self._update_shard_index(output_dir, shard_name, episode_index, tensors["tokens"].nbytes + tensors["actions"].nbytes + tensors["states"].nbytes + tensors["frame_indices"].nbytes)
+            _save_tar(save_path)
+            self._update_shard_index(output_dir, shard_name, episode_index, size_bytes)
         if hf_repo_id:
             path_in_repo = f"{hf_path_prefix.strip('/')}/{shard_name}".lstrip("/")
-            # Upload from a real file path so Xet Storage can use chunked upload.
-            # If we already saved locally, reuse that file; otherwise write a temp file.
             if output_dir:
                 upload_path = save_path
             else:
                 import tempfile
-                tmp_file = tempfile.NamedTemporaryFile(suffix=".safetensors", delete=False)
-                safetensors_save(tensors, tmp_file.name, metadata=metadata)
+                tmp_file = tempfile.NamedTemporaryFile(suffix=".tar", delete=False)
                 tmp_file.close()
+                _save_tar(tmp_file.name)
                 upload_path = tmp_file.name
             try:
                 for attempt in range(3):
@@ -482,7 +479,6 @@ class BehaviorEpisodePreencoder:
                             raise
                         logger.warning(f"HF upload attempt {attempt+1}/3 failed: {e}. Retrying...")
             finally:
-                # Always remove: temp file (HF-only) or local shard file (output_dir+HF).
                 os.remove(upload_path)
 
     @staticmethod
