@@ -8,4 +8,4 @@ tqdm
 decord
 pyyaml
 transformers
-mosaicml-streaming
+streaming
