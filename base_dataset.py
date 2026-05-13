@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import concurrent.futures
 import random
 import re
 import time
@@ -209,11 +210,6 @@ class BaseDataset:
         output_dir = Path(self.base_dataset_destination or "output")
         files_to_download = self._build_download_targets(episodes, output_dir)
 
-        found_files = 0
-        missing_files = 0
-        bytes_downloaded = 0
-        download_start = time.time()
-
         file_sizes_by_path = self._fetch_remote_file_sizes()
         estimated_total_bytes = sum(file_sizes_by_path.get(path, 0) for _, path, _ in files_to_download)
         has_size_estimate = estimated_total_bytes > 0
@@ -223,34 +219,36 @@ class BaseDataset:
             has_size_estimate=has_size_estimate,
         )
 
+        def _download_one(args):
+            local_dir, remote_path, category = args
+            try:
+                downloaded_path = load_from_huggingface(
+                    self.repo_id,
+                    file_path=remote_path,
+                    use_hub_download=True,
+                    token=self.token,
+                    **self.kwargs,
+                )
+                local_dir.mkdir(parents=True, exist_ok=True)
+                destination_path = local_dir / Path(remote_path).name
+                shutil.copy2(downloaded_path, destination_path)
+                file_size = destination_path.stat().st_size
+                progress.update(file_sizes_by_path.get(remote_path, file_size) if has_size_estimate else 1)
+                return file_size, None
+            except Exception as exc:
+                self.logger.warning(f"Failed to download [{category}] {remote_path}: {exc}")
+                if not has_size_estimate:
+                    progress.update(1)
+                return 0, exc
+
+        num_workers = min(8, len(files_to_download))
+        download_start = time.time()
         previous_disable_pb = os.environ.get("HF_HUB_DISABLE_PROGRESS_BARS")
         os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = "1"
         disable_progress_bars()
         try:
-            for local_dir, remote_path, category in files_to_download:
-                try:
-                    downloaded_path = load_from_huggingface(
-                        self.repo_id,
-                        file_path=remote_path,
-                        use_hub_download=True,
-                        token=self.token,
-                        **self.kwargs,
-                    )
-                    local_dir.mkdir(parents=True, exist_ok=True)
-                    destination_path = local_dir / Path(remote_path).name
-                    shutil.copy2(downloaded_path, destination_path)
-                    file_size = destination_path.stat().st_size
-                    bytes_downloaded += file_size
-                    found_files += 1
-                    if has_size_estimate:
-                        progress.update(file_sizes_by_path.get(remote_path, file_size))
-                    else:
-                        progress.update(1)
-                except Exception as exc:
-                    missing_files += 1
-                    self.logger.warning(f"Failed to download [{category}] {remote_path}: {exc}")
-                    if not has_size_estimate:
-                        progress.update(1)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=num_workers) as executor:
+                results = list(executor.map(_download_one, files_to_download))
         finally:
             progress.close()
             enable_progress_bars()
@@ -259,15 +257,15 @@ class BaseDataset:
             else:
                 os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = previous_disable_pb
 
+        bytes_downloaded = sum(r[0] for r in results)
+        missing_files = sum(1 for r in results if r[1] is not None)
+        found_files = len(results) - missing_files
         elapsed_seconds = time.time() - download_start
         gib_downloaded = bytes_downloaded / (1024 ** 3)
         total_files = len(files_to_download)
-        all_found = found_files == total_files
 
         self.logger.info("Download summary")
-        self.logger.info(
-            f"  files found: {found_files}/{total_files} (all_found={all_found})"
-        )
+        self.logger.info(f"  files found: {found_files}/{total_files} (all_found={found_files == total_files})")
         self.logger.info(f"  missing files: {missing_files}")
         self.logger.info(f"  downloaded size: {gib_downloaded:.3f} GiB")
         self.logger.info(f"  download time: {elapsed_seconds:.2f} seconds")
