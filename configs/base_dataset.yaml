@@ -1,6 +1,6 @@
 
 dataset:
-  camera_view_type: head # head= only head camera, multi= head + left hand + right hand
+  camera_view_type: head # supports head only in encoding 
   dataset_size: 1 #in hours at the given hz for the base_dataset
   seed: 42 # random seed used for deterministic episode sampling
   eval_tasks: ["outfit_a_basic_toolbox"] # the task wihc shall completely included into the dataset

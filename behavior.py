@@ -43,6 +43,25 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         cache_parquet=False,
         cache_video_readers=False,
     ):
+        """Initialize the dataset from a JSON manifest file.
+
+        Args:
+            data_path: Path to the JSON manifest listing all episodes.
+            fpcs: Frames per clip (chunk size) used to partition each episode.
+            fps: Target sampling rate in frames per second. If None, the native
+                video FPS is used.
+            transform: Optional callable applied to the raw uint8 video buffer
+                returned by decord before it is stored in the sample dict.
+            camera_frame: Reserved for future use; currently unused.
+            state_start_idx: Column offset into the ``observation.state`` array
+                from which ``state_dim`` values are sliced.
+            state_dim: Number of state dimensions to keep after slicing.
+            action_dim: Number of action dimensions to keep (leading columns).
+            cache_parquet: If True, keep loaded DataFrames in memory to avoid
+                repeated disk reads across workers.
+            cache_video_readers: If True, keep ``VideoReader`` objects alive
+                between calls to ``loadvideo_decord``.
+        """
         self.data_path = data_path
         self.dataset_root = os.path.dirname(os.path.abspath(data_path))
         self.fpc = fpcs
@@ -63,10 +82,29 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         self.windows = self._build_window_index()
 
     def _load_manifest(self, manifest_path):
+        """Load and return the JSON manifest as a dict.
+
+        Args:
+            manifest_path: Absolute or relative path to the manifest JSON file.
+
+        Returns:
+            Parsed manifest dictionary.
+        """
         with open(manifest_path, "r") as f:
             return json.load(f)
 
     def _parse_samples(self, manifest):
+        """Parse episode entries from the manifest into path dicts.
+
+        Args:
+            manifest: Manifest dict as returned by ``_load_manifest``.
+
+        Returns:
+            List of dicts, each containing ``video_path`` and ``parquet_path``.
+
+        Raises:
+            ValueError: If no valid episodes are found in the manifest.
+        """
         samples = []
         for ep in manifest.get("episodes", []):
             task_name = ep.get("task_name")
@@ -89,6 +127,20 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         return samples
 
     def _build_episode_plans(self):
+        """Build per-episode sampling plans from ``self.samples``.
+
+        Each plan records the sampled frame indices, the frame stride, and the
+        usable episode length after reconciling video and parquet lengths.
+        Episodes that are too short or raise an exception are skipped with a
+        warning.
+
+        Returns:
+            List of plan dicts with keys ``sample_idx``, ``indices``,
+            ``fstp``, and ``max_len``.
+
+        Raises:
+            ValueError: If no valid plans could be constructed.
+        """
         plans = []
         for sample_idx, sample in enumerate(self.samples):
             try:
@@ -112,6 +164,23 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         return plans
 
     def _episode_sampled_indices(self, sample):
+        """Compute the frame-stride and sampled indices for a single episode.
+
+        Opens the video briefly to read its FPS and length, then constructs a
+        uniform index array at the configured target FPS.
+
+        Args:
+            sample: Dict with ``video_path`` and ``parquet_path`` keys.
+
+        Returns:
+            Tuple of ``(indices, fstp, max_len)`` where ``indices`` is a
+            ``np.int64`` array of frame positions, ``fstp`` is the integer
+            frame stride, and ``max_len`` is the usable episode length.
+            Returns ``(None, fstp, max_len)`` when the episode is too short.
+
+        Raises:
+            ValueError: If the configured FPS is not positive.
+        """
         vpath = sample["video_path"]
         ppath = sample["parquet_path"]
         vr = VideoReader(vpath, num_threads=-1, ctx=cpu(0))
@@ -135,6 +204,18 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         return indices, fstp, max_len
 
     def _build_window_index(self):
+        """Build the flat list of (episode_idx, start_idx) window pairs.
+
+        Each episode plan is partitioned into non-overlapping chunks of
+        ``self.fpc`` sampled frames.  The resulting list is used directly as
+        the dataset index.
+
+        Returns:
+            List of ``(episode_idx, start_idx)`` tuples.
+
+        Raises:
+            ValueError: If no valid windows are found across all plans.
+        """
         windows = []
         for episode_idx, plan in enumerate(self.episode_plans):
             indices = plan["indices"]
@@ -153,9 +234,27 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         return windows
 
     def __len__(self):
+        """Return the total number of clip windows in the dataset."""
         return len(self.windows)
 
     def __getitem__(self, index):
+        """Return the sample dict for a given window index.
+
+        Retries up to 10 times with a randomly selected fallback window when
+        loading fails, then re-raises on the final attempt.
+
+        Args:
+            index: Integer index into ``self.windows``.
+
+        Returns:
+            Dict with keys ``video``, ``actions``, ``states``,
+            ``frame_indices``, ``episode_idx``, ``start_idx``, and
+            ``valid_len``.
+
+        Raises:
+            Exception: Propagates the last loading exception after all retries
+                are exhausted.
+        """
         episode_idx, start_idx = self.windows[index]
         plan = self.episode_plans[episode_idx]
         sample = self.samples[plan["sample_idx"]]
@@ -184,6 +283,32 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         }
 
     def loadvideo_decord(self, sample, plan, start_idx=0):
+        """Load a clip window from disk and return frames, actions, and states.
+
+        Reads the parquet file for states/actions and the corresponding video
+        frames via decord.  Short windows at the end of an episode are
+        right-padded with the last valid frame/action/state.
+
+        Args:
+            sample: Dict with ``video_path`` and ``parquet_path`` keys.
+            plan: Episode plan dict produced by ``_build_episode_plans``,
+                containing ``indices``, ``fstp``, and ``max_len``.
+            start_idx: Offset (in sampled-index space) of the clip window
+                within the episode.
+
+        Returns:
+            Tuple of ``(buffer, actions, states, window_indices)`` where
+            ``buffer`` is a ``uint8`` ndarray of shape
+            ``(fpc, H, W, C)``, ``actions`` and ``states`` are ``float32``
+            ndarrays of shape ``(fpc, action_dim*fstp)`` and
+            ``(fpc, state_dim)`` respectively, and ``window_indices`` is an
+            ``int64`` ndarray of the actual video frame positions.
+
+        Raises:
+            ValueError: If required parquet columns are missing or array
+                dimensions are too small for the configured slice parameters.
+            RuntimeError: If the episode plan contains no valid indices.
+        """
         vpath = sample["video_path"]
         ppath = sample["parquet_path"]
         df = self._load_parquet(ppath)
@@ -255,6 +380,14 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         return buffer, actions, states, window_indices
 
     def _load_parquet(self, ppath):
+        """Load a parquet file, optionally from the in-memory cache.
+
+        Args:
+            ppath: Path to the parquet file.
+
+        Returns:
+            ``pandas.DataFrame`` for the requested file.
+        """
         if not self.cache_parquet:
             return pd.read_parquet(ppath)
         cached = self._parquet_cache.get(ppath)
@@ -265,6 +398,14 @@ class BehaviorVideoDataset(torch.utils.data.Dataset):
         return df
 
     def _get_video_reader(self, vpath):
+        """Return a ``VideoReader`` for the given path, optionally cached.
+
+        Args:
+            vpath: Path to the MP4 video file.
+
+        Returns:
+            ``decord.VideoReader`` instance for the requested file.
+        """
         if not self.cache_video_readers:
             return VideoReader(vpath, num_threads=-1, ctx=cpu(0))
         cached = self._video_reader_cache.get(vpath)
@@ -288,6 +429,17 @@ class _ShardUploader:
     """
 
     def __init__(self, write_dir, api, repo_id, path_in_repo, delete_local):
+        """Initialize the uploader but do not start the background thread yet.
+
+        Args:
+            write_dir: Local directory that ``MDSWriter`` writes shards into.
+            api: Authenticated ``huggingface_hub.HfApi`` instance.
+            repo_id: HuggingFace dataset repository ID (e.g. ``"org/repo"``).
+            path_in_repo: Prefix path inside the repository for all uploaded
+                files.  Pass ``None`` or an empty string for the repo root.
+            delete_local: If True, each shard is removed from disk immediately
+                after a successful upload.
+        """
         self._write_dir    = write_dir
         self._api          = api
         self._repo_id      = repo_id
@@ -299,9 +451,19 @@ class _ShardUploader:
         self._thread       = threading.Thread(target=self._loop, daemon=True)
 
     def start(self):
+        """Start the background polling thread."""
         self._thread.start()
 
     def stop_and_flush(self):
+        """Signal the thread to stop, wait for it, then upload remaining files.
+
+        Should be called after ``MDSWriter`` has exited so that the final shard
+        and ``index.json`` are complete and safe to upload.
+
+        Raises:
+            RuntimeError: If the background thread encountered an unhandled
+                exception during uploading.
+        """
         self._stop.set()
         self._thread.join()
         if self._error:
@@ -309,6 +471,7 @@ class _ShardUploader:
         self._process(final=True)
 
     def _loop(self):
+        """Background thread body: poll for new shards every 30 seconds."""
         try:
             while not self._stop.wait(timeout=30):
                 self._process(final=False)
@@ -316,6 +479,16 @@ class _ShardUploader:
             self._error = e
 
     def _process(self, final):
+        """Upload any not-yet-uploaded shards (and optionally ``index.json``).
+
+        When ``final`` is False the last shard is skipped because
+        ``MDSWriter`` may still be writing to it.  When ``final`` is True all
+        shards and ``index.json`` are included.  Each file is retried up to
+        three times with back-off on failure.
+
+        Args:
+            final: If True, include the last shard and ``index.json``.
+        """
         shards = sorted(glob.glob(os.path.join(self._write_dir, "shard.*.mds")))
         # Skip the last shard unless final — MDSWriter may still be writing to it.
         targets = shards if final else shards[:-1]
@@ -350,12 +523,42 @@ class BehaviorEpisodePreencoder:
     """Run a vision encoder on BEHAVIOR clips and save pre-encoded episode shards."""
 
     def __init__(self, encoder, device=None, dtype=torch.float32):
+        """Initialize the pre-encoder and move the encoder model to the target device.
+
+        Args:
+            encoder: A callable ``nn.Module`` that accepts a ``(B, C, T, H, W)``
+                float tensor and returns either a tensor or a tuple whose first
+                element is a tensor of shape ``(B, num_tokens, embed_dim)``.
+            device: ``torch.device`` (or string) to run inference on.  Defaults
+                to CUDA when available, otherwise CPU.
+            dtype: Floating-point dtype used for encoder inputs and outputs.
+                ``bfloat16`` outputs are cast to ``float16`` before being saved
+                to disk.
+        """
         self.encoder = encoder.eval()
         self.device = device or (torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu"))
         self.dtype = dtype
         self.encoder.to(self.device)
 
     def _to_video_tensor(self, video):
+        """Convert a raw video array/tensor to a ``(B, C, T, H, W)`` float tensor.
+
+        Accepts numpy arrays or PyTorch tensors in any of the common layouts
+        ``(B, T, H, W, C)``, ``(B, T, C, H, W)``, or ``(B, C, T, H, W)``.
+        A missing batch dimension is added automatically for 4-D inputs.
+
+        Args:
+            video: ``np.ndarray`` or ``torch.Tensor`` representing a batch of
+                video clips.
+
+        Returns:
+            ``torch.Tensor`` of shape ``(B, C, T, H, W)`` on ``self.device``
+            with dtype ``self.dtype``.
+
+        Raises:
+            ValueError: If the input is not 4-D or 5-D, or if the channel axis
+                cannot be inferred.
+        """
         if isinstance(video, np.ndarray):
             video = torch.from_numpy(video)
         if video.ndim == 4:
@@ -378,6 +581,19 @@ class BehaviorEpisodePreencoder:
 
     @staticmethod
     def behavior_preencode_collate(batch):
+        """Collate a list of sample dicts into batched numpy arrays.
+
+        Intended for use as the ``collate_fn`` argument of a
+        ``torch.utils.data.DataLoader``.
+
+        Args:
+            batch: List of sample dicts as returned by
+                ``BehaviorVideoDataset.__getitem__``.
+
+        Returns:
+            Dict mapping each key to a stacked numpy array with an added
+            leading batch dimension.
+        """
         return {
             "video": np.stack([item["video"] for item in batch], axis=0),
             "actions": np.stack([item["actions"] for item in batch], axis=0),
@@ -390,6 +606,12 @@ class BehaviorEpisodePreencoder:
 
     @staticmethod
     def _gpu_status():
+        """Return a short GPU utilisation string from ``nvidia-smi``.
+
+        Returns:
+            String of the form ``"gpu=<util>% mem=<used>/<total>MB"``, or
+            ``"gpu=n/a"`` if ``nvidia-smi`` is unavailable.
+        """
         try:
             out = subprocess.check_output(
                 [
@@ -417,6 +639,37 @@ class BehaviorEpisodePreencoder:
 
     @torch.inference_mode()
     def encode_full_episodes(self, dataset, output_dir=None, hf_repo_id=None, hf_path_prefix="", max_shard_bytes=1 << 30, batch_size=8, num_workers=4, pin_memory=True, persistent_workers=True, prefetch_factor=2):
+        """Encode all episodes and write them as MDS shards.
+
+        Iterates over ``dataset`` in window order, encodes each batch with the
+        vision encoder, re-assembles the per-frame tokens in episode order, and
+        writes complete episodes to MDS via ``MDSWriter``.  Optionally uploads
+        finished shards to a HuggingFace dataset repository in the background
+        while encoding continues.
+
+        Args:
+            dataset: ``BehaviorVideoDataset`` instance to encode.
+            output_dir: Local directory to write MDS shards into.  Created if
+                it does not exist.  Required unless ``hf_repo_id`` is given.
+            hf_repo_id: HuggingFace dataset repository ID to upload shards to.
+                When provided without ``output_dir``, shards are written to a
+                temporary directory and deleted after upload.
+            hf_path_prefix: Path prefix inside the HF repository for uploaded
+                files.  Defaults to the repository root.
+            max_shard_bytes: Maximum size in bytes for each MDS shard file.
+                Defaults to 1 GiB.
+            batch_size: Number of windows per data-loader batch.
+            num_workers: Number of worker processes for the data loader.
+            pin_memory: If True, use pinned memory in the data loader for
+                faster host-to-device transfers.
+            persistent_workers: If True, keep data-loader worker processes
+                alive between batches.
+            prefetch_factor: Number of batches to prefetch per worker.
+
+        Raises:
+            ValueError: If neither ``output_dir`` nor ``hf_repo_id`` is given.
+            RuntimeError: If the background shard uploader fails.
+        """
         if not output_dir and not hf_repo_id:
             raise ValueError("Either output_dir or hf_repo_id must be provided")
 
@@ -467,6 +720,21 @@ class BehaviorEpisodePreencoder:
                 shutil.rmtree(tmp_dir, ignore_errors=True)
 
     def _flush_active_episode(self, state, dataset, writer):
+        """Write the buffered windows for the current episode to the MDS writer.
+
+        Windows are sorted by their ``start_idx`` before concatenation so that
+        the written frame sequence is in chronological order regardless of
+        data-loader ordering.  Clears the active buffer and increments the
+        episode and frame counters in ``state`` afterwards.
+
+        Args:
+            state: Mutable state dict maintained by ``encode_full_episodes``,
+                containing ``active_episode_idx``, ``active_buffer``,
+                ``encoded_episodes``, and ``encoded_frames``.
+            dataset: The ``BehaviorVideoDataset`` being encoded, used to look
+                up the original ``sample_idx`` for each episode.
+            writer: Open ``MDSWriter`` instance to write samples into.
+        """
         if state["active_episode_idx"] is None or state["active_buffer"] is None or not state["active_buffer"]["tokens"]:
             return
         buf = state["active_buffer"]
@@ -495,6 +763,21 @@ class BehaviorEpisodePreencoder:
         state["active_buffer"] = None
 
     def _make_data_loader(self, dataset, batch_size, num_workers, pin_memory, persistent_workers, prefetch_factor):
+        """Construct a non-shuffling DataLoader with the pre-encode collate function.
+
+        Args:
+            dataset: ``BehaviorVideoDataset`` to wrap.
+            batch_size: Number of windows per batch.
+            num_workers: Number of worker processes.
+            pin_memory: Enable pinned memory for faster GPU transfers.
+            persistent_workers: Keep worker processes alive between batches.
+                Ignored when ``num_workers == 0``.
+            prefetch_factor: Batches to prefetch per worker.  Ignored when
+                ``num_workers == 0``.
+
+        Returns:
+            Configured ``torch.utils.data.DataLoader`` instance.
+        """
         return torch.utils.data.DataLoader(
             dataset,
             batch_size=batch_size,
@@ -507,6 +790,22 @@ class BehaviorEpisodePreencoder:
         )
 
     def _encode_batch(self, video, fpc):
+        """Encode a batch of video clips and reshape tokens per frame.
+
+        Args:
+            video: Raw video array of shape ``(B, T, H, W, C)`` or any layout
+                accepted by ``_to_video_tensor``.
+            fpc: Frames per clip; used to split the flat token sequence into
+                per-frame groups.
+
+        Returns:
+            ``float32`` numpy array of shape
+            ``(B, fpc, tokens_per_frame, embed_dim)``.
+
+        Raises:
+            AssertionError: If the total number of tokens is not divisible by
+                ``fpc``.
+        """
         tokens = self.encoder(self._to_video_tensor(video))
         if isinstance(tokens, (tuple, list)):
             tokens = tokens[0]
@@ -519,6 +818,21 @@ class BehaviorEpisodePreencoder:
         return tokens.reshape(tokens.shape[0], fpc, tokens_per_frame, tokens.shape[2])
 
     def _accumulate(self, state, dataset, writer, tokens, batch, b):
+        """Accumulate encoded windows into the active episode buffer.
+
+        When the episode index changes, the previous episode is flushed to the
+        MDS writer before starting a new buffer.
+
+        Args:
+            state: Mutable state dict maintained by ``encode_full_episodes``.
+            dataset: The source ``BehaviorVideoDataset``.
+            writer: Open ``MDSWriter`` instance.
+            tokens: Encoded token array of shape
+                ``(B, fpc, tokens_per_frame, embed_dim)`` as returned by
+                ``_encode_batch``.
+            batch: Collated batch dict from the data loader.
+            b: Batch index of the sample to accumulate.
+        """
         episode_idx = int(batch["episode_idx"][b])
         valid_len   = int(batch["valid_len"][b])
         if state["active_episode_idx"] is None:
