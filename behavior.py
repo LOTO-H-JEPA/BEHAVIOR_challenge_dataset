@@ -671,9 +671,9 @@ class BehaviorEpisodePreencoder:
             return "gpu=n/a"
 
     _MDS_COLUMNS_BASE = {
-        "actions":       "ndarray",  # (tps * fstp * action_dim,) — all frames within tubelet
-        "states":        "ndarray",  # (state_dim,)  — first sampled frame of tubelet
-        "cam_rel_poses": "ndarray",  # (21,) — 3 cameras × (pos[3] + quat[4]), first frame of tubelet
+        "actions":       "ndarray",  # (tps * fstp * action_dim,) — all native-fps actions within tubelet span
+        "states":        "ndarray",  # (state_dim,)  — last sampled frame of tubelet (boundary state)
+        "cam_rel_poses": "ndarray",  # (21,) — 3 cameras × (pos[3] + quat[4]), last frame of tubelet
         "frame_index":   "int",      # source video frame index at tubelet start
         "episode_idx":   "int",
         "sample_idx":    "int",
@@ -943,8 +943,10 @@ class BehaviorEpisodePreencoder:
         num_steps = act.shape[0] // tps
         act = act[: num_steps * tps].reshape(num_steps, tps * act.shape[-1])
         state["active_buffer"]["actions"].append(act[:valid_steps])
-        # States and cam_rel_poses: snapshot at the first sampled frame of each tubelet.
-        state["active_buffer"]["states"].append(batch["states"][b, ::tps][:valid_steps])
-        state["active_buffer"]["cam_rel_poses"].append(batch["cam_rel_poses"][b, ::tps][:valid_steps])
+        # States and cam_rel_poses: snapshot at the last sampled frame of each tubelet
+        # (boundary state — the robot state right at the edge between tubelet t and t+1,
+        # which is the most informative conditioning for predicting tubelet t+1 tokens).
+        state["active_buffer"]["states"].append(batch["states"][b, 1::tps][:valid_steps])
+        state["active_buffer"]["cam_rel_poses"].append(batch["cam_rel_poses"][b, 1::tps][:valid_steps])
         state["active_buffer"]["frame_indices"].append(batch["frame_indices"][b, ::tps][:valid_steps])
         state["active_buffer"]["starts"].append(int(batch["start_idx"][b]))
