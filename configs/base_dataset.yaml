@@ -1,7 +1,7 @@
 
 dataset:
   camera_view_type: multi  # "head" or "multi" (head + left_wrist + right_wrist)
-  dataset_size: 1 #in hours at the given hz for the base_dataset
+  dataset_size: 1 #in hours
   seed: 42 # random seed used for deterministic episode sampling
   eval_tasks: ["outfit_a_basic_toolbox"] # the task wihc shall completely included into the dataset
   exclude_eval_tasks: True # exclude the eval task from the dataset completely

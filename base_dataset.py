@@ -63,8 +63,6 @@ class BaseDataset:
             "base_dst": self.base_dataset_destination,
         }
         self.logger.info(f"BaseDataset config: {config_preview}")
-
-        # Build base dataset state immediately after initialization.
         self.build_base_dataset()
 
     def build_base_dataset(self) -> dict[str, Any]:
@@ -482,3 +480,6 @@ class BaseDataset:
             "episode_file": episode_file,
             "raw": episode,
         }
+
+if __name__ == "__main__":
+    BaseDataset()
